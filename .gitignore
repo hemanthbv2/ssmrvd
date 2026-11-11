@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+*/node_modules/
+package-lock.json
+
+# Temporary browser profiles
+chrome_temp/
+
+# Python cache & logs
+__pycache__/
+*.py[cod]
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db

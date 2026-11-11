@@ -1,0 +1,1162 @@
+/**
+ * SSMRV Chatbot — Conversational Engine & State Machine
+ * Features:
+ * - Levenshtein Distance & Token Jaccard Fuzzy Matching Algorithm
+ * - Contextual Multi-turn State Machine with Breadcrumb Trails
+ * - Dynamic Contextual Form Engine (Fee Inquiry, Campus Visit, Admission Inquiry)
+ * - Google Sheets Direct Integration + Dual-Write Telemetry Bridge
+ * - 120s Inactivity Nudge Engine
+ * - LocalStorage Session Persistence
+ */
+
+(function () {
+  'use strict';
+
+  // ─── Constants & State ───────────────────────────────────────
+  const STORAGE_KEY = 'ssmrv_chatbot_session_v1';
+  const INACTIVITY_TIMEOUT = 120000; // 120 seconds
+  let isOpen = false;
+  let isTyping = false;
+  let currentFlowId = 'welcome';
+  let welcomePromptDismissed = false;
+  let inactivityTimer = null;
+  let telemetry = null;
+
+  // DOM Elements
+  let triggerBtn, chatWindow, chatMessages, chatInput, sendBtn, actionsContainer, typingIndicator, welcomePrompt;
+
+  // Helper to resolve logo
+  const getLogoUrl = () => {
+    return (window.ssmrvChatbotSettings && window.ssmrvChatbotSettings.logoUrl)
+      ? window.ssmrvChatbotSettings.logoUrl
+      : 'assets/logo.png';
+  };
+
+  const getRvLogoUrl = () => {
+    return (window.ssmrvChatbotSettings && window.ssmrvChatbotSettings.rvLogoUrl)
+      ? window.ssmrvChatbotSettings.rvLogoUrl
+      : 'assets/rv-logo.png';
+  };
+
+  // ─── Initialize Engine ──────────────────────────────────────
+  function init() {
+    // Initialize Telemetry
+    if (window.SSMRVTelemetry) {
+      telemetry = new window.SSMRVTelemetry();
+    }
+
+    // Build DOM structure if not statically present
+    ensureChatMarkup();
+
+    // Cache DOM references
+    triggerBtn = document.getElementById('ssmrvTrigger');
+    chatWindow = document.getElementById('ssmrvChatWindow');
+    chatMessages = document.getElementById('ssmrvMessages');
+    chatInput = document.getElementById('ssmrvInput');
+    sendBtn = document.getElementById('ssmrvSend');
+    actionsContainer = document.getElementById('ssmrvActions');
+    typingIndicator = document.getElementById('ssmrvTyping');
+    welcomePrompt = document.getElementById('ssmrvWelcomePrompt');
+
+    // Attach Event Listeners
+    attachEvents();
+
+    // Restore or start fresh
+    const restored = loadState();
+    if (!restored) {
+      navigateTo('welcome', false);
+      if (!welcomePromptDismissed && welcomePrompt) {
+        setTimeout(() => {
+          if (!isOpen && welcomePrompt) welcomePrompt.style.display = 'flex';
+        }, 1200);
+      }
+    }
+  }
+
+  // ─── Inject Widget Markup ────────────────────────────────────
+  function ensureChatMarkup() {
+    if (document.getElementById('ssmrvChatWindow')) return;
+
+    const logoSrc = getLogoUrl();
+    const rvLogoSrc = getRvLogoUrl();
+    const primaryPhone = (typeof SSMRV_CONFIG !== 'undefined' && SSMRV_CONFIG.contacts) 
+      ? SSMRV_CONFIG.contacts.primaryHelpline 
+      : '+91 97395 88855';
+    const waUrl = (typeof SSMRV_CONFIG !== 'undefined' && SSMRV_CONFIG.whatsappUrl)
+      ? SSMRV_CONFIG.whatsappUrl
+      : 'https://wa.me/919739588855';
+
+    const widgetHtml = `
+      <!-- Welcome Prompt Floating Card -->
+      <div class="ssmrv-welcome-prompt" id="ssmrvWelcomePrompt" style="display:none;">
+        <div class="ssmrv-welcome-header">
+          <span class="ssmrv-welcome-title">
+            <span>🎓</span> SSMRV Admissions Desk
+          </span>
+          <button class="ssmrv-welcome-close" id="ssmrvPromptClose" title="Dismiss">&times;</button>
+        </div>
+        <div class="ssmrv-welcome-body">
+          Welcome to Sivananda Sarma Memorial RV Degree College. Explore admissions, courses, or ask any question!
+        </div>
+        <div class="ssmrv-welcome-cta">
+          Chat with us <span>&rarr;</span>
+        </div>
+      </div>
+
+      <!-- Floating Trigger Button -->
+      <div class="ssmrv-chat-trigger" id="ssmrvTrigger" title="Open SSMRV Admissions Chat">
+        <div class="ssmrv-trigger-pulse"></div>
+        <div class="ssmrv-trigger-badge">1</div>
+        <img src="${rvLogoSrc}" alt="RV Crest" class="ssmrv-trigger-rv-crest">
+        <svg class="ssmrv-trigger-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+
+      <!-- Main Chat Window -->
+      <div class="ssmrv-chat-window" id="ssmrvChatWindow" role="dialog" aria-label="SSMRV Chatbot">
+        <!-- Header -->
+        <header class="ssmrv-chat-header">
+          <div class="ssmrv-header-info">
+            <div class="ssmrv-avatar-wrapper">
+              <img src="${rvLogoSrc}" alt="RV Crest" class="ssmrv-avatar-img">
+              <span class="ssmrv-status-indicator" title="Online"></span>
+            </div>
+            <div class="ssmrv-header-text">
+              <span class="ssmrv-college-title">
+                SSMRV Degree College <span class="ssmrv-verified-badge">✓</span>
+              </span>
+              <span class="ssmrv-college-subtitle">
+                <span>●</span> Online | Jayanagar, Bengaluru
+              </span>
+            </div>
+          </div>
+          <div class="ssmrv-header-actions">
+            <a href="tel:${primaryPhone.replace(/\s+/g, '')}" class="ssmrv-header-btn" title="Call Admissions Desk (${primaryPhone})">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </a>
+            <a href="${waUrl}" target="_blank" class="ssmrv-header-btn" title="Chat on WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            </a>
+            <button class="ssmrv-header-btn" id="ssmrvClearChat" title="Clear Chat History">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+            </button>
+            <button class="ssmrv-header-btn" id="ssmrvCloseChat" title="Close Chat">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        </header>
+
+        <!-- Breadcrumb Bar -->
+        <div class="ssmrv-breadcrumb-bar" id="ssmrvBreadcrumb">
+          <span>Navigation:</span>
+          <span class="ssmrv-breadcrumb-link" id="ssmrvBreadcrumbCurrent">Home</span>
+        </div>
+
+        <!-- Messages Area -->
+        <div class="ssmrv-chat-messages" id="ssmrvMessages">
+          <!-- Messages will be injected dynamically -->
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="ssmrv-typing-indicator" id="ssmrvTyping">
+          <div class="ssmrv-msg-avatar">
+            <img src="${logoSrc}" alt="SSMRV">
+          </div>
+          <div class="ssmrv-typing-bubble">
+            <span class="ssmrv-typing-dot"></span>
+            <span class="ssmrv-typing-dot"></span>
+            <span class="ssmrv-typing-dot"></span>
+          </div>
+        </div>
+
+        <!-- Quick Action Buttons Container -->
+        <div class="ssmrv-actions-container" id="ssmrvActions">
+          <!-- Quick action chips injected here -->
+        </div>
+
+        <!-- Input Bar -->
+        <form class="ssmrv-chat-input-bar" id="ssmrvInputForm">
+          <input type="text" class="ssmrv-chat-input" id="ssmrvInput" placeholder="Ask about B.Com, BBA, fees, BCA, placements..." autocomplete="off">
+          <button type="submit" class="ssmrv-chat-send-btn" id="ssmrvSend" title="Send Message">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+
+        <!-- Footer -->
+        <div class="ssmrv-chat-footer">
+          Official Admissions Portal • <a href="https://www.ssmrv.edu.in" target="_blank">ssmrv.edu.in</a>
+        </div>
+      </div>
+    `;
+
+    const container = document.createElement('div');
+    container.className = 'ssmrv-chatbot-widget';
+    container.innerHTML = widgetHtml;
+    document.body.appendChild(container);
+  }
+
+  // ─── Event Binding ───────────────────────────────────────────
+  function attachEvents() {
+    triggerBtn.addEventListener('click', toggleChat);
+    document.getElementById('ssmrvCloseChat').addEventListener('click', toggleChat);
+    document.getElementById('ssmrvClearChat').addEventListener('click', clearChat);
+
+    if (welcomePrompt) {
+      welcomePrompt.addEventListener('click', (e) => {
+        if (e.target.id === 'ssmrvPromptClose') {
+          e.stopPropagation();
+          welcomePrompt.style.display = 'none';
+          welcomePromptDismissed = true;
+          saveState();
+        } else {
+          welcomePrompt.style.display = 'none';
+          toggleChat();
+        }
+      });
+    }
+
+    document.getElementById('ssmrvInputForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      handleUserSubmit();
+    });
+
+    document.getElementById('ssmrvBreadcrumbCurrent').addEventListener('click', () => {
+      navigateTo('welcome');
+    });
+  }
+
+  function toggleChat() {
+    isOpen = !isOpen;
+    if (isOpen) {
+      chatWindow.classList.add('is-open');
+      if (welcomePrompt) welcomePrompt.style.display = 'none';
+      const badge = triggerBtn.querySelector('.ssmrv-trigger-badge');
+      if (badge) badge.style.display = 'none';
+      setTimeout(() => chatInput.focus(), 300);
+      resetInactivityTimer();
+      if (telemetry) telemetry.trackEvent('chat_opened');
+    } else {
+      chatWindow.classList.remove('is-open');
+      clearInactivityTimer();
+      if (telemetry) telemetry.trackEvent('chat_closed');
+    }
+    saveState();
+  }
+
+  function clearChat() {
+    if (confirm('Clear entire conversation history?')) {
+      chatMessages.innerHTML = '';
+      clearInactivityTimer();
+      localStorage.removeItem(STORAGE_KEY);
+      navigateTo('welcome', false);
+      if (telemetry) telemetry.trackEvent('chat_cleared');
+    }
+  }
+
+  // ─── Inactivity Engine ────────────────────────────────────────
+  function resetInactivityTimer() {
+    clearInactivityTimer();
+    if (isOpen) {
+      inactivityTimer = setTimeout(() => {
+        appendBotMessage(
+          `Hello 👋<br><br>Just checking in to see if you need assistance regarding <b>SSMRV College admissions, fee structures, or placements</b>.<br><br><b>Admissions for 2026-27 are currently ongoing!</b>`
+        );
+        renderButtons([
+          { text: "📊 B.Com Admissions", action: "flow:bcom_details" },
+          { text: "📈 BBA Honours", action: "flow:bba_details" },
+          { text: "💻 BCA Tech", action: "flow:bca_details" },
+          { text: "💰 Request Fee Sheet", action: "flow:fee_enquiry" },
+          { text: "📞 Call Helpline", url: "tel:9739588855" }
+        ]);
+        saveState();
+      }, INACTIVITY_TIMEOUT);
+    }
+  }
+
+  function clearInactivityTimer() {
+    if (inactivityTimer) {
+      clearTimeout(inactivityTimer);
+      inactivityTimer = null;
+    }
+  }
+
+  // ─── State Navigation ─────────────────────────────────────────
+  function navigateTo(flowId, animate = true) {
+    const flow = CHAT_FLOWS[flowId];
+    if (!flow) return;
+
+    currentFlowId = flowId;
+    updateBreadcrumb(flowId);
+    resetInactivityTimer();
+
+    if (animate) {
+      showTyping(true);
+      setTimeout(() => {
+        showTyping(false);
+        appendBotMessage(flow.message, flow.pageUrl);
+        if (flow.showForm) {
+          renderInquiryForm(flow.formType || 'admission_inquiry');
+        } else {
+          renderButtons(flow.buttons || []);
+        }
+        saveState();
+      }, 450);
+    } else {
+      appendBotMessage(flow.message, flow.pageUrl);
+      if (flow.showForm) {
+        renderInquiryForm(flow.formType || 'admission_inquiry');
+      } else {
+        renderButtons(flow.buttons || []);
+      }
+      saveState();
+    }
+
+    if (telemetry) {
+      telemetry.trackEvent('flow_navigated', { flowId });
+    }
+  }
+
+  function updateBreadcrumb(flowId) {
+    const breadcrumbEl = document.getElementById('ssmrvBreadcrumbCurrent');
+    if (!breadcrumbEl) return;
+    const names = {
+      welcome: "Home",
+      programmes: "Programmes",
+      bcom_details: "B.Com Details",
+      bba_details: "BBA Details",
+      aviation_details: "BBA Aviation",
+      bca_details: "BCA Details",
+      mcom_details: "M.Com Details",
+      admissions: "Admissions",
+      fee_enquiry: "Fee Inquiry",
+      campus_visit: "Campus Visit",
+      placements: "Placements",
+      faculty: "Faculty Directory",
+      faculty_bca: "BCA Faculty",
+      faculty_commerce: "Commerce Faculty",
+      faculty_bba: "BBA Faculty",
+      faculty_mcom: "M.Com Faculty",
+      faculty_languages: "Languages Faculty",
+      faculty_placement: "Placement Cell",
+      faculty_leadership: "Leadership",
+      cancellation_refund: "Refund Policy",
+      alumni: "Alumni Network",
+      sitemap_links: "All College Links",
+      links_programmes: "Program Links",
+      links_admissions: "Admission Links",
+      prospectus_downloads: "Official Downloads",
+      campus_navigation: "Campus Directions",
+      centres_clubs: "Centres & Clubs",
+      campus: "Campus Life",
+      contact: "Contact Us",
+      inquiry_form: "Inquiry Form"
+    };
+    breadcrumbEl.innerText = names[flowId] || flowId;
+  }
+
+  // ─── Rendering Helpers ───────────────────────────────────────
+  function appendUserMessage(text) {
+    const msgEl = document.createElement('div');
+    msgEl.className = 'ssmrv-message user';
+    msgEl.innerHTML = `
+      <div class="ssmrv-msg-avatar">You</div>
+      <div class="ssmrv-msg-content-wrap">
+        <div class="ssmrv-message-bubble">${escapeHtml(text)}</div>
+        <span class="ssmrv-msg-time">${getCurrentTime()}</span>
+      </div>
+    `;
+    chatMessages.appendChild(msgEl);
+    scrollToBottom();
+  }
+
+  function appendBotMessage(html, pageUrl = null) {
+    const rvLogoSrc = getRvLogoUrl();
+    const msgEl = document.createElement('div');
+    msgEl.className = 'ssmrv-message bot';
+
+    // Auto-resolve pageUrl from active flow if not explicitly passed
+    const targetUrl = pageUrl || (typeof CHAT_FLOWS !== 'undefined' && CHAT_FLOWS[currentFlowId] ? CHAT_FLOWS[currentFlowId].pageUrl : null);
+
+    let sourceLinkHtml = '';
+    if (targetUrl && !html.includes('ssmrv-source-link')) {
+      const displayUrl = targetUrl.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+      sourceLinkHtml = `
+        <div class="ssmrv-source-link">
+          <span class="ssmrv-source-label">🌐 Official Page:</span>
+          <a href="${targetUrl}" target="_blank" rel="noopener noreferrer" class="ssmrv-source-url">
+            ${displayUrl} ↗
+          </a>
+        </div>
+      `;
+    }
+
+    msgEl.innerHTML = `
+      <div class="ssmrv-msg-avatar">
+        <img src="${rvLogoSrc}" alt="RV Crest">
+      </div>
+      <div class="ssmrv-msg-content-wrap">
+        <div class="ssmrv-message-bubble">
+          ${html}
+          ${sourceLinkHtml}
+        </div>
+        <span class="ssmrv-msg-time">${getCurrentTime()}</span>
+      </div>
+    `;
+    chatMessages.appendChild(msgEl);
+    scrollToBottom();
+  }
+
+  function showTyping(show) {
+    isTyping = show;
+    if (show) {
+      typingIndicator.classList.add('is-visible');
+    } else {
+      typingIndicator.classList.remove('is-visible');
+    }
+    scrollToBottom();
+  }
+
+  function scrollToBottom() {
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function renderButtons(buttons) {
+    actionsContainer.innerHTML = '';
+    if (!buttons || buttons.length === 0) {
+      actionsContainer.style.display = 'none';
+      return;
+    }
+
+    actionsContainer.style.display = 'flex';
+    buttons.forEach(btn => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'ssmrv-action-chip';
+      if (btn.action && (btn.action.includes('inquiry') || btn.action.includes('fee'))) chip.classList.add('is-primary');
+      chip.innerHTML = btn.text;
+
+      chip.addEventListener('click', () => {
+        resetInactivityTimer();
+        if (btn.url) {
+          if (btn.url.startsWith('tel:')) {
+            window.location.href = btn.url;
+          } else {
+            window.open(btn.url, '_blank');
+          }
+          if (telemetry) telemetry.trackEvent('external_link_clicked', { url: btn.url, label: btn.text });
+        } else if (btn.action) {
+          if (btn.action.startsWith('flow:')) {
+            const targetFlow = btn.action.replace('flow:', '');
+            appendUserMessage(btn.text.replace(/^[^\w\s]+/, '').trim());
+            navigateTo(targetFlow);
+          } else if (btn.action.startsWith('faq:')) {
+            const question = btn.action.replace('faq:', '');
+            appendUserMessage(question);
+            handleFaqAnswer(question);
+          }
+        }
+      });
+
+      actionsContainer.appendChild(chip);
+    });
+  }
+
+  // ─── Dynamic Form Rendering ───────────────────────────────────
+  function renderInquiryForm(formType = 'admission_inquiry') {
+    actionsContainer.innerHTML = '';
+    actionsContainer.style.display = 'none';
+
+    let title = '📝 SSMRV Admission Callback Request';
+    let extraFields = '';
+    let submitText = 'Submit Inquiry & Request Callback 🚀';
+
+    if (formType === 'fee_enquiry') {
+      title = '💰 Official Fee Structure & Prospectus Request';
+      submitText = 'Send Me the Complete Fee Details 📊';
+      extraFields = `
+        <div class="ssmrv-input-group">
+          <label class="ssmrv-input-label">12th / PUC Percentage (%) *</label>
+          <input type="number" class="ssmrv-form-input" id="leadMarks" placeholder="e.g. 85" min="35" max="100">
+          <span class="ssmrv-error-msg" id="errLeadMarks">Please enter your percentage or expected score.</span>
+        </div>
+      `;
+    } else if (formType === 'campus_visit') {
+      title = '🏫 Schedule Guided Campus Visit';
+      submitText = 'Confirm Campus Tour Booking 📍';
+      extraFields = `
+        <div class="ssmrv-input-group">
+          <label class="ssmrv-input-label">Preferred Date of Visit *</label>
+          <input type="date" class="ssmrv-form-input" id="leadDate" required>
+          <span class="ssmrv-error-msg" id="errLeadDate">Please pick a preferred date (Mon-Sat).</span>
+        </div>
+      `;
+    }
+
+    const formEl = document.createElement('div');
+    formEl.className = 'ssmrv-form-card';
+    formEl.innerHTML = `
+      <div class="ssmrv-form-title">${title}</div>
+      <div class="ssmrv-input-group">
+        <label class="ssmrv-input-label">Student Name *</label>
+        <input type="text" class="ssmrv-form-input" id="leadName" placeholder="e.g. Rahul Sharma" required>
+        <span class="ssmrv-error-msg" id="errLeadName">Please enter full name (at least 3 characters).</span>
+      </div>
+      <div class="ssmrv-input-group">
+        <label class="ssmrv-input-label">Mobile Number *</label>
+        <input type="tel" class="ssmrv-form-input" id="leadPhone" placeholder="10-digit mobile number" maxlength="10" required>
+        <span class="ssmrv-error-msg" id="errLeadPhone">Please enter a valid 10-digit Indian mobile number.</span>
+      </div>
+      <div class="ssmrv-input-group">
+        <label class="ssmrv-input-label">Email ID *</label>
+        <input type="email" class="ssmrv-form-input" id="leadEmail" placeholder="e.g. rahul@gmail.com" required>
+        <span class="ssmrv-error-msg" id="errLeadEmail">Please enter a valid email address.</span>
+      </div>
+      <div class="ssmrv-input-group">
+        <label class="ssmrv-input-label">Programme of Interest *</label>
+        <select class="ssmrv-form-select" id="leadProgram">
+          <option value="B.Com">B.Com (General / Professional CA/CS/ACCA)</option>
+          <option value="BBA">BBA (General Honours)</option>
+          <option value="BBA Aviation">BBA – Aviation Management (BBA-AM)</option>
+          <option value="BCA">BCA (Computer Applications / Emerging Tech)</option>
+          <option value="M.Com">M.Com (Postgraduate)</option>
+        </select>
+      </div>
+      ${extraFields}
+      <button type="button" class="ssmrv-form-submit-btn" id="leadSubmitBtn">
+        ${submitText}
+      </button>
+    `;
+
+    chatMessages.appendChild(formEl);
+    scrollToBottom();
+
+    const submitBtn = formEl.querySelector('#leadSubmitBtn');
+    submitBtn.addEventListener('click', () => handleLeadSubmission(formEl, formType));
+  }
+
+  function handleLeadSubmission(formEl, formType) {
+    const nameInput = formEl.querySelector('#leadName');
+    const phoneInput = formEl.querySelector('#leadPhone');
+    const emailInput = formEl.querySelector('#leadEmail');
+    const progSelect = formEl.querySelector('#leadProgram');
+    const marksInput = formEl.querySelector('#leadMarks');
+    const dateInput = formEl.querySelector('#leadDate');
+
+    const errName = formEl.querySelector('#errLeadName');
+    const errPhone = formEl.querySelector('#errLeadPhone');
+    const errEmail = formEl.querySelector('#errLeadEmail');
+    const errMarks = formEl.querySelector('#errLeadMarks');
+    const errDate = formEl.querySelector('#errLeadDate');
+
+    let isValid = true;
+
+    // Name
+    const name = nameInput.value.trim();
+    if (name.length < 3) {
+      nameInput.classList.add('is-invalid');
+      errName.classList.add('is-visible');
+      isValid = false;
+    } else {
+      nameInput.classList.remove('is-invalid');
+      errName.classList.remove('is-visible');
+    }
+
+    // Phone (10 digits starting with 6-9)
+    const phone = phoneInput.value.trim();
+    const phoneRegex = /^[6-9]\d{9}$/;
+    if (!phoneRegex.test(phone)) {
+      phoneInput.classList.add('is-invalid');
+      errPhone.classList.add('is-visible');
+      isValid = false;
+    } else {
+      phoneInput.classList.remove('is-invalid');
+      errPhone.classList.remove('is-visible');
+    }
+
+    // Email
+    const email = emailInput.value.trim();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      emailInput.classList.add('is-invalid');
+      errEmail.classList.add('is-visible');
+      isValid = false;
+    } else {
+      emailInput.classList.remove('is-invalid');
+      errEmail.classList.remove('is-visible');
+    }
+
+    // Optional marks
+    let marks = '';
+    if (marksInput) {
+      marks = marksInput.value.trim();
+      if (!marks || Number(marks) < 30 || Number(marks) > 100) {
+        marksInput.classList.add('is-invalid');
+        if (errMarks) errMarks.classList.add('is-visible');
+        isValid = false;
+      } else {
+        marksInput.classList.remove('is-invalid');
+        if (errMarks) errMarks.classList.remove('is-visible');
+      }
+    }
+
+    // Optional date
+    let visitDate = '';
+    if (dateInput) {
+      visitDate = dateInput.value;
+      if (!visitDate) {
+        dateInput.classList.add('is-invalid');
+        if (errDate) errDate.classList.add('is-visible');
+        isValid = false;
+      } else {
+        dateInput.classList.remove('is-invalid');
+        if (errDate) errDate.classList.remove('is-visible');
+      }
+    }
+
+    if (!isValid) return;
+
+    const submitBtn = formEl.querySelector('#leadSubmitBtn');
+    submitBtn.disabled = true;
+    submitBtn.innerText = 'Submitting...';
+
+    const leadData = {
+      formType,
+      name,
+      phone,
+      email,
+      program: progSelect.value,
+      marks: marks || undefined,
+      visitDate: visitDate || undefined,
+      source: 'SSMRV Chatbot',
+      timestamp: new Date().toISOString()
+    };
+
+    // 1. Dual-Write Telemetry
+    if (telemetry) {
+      telemetry.trackLead(leadData);
+    }
+
+    // 2. Google Sheets Webhook Dispatch (if configured)
+    const sheetsUrl = (typeof GOOGLE_SHEETS_URL !== 'undefined' && GOOGLE_SHEETS_URL) ? GOOGLE_SHEETS_URL : '';
+    if (sheetsUrl) {
+      fetch(sheetsUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(leadData)
+      }).catch(err => console.debug('[SSMRV Sheets]', err));
+    }
+
+    // Confirmation message
+    setTimeout(() => {
+      let confirmMsg = `Your inquiry for <b>${escapeHtml(progSelect.value)}</b> has been registered. An admission counselor will contact you at <b>${escapeHtml(phone)}</b>.`;
+      if (formType === 'fee_enquiry') {
+        confirmMsg = `Thank you! The fee breakdown for <b>${escapeHtml(progSelect.value)}</b> has been routed. Our counseling desk will call you at <b>${escapeHtml(phone)}</b> with scholarship eligibility details.`;
+      } else if (formType === 'campus_visit') {
+        confirmMsg = `Your campus visit for <b>${escapeHtml(visitDate)}</b> has been requested! Our team will contact you at <b>${escapeHtml(phone)}</b> to finalize your campus tour slot.`;
+      }
+
+      formEl.innerHTML = `
+        <div style="text-align:center; padding: 14px 4px;">
+          <div style="font-size:32px; margin-bottom:6px;">🎉</div>
+          <div style="font-weight:700; color:var(--ssmrv-navy); font-size:15px;">Thank You, ${escapeHtml(name)}!</div>
+          <div style="font-size:12.5px; color:var(--text-secondary); margin-top:6px; line-height:1.5;">
+            ${confirmMsg}
+          </div>
+        </div>
+      `;
+      saveState();
+
+      renderButtons([
+        { text: "📚 Explore Programmes", action: "flow:programmes" },
+        { text: "💬 Chat on WhatsApp", url: "https://wa.me/919739588855?text=Hello%20SSMRV%20Admissions%20Team" },
+        { text: "📞 Call Helpline", url: "tel:9739588855" },
+        { text: "↩️ Main Menu", action: "flow:welcome" }
+      ]);
+    }, 500);
+  }
+
+  // ─── Algorithms: Fuzzy Search & Intent Matching ───────────────
+
+  function levenshteinDistance(a, b) {
+    const matrix = [];
+    for (let i = 0; i <= b.length; i++) matrix[i] = [i];
+    for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+
+    for (let i = 1; i <= b.length; i++) {
+      for (let j = 1; j <= a.length; j++) {
+        if (b.charAt(i - 1) === a.charAt(j - 1)) {
+          matrix[i][j] = matrix[i - 1][j - 1];
+        } else {
+          matrix[i][j] = Math.min(
+            matrix[i - 1][j - 1] + 1,
+            matrix[i][j - 1] + 1,
+            matrix[i - 1][j] + 1
+          );
+        }
+      }
+    }
+    return matrix[b.length][a.length];
+  }
+
+  function calculateFuzzyScore(query, targetKeywords) {
+    const queryTokens = query.toLowerCase().split(/\s+/).filter(t => t.length > 1);
+    if (queryTokens.length === 0) return 0;
+
+    let score = 0;
+    queryTokens.forEach(qToken => {
+      targetKeywords.forEach(kw => {
+        const kwLower = kw.toLowerCase();
+        if (kwLower === qToken) {
+          score += 3.0;
+        } else if (kwLower.includes(qToken) || qToken.includes(kwLower)) {
+          score += 1.8;
+        } else {
+          const maxLen = Math.max(qToken.length, kwLower.length);
+          if (maxLen > 3) {
+            const dist = levenshteinDistance(qToken, kwLower);
+            if (dist <= 1) {
+              score += 1.5;
+            } else if (dist <= 2 && maxLen >= 6) {
+              score += 0.8;
+            }
+          }
+        }
+      });
+    });
+
+    return score;
+  }
+
+  function resolveUserQuery(rawText) {
+    const text = rawText.toLowerCase().trim();
+
+    // 1. Direct Greetings
+    if (/^(hi|hello|hey|good morning|good afternoon|namaste|vanakkam)/i.test(text)) {
+      return {
+        type: 'response',
+        message: "Hello! Welcome to <b>SSMRV Degree College</b>, Jayanagar. How may I help you with admissions, faculty, courses, fees, or placements today?",
+        buttons: [
+          { text: "📚 Programmes", action: "flow:programmes" },
+          { text: "📝 Admissions", action: "flow:admissions" },
+          { text: "💰 Fees Structure", action: "flow:fee_enquiry" },
+          { text: "👨‍🏫 Faculty Roster", action: "flow:faculty" },
+          { text: "📄 Official Downloads", action: "flow:prospectus_downloads" },
+          { text: "📍 Campus Maps", action: "flow:campus_navigation" }
+        ]
+      };
+    }
+
+    // 1.b Admission Cancellation & UGC Refund Matrix Intent
+    if (/\b(cancel|cancellation|refund|surrender|withdraw admission|fee return|money back)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'cancellation_refund' };
+    }
+
+    // 1.c Alumni Association Intent
+    if (/\b(alumni|alumnus|sammilana|past students|old students)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'alumni' };
+    }
+
+    // 1.d All Links & Sitemap Directory Intent
+    if (/\b(all links|page links|sitemap|website links|all pages|directory|all urls)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'sitemap_links' };
+    }
+
+    // 1.e Smart URL Matcher for "link for X" or "website for Y"
+    if (/\b(link|url|website|site|webpage)\b/i.test(text) && typeof SSMRV_ALL_PAGES !== 'undefined') {
+      let matchedPage = null;
+      for (const p of SSMRV_ALL_PAGES) {
+        const tLower = p.title.toLowerCase();
+        const uLower = p.url.toLowerCase();
+        if (text.includes('bca') && (uLower.includes('computer_application') || tLower.includes('bca'))) { matchedPage = p; break; }
+        if ((text.includes('b.com') || text.includes('bcom') || text.includes('commerce')) && (uLower.includes('bachelor_of_commerce') || tLower.includes('b.com'))) { matchedPage = p; break; }
+        if (text.includes('aviation') && uLower.includes('aviation')) { matchedPage = p; break; }
+        if (text.includes('bba') && uLower.includes('business_administration')) { matchedPage = p; break; }
+        if (text.includes('mcom') && uLower.includes('master_of_commerce')) { matchedPage = p; break; }
+        if (text.includes('placement') && uLower.includes('placement')) { matchedPage = p; break; }
+        if ((text.includes('admission') || text.includes('apply')) && uLower.includes('admission_procedure')) { matchedPage = p; break; }
+        if (text.includes('refund') && uLower.includes('cancellation')) { matchedPage = p; break; }
+        if (text.includes('alumni') && uLower.includes('alumni')) { matchedPage = p; break; }
+        if (text.includes('raise') && uLower.includes('raise')) { matchedPage = p; break; }
+        if (text.includes('disclosure') && uLower.includes('disclosure')) { matchedPage = p; break; }
+      }
+      if (matchedPage) {
+        return {
+          type: 'response',
+          pageUrl: matchedPage.url,
+          message: `Official web link for <b>${escapeHtml(matchedPage.title)}</b>:`,
+          buttons: [
+            { text: "🌐 Open on ssmrv.edu.in", url: matchedPage.url },
+            { text: "🌐 Browse All Links (120+)", action: "flow:sitemap_links" },
+            { text: "↩️ Main Menu", action: "flow:welcome" }
+          ]
+        };
+      }
+    }
+
+    // 2. Official Downloads & Prospectus
+    if (/\b(prospectus|brochure|disclosure|mandatory disclosure|aicte|catalog|syllabus|calendar|handbook|pdf|download)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'prospectus_downloads' };
+    }
+
+    // 3. Campus Navigation & Directions
+    if (/\b(map|maps|location|address|direction|directions|where is|how to reach|metro|bus|route|campus tour|landmark)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'campus_navigation' };
+    }
+
+    // 4. Faculty Intelligence & Name Search
+    if (typeof SSMRV_FACULTY_CATALOG !== 'undefined' && SSMRV_FACULTY_CATALOG.length > 0) {
+      // Direct HOD questions
+      if (/\b(bca|computer)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+        return {
+          type: 'response',
+          message: `
+            <div class="ssmrv-faculty-card">
+              <div class="ssmrv-faculty-name">Dr. R. Sheela Chandrashekar</div>
+              <div class="ssmrv-faculty-role">Associate Professor & HOD — Department of Computer Applications (BCA)</div>
+              <div class="ssmrv-faculty-meta">
+                🎓 <b>Qualifications:</b> Ph.D., MCA, M.Phil<br>
+                🔬 <b>Expertise:</b> Cloud Computing, Database Management Systems<br>
+                ✉️ <b>Email:</b> <a href="mailto:sheelac.ssmrv@rvei.edu.in">sheelac.ssmrv@rvei.edu.in</a>
+              </div>
+            </div>`,
+          buttons: [
+            { text: "💻 BCA Faculty List (17)", action: "flow:faculty_bca" },
+            { text: "💻 BCA Course Details", action: "flow:bca_details" },
+            { text: "👨‍🏫 All Faculty", action: "flow:faculty" },
+            { text: "↩️ Main Menu", action: "flow:welcome" }
+          ]
+        };
+      }
+
+      if (/\b(commerce|b\.?com)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+        return {
+          type: 'response',
+          message: `
+            <div class="ssmrv-faculty-card">
+              <div class="ssmrv-faculty-name">Dr. Malini N.</div>
+              <div class="ssmrv-faculty-role">Associate Professor & HOD — Department of Commerce (B.Com)</div>
+              <div class="ssmrv-faculty-meta">
+                🎓 <b>Qualifications:</b> B.Com, M.Com, MBA, Ph.D.<br>
+                🔬 <b>Expertise:</b> Accounting & Taxation, Human Resources Analytics, Climate Governance<br>
+                ✉️ <b>Email:</b> <a href="mailto:malinin.ssmrv@rvei.edu.in">malinin.ssmrv@rvei.edu.in</a>
+              </div>
+            </div>`,
+          buttons: [
+            { text: "📊 Commerce Faculty (8)", action: "flow:faculty_commerce" },
+            { text: "📊 B.Com Details", action: "flow:bcom_details" },
+            { text: "👨‍🏫 All Faculty", action: "flow:faculty" },
+            { text: "↩️ Main Menu", action: "flow:welcome" }
+          ]
+        };
+      }
+
+      if (/\b(placement|paryapti)\b/i.test(text) && /\b(officer|head|incharge|in-charge|who is)\b/i.test(text)) {
+        return {
+          type: 'response',
+          message: `
+            <div class="ssmrv-faculty-card">
+              <div class="ssmrv-faculty-name">Mrs. Sumana H.N.</div>
+              <div class="ssmrv-faculty-role">Placement Officer — Paryapti Training & Placement Cell</div>
+              <div class="ssmrv-faculty-meta">
+                🎓 <b>Corporate Relations & Recruitment Specialist</b><br>
+                🔬 <b>Network:</b> 100+ Tier-1 Recruiters (Deloitte, Accenture, Infosys, KPMG, EY)<br>
+                📞 <b>Direct Helpline:</b> <a href="tel:9606067551">+91 96060 67551</a><br>
+                ✉️ <b>Email:</b> <a href="mailto:placement.ssmrv@rvei.edu.in">placement.ssmrv@rvei.edu.in</a>
+              </div>
+            </div>`,
+          buttons: [
+            { text: "💼 Placements & Packages", action: "flow:placements" },
+            { text: "📞 Call Placement Office", url: "tel:9606067551" },
+            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
+            { text: "↩️ Main Menu", action: "flow:welcome" }
+          ]
+        };
+      }
+
+      // Check specific individual faculty name search
+      let matchedFaculty = null;
+      const textWords = text.replace(/[^a-zA-Z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length > 2);
+      
+      // 1. Exact token match (e.g., 'sumana', 'malini', 'kannan')
+      for (const fac of SSMRV_FACULTY_CATALOG) {
+        const cleanName = fac.name.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Sri\.|Smt\.)\s*/i, '').toLowerCase();
+        const rawTokens = cleanName.split(/\s+/).map(t => t.replace(/[^a-zA-Z0-9]/g, '')).filter(t => t.length > 2);
+        const matchesExactWord = rawTokens.some(tok => textWords.includes(tok));
+        if (matchesExactWord) {
+          matchedFaculty = fac;
+          break;
+        }
+      }
+
+      // 2. Fallback substring match
+      if (!matchedFaculty) {
+        for (const fac of SSMRV_FACULTY_CATALOG) {
+          const cleanName = fac.name.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Sri\.|Smt\.)\s*/i, '').toLowerCase();
+          if (text.includes(cleanName) || cleanName.includes(text)) {
+            matchedFaculty = fac;
+            break;
+          }
+        }
+      }
+
+      if (matchedFaculty) {
+        const emailHtml = matchedFaculty.email ? `<br>✉️ <b>Email:</b> <a href="mailto:${matchedFaculty.email}" style="color:var(--ssmrv-navy); font-weight:600;">${matchedFaculty.email}</a>` : '';
+        const qualHtml = matchedFaculty.qualifications ? `<br>🎓 <b>Qualifications:</b> ${matchedFaculty.qualifications}` : '';
+        const specHtml = matchedFaculty.specialisation ? `<br>🔬 <b>Specialisation:</b> <i>${matchedFaculty.specialisation}</i>` : '';
+
+        return {
+          type: 'response',
+          message: `
+            <div class="ssmrv-faculty-card">
+              <div class="ssmrv-faculty-name">${matchedFaculty.name}</div>
+              <div class="ssmrv-faculty-role">${matchedFaculty.designation} — ${matchedFaculty.department}</div>
+              <div class="ssmrv-faculty-meta">
+                ${qualHtml}
+                ${specHtml}
+                ${emailHtml}
+              </div>
+            </div>`,
+          buttons: [
+            { text: "🌐 View Faculty Profile Online", url: matchedFaculty.url },
+            { text: "👨‍🏫 Explore All Faculty", action: "flow:faculty" },
+            { text: "📞 Contact Academic Office", action: "flow:contact" },
+            { text: "↩️ Main Menu", action: "flow:welcome" }
+          ]
+        };
+      }
+
+      // Department-specific faculty queries
+      if (/\b(bca|computer|software|coding)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff|who teaches)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_bca' };
+      }
+      if (/\b(commerce|b\.?com|accounting|taxation)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff|who teaches)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_commerce' };
+      }
+      if (/\b(bba|management|aviation)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff|who teaches)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_bba' };
+      }
+      if (/\b(language|languages|kannada|english|hindi)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_languages' };
+      }
+      if (/\b(m\.?com|postgraduate|pg)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_mcom' };
+      }
+      if (/\b(principal|head of college|director|leader)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty_leadership' };
+      }
+      if (/\b(faculty|teacher|professor|hod|lecturer|staff)\b/i.test(text)) {
+        return { type: 'flow', flowId: 'faculty' };
+      }
+    }
+
+    // 5. Intent Routing for Programs & Flow Targets
+    if (/\b(fee|fees|cost|tuition|price|fee structure)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'fee_enquiry' };
+    }
+    if (/\b(placement|placements|package|salary|recruitment|recruiter|paryapti)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'placements' };
+    }
+    if (/\b(visit|campus tour|come to college|see campus)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'campus_visit' };
+    }
+    if (/\b(admission|admissions|apply|application|eligibility|praveshan)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'admissions' };
+    }
+    if (/\b(b\.?com|commerce|accounting)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'bcom_details' };
+    }
+    if (/\b(aviation|airport|airline|bba am)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'aviation_details' };
+    }
+    if (/\b(bba|business administration|management)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'bba_details' };
+    }
+    if (/\b(bca|computer|software|coding|it)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'bca_details' };
+    }
+    if (/\b(m\.?com|postgraduate|pg|master of commerce)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'mcom_details' };
+    }
+    if (/\b(club|centre|centers|sustainability|rotaract|nss|heritage|excellence|raise)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'centres_clubs' };
+    }
+    if (/\b(contact|phone|email|call|number|office|help)\b/i.test(text)) {
+      return { type: 'flow', flowId: 'contact' };
+    }
+
+    // 6. Match against Knowledge Base FAQs
+    let bestMatch = null;
+    let highestScore = 0;
+
+    SSMRV_FAQS.forEach(faq => {
+      const score = calculateFuzzyScore(text, [...faq.keywords, faq.q]);
+      if (score > highestScore) {
+        highestScore = score;
+        bestMatch = faq;
+      }
+    });
+
+    if (bestMatch && highestScore >= 1.5) {
+      return {
+        type: 'response',
+        message: `<b>${bestMatch.q}</b><br><br>${bestMatch.a}`,
+        buttons: [
+          { text: "📋 Request a Callback", action: "flow:inquiry_form" },
+          { text: "💰 Request Fee Details", action: "flow:fee_enquiry" },
+          { text: "📚 Explore Programmes", action: "flow:programmes" },
+          { text: "↩️ Main Menu", action: "flow:welcome" }
+        ]
+      };
+    }
+
+    // 7. Fallback handler
+    return {
+      type: 'response',
+      message: "I want to make sure you get the exact information! Could you please select an option below, or request a call from our admission counselors?",
+      buttons: [
+        { text: "📚 Programmes Offered", action: "flow:programmes" },
+        { text: "📝 Admission Process (Praveshan)", action: "flow:admissions" },
+        { text: "💰 Fee Structure Inquiry", action: "flow:fee_enquiry" },
+        { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
+        { text: "📄 Official Downloads", action: "flow:prospectus_downloads" },
+        { text: "📍 Campus Navigation", action: "flow:campus_navigation" }
+      ]
+    };
+  }
+
+  function handleUserSubmit() {
+    const text = chatInput.value.trim();
+    if (!text || isTyping) return;
+
+    chatInput.value = '';
+    appendUserMessage(text);
+    resetInactivityTimer();
+
+    if (telemetry) {
+      telemetry.trackEvent('user_message', { query: text });
+    }
+
+    showTyping(true);
+    setTimeout(() => {
+      showTyping(false);
+      const resolution = resolveUserQuery(text);
+
+      if (resolution.type === 'flow') {
+        navigateTo(resolution.flowId);
+      } else {
+        appendBotMessage(resolution.message);
+        renderButtons(resolution.buttons || []);
+        saveState();
+      }
+    }, 450);
+  }
+
+  function handleFaqAnswer(question) {
+    const faq = SSMRV_FAQS.find(f => f.q === question);
+    if (!faq) return;
+
+    resetInactivityTimer();
+    showTyping(true);
+    setTimeout(() => {
+      showTyping(false);
+      appendBotMessage(`<b>${faq.q}</b><br><br>${faq.a}`);
+      renderButtons([
+        { text: "📋 Request a Callback", action: "flow:inquiry_form" },
+        { text: "💰 Fee Structure Inquiry", action: "flow:fee_enquiry" },
+        { text: "📚 Explore Programmes", action: "flow:programmes" },
+        { text: "↩️ Main Menu", action: "flow:welcome" }
+      ]);
+      saveState();
+    }, 400);
+  }
+
+  // ─── Local Storage Persistence ────────────────────────────────
+  function saveState() {
+    try {
+      const messages = [];
+      chatMessages.querySelectorAll('.ssmrv-message').forEach(el => {
+        const isBot = el.classList.contains('bot');
+        const bubble = el.querySelector('.ssmrv-message-bubble');
+        const time = el.querySelector('.ssmrv-msg-time');
+        if (bubble) {
+          messages.push({
+            type: isBot ? 'bot' : 'user',
+            html: bubble.innerHTML,
+            time: time ? time.innerText : getCurrentTime()
+          });
+        }
+      });
+
+      const state = {
+        isOpen,
+        currentFlowId,
+        welcomePromptDismissed,
+        messages: messages.slice(-30)
+      };
+
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    } catch (e) {
+      console.debug('Failed to save chat state', e);
+    }
+  }
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+
+      const state = JSON.parse(raw);
+      welcomePromptDismissed = state.welcomePromptDismissed || false;
+      currentFlowId = state.currentFlowId || 'welcome';
+
+      if (state.messages && state.messages.length > 0) {
+        state.messages.forEach(m => {
+          if (m.type === 'bot') {
+            appendBotMessage(m.html);
+          } else {
+            appendUserMessage(m.html);
+          }
+        });
+
+        const flow = CHAT_FLOWS[currentFlowId];
+        if (flow && !flow.showForm) {
+          renderButtons(flow.buttons || []);
+        }
+        updateBreadcrumb(currentFlowId);
+        return true;
+      }
+    } catch (e) {
+      console.debug('Failed to load chat state', e);
+    }
+    return false;
+  }
+
+  // ─── Utilities ────────────────────────────────────────────────
+  function getCurrentTime() {
+    const now = new Date();
+    return now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function escapeHtml(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&#039;');
+  }
+
+  // ─── Boot ─────────────────────────────────────────────────────
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();

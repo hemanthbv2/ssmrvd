@@ -1,0 +1,632 @@
+[
+  {
+    "id": "dr-vijayashree-l",
+    "name": "Dr. Vijayashree L.",
+    "designation": "Principal & Professor",
+    "department": "Leadership",
+    "qualifications": "MBA, M.Phil., Ph.D., NET",
+    "specialisation": "Innovation Strategy, Entrepreneurship, Harvard Design Thinking",
+    "email": "principal.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr-vijayashree-l/"
+  },
+  {
+    "id": "dr_r_sheela_chandrashekar",
+    "name": "Dr. R. Sheela Chandrashekar",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Ph.D., MCA, M.Phil",
+    "specialisation": "Computer Applications, Cloud Computing, Database Systems",
+    "email": "sheelac.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_r_sheela_chandrashekar/"
+  },
+  {
+    "id": "dr_malini_n",
+    "name": "Dr. Malini N.",
+    "designation": "Associate Professor & HOD",
+    "department": "Commerce (B.Com)",
+    "qualifications": "B.Com, M.Com, MBA, Ph.D.",
+    "specialisation": "Accounting and Taxation, Human Resources Management, Climate Governance",
+    "email": "malinin.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_malini_n/"
+  },
+  {
+    "id": "dr_lavanya_balaji",
+    "name": "Dr. Lavanya Balaji",
+    "designation": "Associate Professor & Head of PG Department",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com, Ph.D.",
+    "specialisation": "Postgraduate Commerce, Advanced Financial Accounting, Capital Markets",
+    "email": "lavanyab.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji/"
+  },
+  {
+    "id": "dr_jyothi_n_hosurkar",
+    "name": "Dr. Jyothi N. Hosurkar",
+    "designation": "Assistant Professor & HOD",
+    "department": "Languages & Humanities",
+    "qualifications": "M.A., Ph.D.",
+    "specialisation": "Kannada Literature, Cultural Studies (13+ years experience)",
+    "email": "jyothih.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_jyothi_n_hosurkar/"
+  },
+  {
+    "id": "dr_revathy_shivashankaran",
+    "name": "Dr. Revathy Shivashankaran",
+    "designation": "Associate Professor & HOD",
+    "department": "Business Administration (BBA)",
+    "qualifications": "MBA, M.Phil., Ph.D.",
+    "specialisation": "Strategic Management, Organizational Behavior, Consumer Marketing",
+    "email": "revathys.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran/"
+  },
+  {
+    "id": "mr_jagadish_a",
+    "name": "Mr. Jagadish A.",
+    "designation": "Assistant Professor & HOD",
+    "department": "Business Administration (BBA Aviation)",
+    "qualifications": "BCA, MBA",
+    "specialisation": "Aviation Management, Airport Operations, Logistics & Supply Chain",
+    "email": "jagadisha.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a/"
+  },
+  {
+    "id": "dr_d_kannan",
+    "name": "Dr. D. Kannan",
+    "designation": "Assistant Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "B.A. (English), M.A. (English), Ph.D.",
+    "specialisation": "English Literature, Communicative English, Soft Skills Training",
+    "email": "kannand.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan/"
+  },
+  {
+    "id": "mr_gokul_c",
+    "name": "Mr. Gokul C.",
+    "designation": "Assistant Professor & Coordinator (B.Com 1st Year)",
+    "department": "Commerce (B.Com)",
+    "qualifications": "B.Com, MBA, M.Com, KSET",
+    "specialisation": "Financial Accounting, Corporate Law, Cost Management",
+    "email": "gokulc.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c/"
+  },
+  {
+    "id": "mr_shivakumara_n",
+    "name": "Mr. Shivakumara N.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA, M.Phil, NET",
+    "specialisation": "Programming Languages, Data Structures, Web Technologies",
+    "email": "shivakumaran.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n/"
+  },
+  {
+    "id": "mr_yallappa_m",
+    "name": "Mr. Yallappa M.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA, M.Sc.",
+    "specialisation": "Operating Systems, Computer Networks, Software Engineering",
+    "email": "yallappam.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m/"
+  },
+  {
+    "id": "ms_m_roopa_latha",
+    "name": "Ms. M. Roopa Latha",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA, M.Tech",
+    "specialisation": "Artificial Intelligence, Python, Cloud Infrastructure",
+    "email": "roopalatha.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_roopa_latha/"
+  },
+  {
+    "id": "ms_deepika_l",
+    "name": "Ms. Deepika L.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "Java Programming, Database Management Systems",
+    "email": "deepikal.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l/"
+  },
+  {
+    "id": "ms_shakeela_m_k",
+    "name": "Ms. Shakeela M.K.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Sc. (Computer Science), M.Phil",
+    "specialisation": "Information Security, Computer Networks, C++",
+    "email": "shakeelamk.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_shakeela_m_k/"
+  },
+  {
+    "id": "ms_jahanavi_rao_a_v",
+    "name": "Ms. Jahanavi Rao A.V.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "BCA, MCA",
+    "specialisation": "Full-Stack Development, Mobile App Development",
+    "email": "jahanavirao.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_jahanavi_rao_a_v/"
+  },
+  {
+    "id": "avinash_k_v",
+    "name": "Avinash K V",
+    "designation": "Associate Professor & HOD",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, MBA, B.Com",
+    "specialisation": "Accounting and Taxation, Human Resources Management",
+    "email": "avinashkv.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash-k-v/"
+  },
+  {
+    "id": "chiranjivi_m_s",
+    "name": "Chiranjivi M S",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "chiranjivi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s/"
+  },
+  {
+    "id": "dr__kanchan_g__rajput",
+    "name": "Dr. Kanchan G. Rajput",
+    "designation": "Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "MBA",
+    "specialisation": "Domain of Finance",
+    "email": "drkanchang.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput/"
+  },
+  {
+    "id": "dr__lalitha_b_s_",
+    "name": "Dr. Lalitha B.S.",
+    "designation": "Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Accounting, Finance, Banking, Supply Chain Back to Faculty",
+    "email": "drlalithab.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s/"
+  },
+  {
+    "id": "dr__prathima_vijay",
+    "name": "Dr. Prathima Vijay",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Kannada Literature, Folklore",
+    "email": "drprathima.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_prathima_vijay/"
+  },
+  {
+    "id": "dr__rajini_k_s_",
+    "name": "Dr. Rajini K.S.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA, B.Com",
+    "specialisation": "Human Resource Management",
+    "email": "drrajiniks.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s/"
+  },
+  {
+    "id": "dr__s__chethana",
+    "name": "Dr. S. Chethana",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "Artificial Intelligence, IoT",
+    "email": "drschethan.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_s_chethana/"
+  },
+  {
+    "id": "dr__shashikala_c_s_",
+    "name": "Dr. Shashikala C.S.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com",
+    "specialisation": "Accounting and Taxation, Marketing",
+    "email": "drshashika.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s/"
+  },
+  {
+    "id": "dr__shruti_khemashetty",
+    "name": "Dr. Shruti Khemashetty",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA",
+    "specialisation": "Human Resource Management and Marketing Back to Faculty",
+    "email": "drshrutikh.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty/"
+  },
+  {
+    "id": "dr__suma_sannamani",
+    "name": "Dr. Suma Sannamani",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Memory Architecture, VLSI",
+    "email": "drsumasann.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_suma_sannamani/"
+  },
+  {
+    "id": "dr__sushma_c_",
+    "name": "Dr. Sushma C.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA",
+    "specialisation": "Accounts and Finance",
+    "email": "drsushmac.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c/"
+  },
+  {
+    "id": "dr__v__sudha",
+    "name": "Dr. V. Sudha",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "NET",
+    "specialisation": "Digital Image Processing, Machine Learning",
+    "email": "drvsudha.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_v_sudha/"
+  },
+  {
+    "id": "dr__vinaya_t_",
+    "name": "Dr. Vinaya T.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com",
+    "specialisation": "Finance, Accounting, Taxation and Research",
+    "email": "drvinayat.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t/"
+  },
+  {
+    "id": "kalaimathi_s",
+    "name": "Kalaimathi S",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "NET",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "kalaimathi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s/"
+  },
+  {
+    "id": "kavitha_h_s",
+    "name": "Kavitha H S",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "kavithahs.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kavitha_h_s/"
+  },
+  {
+    "id": "mr__akshay_kumar_a_v_",
+    "name": "Mr. Akshay Kumar A.V.",
+    "designation": "Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com",
+    "specialisation": "Accountancy, Taxation and Finance Back to Faculty",
+    "email": "mrakshayku.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v/"
+  },
+  {
+    "id": "mr__arunkumar_r_",
+    "name": "Mr. Arunkumar R.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA",
+    "specialisation": "Finance and Human Resources",
+    "email": "mrarunkuma.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r/"
+  },
+  {
+    "id": "mr__getendra_kumar_m_",
+    "name": "Mr. Getendra Kumar M.",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Database Back to Faculty",
+    "email": "mrgetendra.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_getendra_kumar_m/"
+  },
+  {
+    "id": "mr__santosh_d_bendigeri",
+    "name": "Mr. Santosh D Bendigeri",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Finance, Accounting and Taxation",
+    "email": "mrsantoshd.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri/"
+  },
+  {
+    "id": "mrs__lavanya_b_k_",
+    "name": "Mrs. Lavanya B.K.",
+    "designation": "Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com, KSET",
+    "specialisation": "Accounting, Taxation Papers",
+    "email": "mrslavanya.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k/"
+  },
+  {
+    "id": "mrs__malasa_m_r_",
+    "name": "Mrs. Malasa M.R.",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "IoT Back to Faculty",
+    "email": "mrsmalasam.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_malasa_m_r/"
+  },
+  {
+    "id": "mrs__pavana_r__kulkarni",
+    "name": "Mrs. Pavana R. Kulkarni",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA, M.Com",
+    "specialisation": "Finance, Human Resource Management Back to Faculty",
+    "email": "mrspavanar.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni/"
+  },
+  {
+    "id": "mrs__preethi_dwarakanath",
+    "name": "Mrs. Preethi Dwarakanath",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Theoretical Computer Science, Machine Learning Back to Faculty",
+    "email": "mrspreethi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_preethi_dwarakanath/"
+  },
+  {
+    "id": "mrs__puja_biswas",
+    "name": "Mrs. Puja Biswas",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Information Technology, Cloud Computing, IoT Back to Faculty",
+    "email": "mrspujabis.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas/"
+  },
+  {
+    "id": "mrs__vidya_u__jambagi",
+    "name": "Mrs. Vidya U. Jambagi",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, KSET",
+    "specialisation": "Accounting",
+    "email": "mrsvidyauj.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi/"
+  },
+  {
+    "id": "ms__bharathi_n_s_",
+    "name": "Ms. Bharathi N.S.",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Marketing, Finance, Accountancy, Neuroscience and Psychology",
+    "email": "msbharathi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s/"
+  },
+  {
+    "id": "ms__bhargavi_iyer_b_s_",
+    "name": "Ms. Bhargavi Iyer B.S.",
+    "designation": "Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com",
+    "specialisation": "Accounting and Taxation Papers",
+    "email": "msbhargavi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s/"
+  },
+  {
+    "id": "ms__deepthi_raju",
+    "name": "Ms. Deepthi Raju",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Gender Studies, Urban Studies, Creative Writing Papers",
+    "email": "msdeepthir.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju/"
+  },
+  {
+    "id": "ms__gayathri_kempurajan",
+    "name": "Ms. Gayathri Kempurajan",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "English Literature Papers",
+    "email": "msgayathri.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan/"
+  },
+  {
+    "id": "ms__m__rajatha",
+    "name": "Ms. M. Rajatha",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Finance, Marketing Back to Faculty",
+    "email": "msmrajatha.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha/"
+  },
+  {
+    "id": "ms__mokshamala_u_",
+    "name": "Ms. Mokshamala U.",
+    "designation": "Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "B.Com",
+    "specialisation": "Law Back to Faculty",
+    "email": "msmokshama.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u/"
+  },
+  {
+    "id": "ms__neha_banu",
+    "name": "Ms. Neha Banu",
+    "designation": "Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com, B.E.",
+    "specialisation": "Finance and Banking Papers",
+    "email": "msnehabanu.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu/"
+  },
+  {
+    "id": "ms__r__shanthi_krishna",
+    "name": "Ms. R. Shanthi Krishna",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "Machine Learning, Programming Languages",
+    "email": "msrshanthi.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna/"
+  },
+  {
+    "id": "ms__soujanya_d_",
+    "name": "Ms. Soujanya D.",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Humanities",
+    "email": "mssoujanya.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d/"
+  },
+  {
+    "id": "ms__vasugi_mudaliar_r_k_",
+    "name": "Ms. Vasugi Mudaliar R.K.",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Social Media Analytics, Data Science, Python Programming, Java Programming, Cyber Security Back to Faculty",
+    "email": "msvasugimu.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k/"
+  },
+  {
+    "id": "nandini_j",
+    "name": "Nandini J",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "nandinij.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/nandini_j/"
+  },
+  {
+    "id": "prakasha_v",
+    "name": "Prakasha V",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA, B.Com, M.Com",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "prakashav.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/prakasha_v/"
+  },
+  {
+    "id": "ramamishra_yashaswi_m",
+    "name": "Ramamishra Yashaswi M",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "ramamishra.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ramamishra_yashaswi_m/"
+  },
+  {
+    "id": "sharavana_m",
+    "name": "Sharavana M",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "sharavanam.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/sharavana_m/"
+  },
+  {
+    "id": "swathi_s_nair",
+    "name": "Swathi S Nair",
+    "designation": "Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "swathisnai.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/swathi_s_nair/"
+  },
+  {
+    "id": "ume_salma",
+    "name": "Ume Salma",
+    "designation": "Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "umesalma.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ume_salma/"
+  },
+  {
+    "id": "vaishnavi_r",
+    "name": "Vaishnavi R",
+    "designation": "Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "KSET, M.Com, NET",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "vaishnavir.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vaishnavi_r/"
+  },
+  {
+    "id": "vedamurthy_y_n",
+    "name": "Vedamurthy Y N",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "Faculty Member",
+    "specialisation": "Higher Education & Academic Mentorship",
+    "email": "vedamurthy.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n/"
+  },
+  {
+    "id": "mrs_sumana_h_n",
+    "name": "Mrs. Sumana H.N.",
+    "designation": "Placement Officer",
+    "department": "Training & Placement Cell",
+    "qualifications": "Corporate Relations Specialist",
+    "specialisation": "Campus Recruitment, Industry Tie-ups, Soft Skills & Corporate Placement (100+ Recruiter Network)",
+    "email": "placement.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/placement/"
+  },
+  {
+    "id": "mrs_shylaja_t_m",
+    "name": "Mrs. Shylaja T.M.",
+    "designation": "Library Assistant & In-Charge",
+    "department": "Library & Information Center",
+    "qualifications": "M.Lib.I.Sc",
+    "specialisation": "Digital Library, N-LIST, DELNET, Research Repository Management",
+    "email": "library.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr_guranna_sajjan",
+    "name": "Mr. Guranna Sajjan",
+    "designation": "Senior Executive (Library)",
+    "department": "Library & Information Center",
+    "qualifications": "Library Administration",
+    "specialisation": "Circulation Services, OPAC, E-Resources Support",
+    "email": "library.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs_vani_m_u",
+    "name": "Mrs. Vani M.U.",
+    "designation": "Manager of Finance & Administration",
+    "department": "Administration & Finance",
+    "qualifications": "MBA, Administration",
+    "specialisation": "Fee Administration, Financial Planning, Institutional Operations",
+    "email": "office.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr_hanumantha_reddy_b",
+    "name": "Mr. Hanumantha Reddy B",
+    "designation": "IT Executive",
+    "department": "IT Support & Infrastructure",
+    "qualifications": "B.E. (Computer Science)",
+    "specialisation": "Campus Wi-Fi, LMS, Lab Infrastructure, Smart Classrooms",
+    "email": "it.ssmrv@rvei.edu.in",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  }
+]

@@ -1,0 +1,863 @@
+[
+  {
+    "url": "https://www.ssmrv.edu.in/about_us/",
+    "display": "ssmrv.edu.in/about_us",
+    "title": "About Us",
+    "category": "About & Governance",
+    "slug": "about_us"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/about_us/about_college/",
+    "display": "ssmrv.edu.in/about_us/about_college",
+    "title": "About SSMRV College \u2013 Best Degree College in Bangalore",
+    "category": "About & Governance",
+    "slug": "about_us_about_college"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/about_us/achievements_affiliations/",
+    "display": "ssmrv.edu.in/about_us/achievements_affiliations",
+    "title": "Achievements and Affiliations",
+    "category": "About & Governance",
+    "slug": "about_us_achievements_affiliations"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/about_us/board_of_management/",
+    "display": "ssmrv.edu.in/about_us/board_of_management",
+    "title": "Board of Management",
+    "category": "About & Governance",
+    "slug": "about_us_board_of_management"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/about_us/mandatory_disclosure/",
+    "display": "ssmrv.edu.in/about_us/mandatory_disclosure",
+    "title": "Mandatory disclosure",
+    "category": "About & Governance",
+    "slug": "about_us_mandatory_disclosure"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/",
+    "display": "ssmrv.edu.in/academics",
+    "title": "Academics",
+    "category": "General",
+    "slug": "academics"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
+    "display": "ssmrv.edu.in/academics/non_teaching_staff",
+    "title": "Non-Teaching Staff",
+    "category": "General",
+    "slug": "academics_non_teaching_staff"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/",
+    "display": "ssmrv.edu.in/academics/programmes",
+    "title": "SSMRV Degree College Bangalore \u2013 Academic Programs Overview",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/bachelor_of_commerce/",
+    "display": "ssmrv.edu.in/academics/programmes/bachelor_of_commerce",
+    "title": "B.Com Admissions 2025, Jayanagar, Bangalore",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes_bachelor_of_commerce"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/bachelors_of_business_administration/",
+    "display": "ssmrv.edu.in/academics/programmes/bachelors_of_business_administration",
+    "title": "BBA with Global Exposure & Specialisations, Jayanagar",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes_bachelors_of_business_administration"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/bachelors_of_computer_application/",
+    "display": "ssmrv.edu.in/academics/programmes/bachelors_of_computer_application",
+    "title": "BCA with Specialisations & Internships, Jayanagar",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes_bachelors_of_computer_application"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/bba-_aviation_management/",
+    "display": "ssmrv.edu.in/academics/programmes/bba-_aviation_management",
+    "title": "BBA Aviation with Internships & Training, Jayanagar",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes_bba-_aviation_management"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/programmes/master_of_commerce/",
+    "display": "ssmrv.edu.in/academics/programmes/master_of_commerce",
+    "title": "Top M.Com College in Bangalore \u2013 SSMRV Jayanagar Admissions 2025",
+    "category": "Academic Programmes",
+    "slug": "academics_programmes_master_of_commerce"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty",
+    "title": "Teaching Faculty",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash-k-v/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/avinash-k-v",
+    "title": "Avinash K V",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_avinash-k-v"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash_k_v/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/avinash_k_v",
+    "title": "Avinash K V",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_avinash_k_v"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s",
+    "title": "Chiranjivi M S",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_chiranjivi_m_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr-vijayashree-l/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr-vijayashree-l",
+    "title": "Dr. Vijayashree L.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr-vijayashree-l"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan",
+    "title": "Dr. D. Kannan",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_d_kannan"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_jyothi_n_hosurkar/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_jyothi_n_hosurkar",
+    "title": "Dr. Jyothi N. Hosurkar",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_jyothi_n_hosurkar"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput",
+    "title": "Dr. Kanchan G. Rajput",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_kanchan_g_rajput"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s",
+    "title": "Dr. Lalitha B.S.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_lalitha_b_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji",
+    "title": "Dr. Lavanya Balaji",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_lavanya_balaji"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_malini_n/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_malini_n",
+    "title": "Dr. Malini N.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_malini_n"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_prathima_vijay/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_prathima_vijay",
+    "title": "Dr. Prathima Vijay",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_prathima_vijay"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_r_sheela_chandrashekar/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_r_sheela_chandrashekar",
+    "title": "Dr. R. Sheela Chandrashekar",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_r_sheela_chandrashekar"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s",
+    "title": "Dr. Rajini K.S.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_rajini_k_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran",
+    "title": "Dr. Revathy Shivashankaran",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_revathy_shivashankaran"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_s_chethana/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_s_chethana",
+    "title": "Dr. S. Chethana",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_s_chethana"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s",
+    "title": "Dr. Shashikala C.S.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_shashikala_c_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty",
+    "title": "Dr. Shruti Khemashetty",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_shruti_khemashetty"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_suma_sannamani/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_suma_sannamani",
+    "title": "Dr. Suma Sannamani",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_suma_sannamani"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c",
+    "title": "Dr. Sushma C.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_sushma_c"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_v_sudha/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_v_sudha",
+    "title": "Dr. V. Sudha",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_v_sudha"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t",
+    "title": "Dr. Vinaya T.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_dr_vinaya_t"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s",
+    "title": "Kalaimathi S",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_kalaimathi_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kavitha_h_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/kavitha_h_s",
+    "title": "Kavitha H S",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_kavitha_h_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/malini-n/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/malini-n",
+    "title": "Malini N.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_malini-n"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v",
+    "title": "Mr. Akshay Kumar A.V.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_akshay_kumar_a_v"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r",
+    "title": "Mr. Arunkumar R.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_arunkumar_r"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_getendra_kumar_m/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_getendra_kumar_m",
+    "title": "Mr. Getendra Kumar M.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_getendra_kumar_m"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c",
+    "title": "Mr. Gokul C.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_gokul_c"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a",
+    "title": "Mr. Jagadish A.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_jagadish_a"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri",
+    "title": "Mr. Santosh D Bendigeri",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_santosh_d_bendigeri"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n",
+    "title": "Mr. Shivakumara N.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_shivakumara_n"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m",
+    "title": "Mr. Yallappa M.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mr_yallappa_m"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k",
+    "title": "Mrs. Lavanya B.K.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_lavanya_b_k"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_malasa_m_r/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_malasa_m_r",
+    "title": "Mrs. Malasa M.R.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_malasa_m_r"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni",
+    "title": "Mrs. Pavana R. Kulkarni",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_pavana_r_kulkarni"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_preethi_dwarakanath/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_preethi_dwarakanath",
+    "title": "Mrs. Preethi Dwarakanath",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_preethi_dwarakanath"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas",
+    "title": "Mrs. Puja Biswas",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_puja_biswas"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi",
+    "title": "Mrs. Vidya U. Jambagi",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_mrs_vidya_u_jambagi"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s",
+    "title": "Ms. Bharathi N.S.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_bharathi_n_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s",
+    "title": "Ms. Bhargavi Iyer B.S.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_bhargavi_iyer_b_s"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l",
+    "title": "Ms. Deepika L.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_deepika_l"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju",
+    "title": "Ms. Deepthi Raju",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_deepthi_raju"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan",
+    "title": "Ms. Gayathri Kempurajan",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_gayathri_kempurajan"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_jahanavi_rao_a_v/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_jahanavi_rao_a_v",
+    "title": "Ms. Jahanavi Rao A.V.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_jahanavi_rao_a_v"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha",
+    "title": "Ms. M. Rajatha",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_m_rajatha"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_roopa_latha/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_m_roopa_latha",
+    "title": "Ms. M. Roopa Latha",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_m_roopa_latha"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u",
+    "title": "Ms. Mokshamala U.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_mokshamala_u"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu",
+    "title": "Ms. Neha Banu",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_neha_banu"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna",
+    "title": "Ms. R. Shanthi Krishna",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_r_shanthi_krishna"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_shakeela_m_k/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_shakeela_m_k",
+    "title": "Ms. Shakeela M.K.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_shakeela_m_k"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d",
+    "title": "Ms. Soujanya D.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_soujanya_d"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k",
+    "title": "Ms. Vasugi Mudaliar R.K.",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ms_vasugi_mudaliar_r_k"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/nandini_j/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/nandini_j",
+    "title": "Nandini J",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_nandini_j"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/prakasha_v/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/prakasha_v",
+    "title": "Prakasha V",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_prakasha_v"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ramamishra_yashaswi_m/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ramamishra_yashaswi_m",
+    "title": "Ramamishra Yashaswi M",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ramamishra_yashaswi_m"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/sharavana_m/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/sharavana_m",
+    "title": "Sharavana M",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_sharavana_m"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/swathi_s_nair/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/swathi_s_nair",
+    "title": "Swathi S Nair",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_swathi_s_nair"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ume_salma/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/ume_salma",
+    "title": "Ume Salma",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_ume_salma"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vaishnavi_r/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/vaishnavi_r",
+    "title": "Vaishnavi R",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_vaishnavi_r"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n/",
+    "display": "ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n",
+    "title": "Vedamurthy Y N",
+    "category": "Faculty",
+    "slug": "academics_teaching_faculty_vedamurthy_y_n"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/admission_cancellation_process/",
+    "display": "ssmrv.edu.in/admission_cancellation_process",
+    "title": "Admission Cancellation Process",
+    "category": "Admissions",
+    "slug": "admission_cancellation_process"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/admission_procedure/",
+    "display": "ssmrv.edu.in/admission_procedure",
+    "title": "Admission Procedure",
+    "category": "Admissions",
+    "slug": "admission_procedure"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/aqar_2020_21_supporting_documents/",
+    "display": "ssmrv.edu.in/aqar_2020_21_supporting_documents",
+    "title": "AQAR 2020-21 Supporting Documents",
+    "category": "Accreditation & Disclosures",
+    "slug": "aqar_2020_21_supporting_documents"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/aqar_2021_22_supporting_documents/",
+    "display": "ssmrv.edu.in/aqar_2021_22_supporting_documents",
+    "title": "AQAR 2021-22 Supporting Documents",
+    "category": "Accreditation & Disclosures",
+    "slug": "aqar_2021_22_supporting_documents"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/aqar_2022_23_supporting_documents/",
+    "display": "ssmrv.edu.in/aqar_2022_23_supporting_documents",
+    "title": "AQAR 2022-23 Supporting Documents",
+    "category": "Accreditation & Disclosures",
+    "slug": "aqar_2022_23_supporting_documents"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/aqar_2023_24_supporting_documents/",
+    "display": "ssmrv.edu.in/aqar_2023_24_supporting_documents",
+    "title": "AQAR 2023-24 Supporting Documents",
+    "category": "Accreditation & Disclosures",
+    "slug": "aqar_2023_24_supporting_documents"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/",
+    "display": "ssmrv.edu.in/campus_life",
+    "title": "Campus Life",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/alumni/",
+    "display": "ssmrv.edu.in/campus_life/alumni",
+    "title": "Alumni",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_alumni"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/circular_and_notifications/",
+    "display": "ssmrv.edu.in/campus_life/circular_and_notifications",
+    "title": "Circular and Notifications",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_circular_and_notifications"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations",
+    "title": "Clubs and Associations",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_culture_and_heritage/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_culture_and_heritage",
+    "title": "Centre for Culture and Heritage",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_centre_for_culture_and_heritage"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_partnership_collaborations/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_partnership_collaborations",
+    "title": "Centre for Partnership & Collaborations",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_centre_for_partnership_collaborations"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_sustainability/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/centre_for_sustainability",
+    "title": "Centre for Sustainability",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_centre_for_sustainability"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/knowledge_hub/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/knowledge_hub",
+    "title": "Knowledge Hub",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_knowledge_hub"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/non_technical_clubs/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/non_technical_clubs",
+    "title": "Non-Technical Clubs",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_non_technical_clubs"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/raise_the_centre_of_excellence/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/raise_the_centre_of_excellence",
+    "title": "Raise - The Centre of Excellence",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_raise_the_centre_of_excellence"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre",
+    "title": "Sports and Wellness Centre",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_sports_and_wellness_centre"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory-committees-and-support-system/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/statutory-committees-and-support-system",
+    "title": "Statutory Committees and Support System1",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_statutory-committees-and-support-system"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system",
+    "title": "Statutory Committees and Support System",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_statutory_committees_and_support_system"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/technical_clubs/",
+    "display": "ssmrv.edu.in/campus_life/clubs_and_associations/technical_clubs",
+    "title": "Technical Clubs",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_clubs_and_associations_technical_clubs"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/infrastructure/",
+    "display": "ssmrv.edu.in/campus_life/infrastructure",
+    "title": "Infrastructure",
+    "category": "Campus Life & Centres",
+    "slug": "campus_life_infrastructure"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/campus_life/placement/",
+    "display": "ssmrv.edu.in/campus_life/placement",
+    "title": "Placement",
+    "category": "Placements",
+    "slug": "campus_life_placement"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/category/iqac-events/",
+    "display": "ssmrv.edu.in/category/iqac-events",
+    "title": "IQAC Events Archives",
+    "category": "Accreditation & Disclosures",
+    "slug": "category_iqac-events"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/category/uncategorized/",
+    "display": "ssmrv.edu.in/category/uncategorized",
+    "title": "Uncategorized Archives",
+    "category": "General",
+    "slug": "category_uncategorized"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/change-the-world/",
+    "display": "ssmrv.edu.in/change-the-world",
+    "title": "Change the World",
+    "category": "General",
+    "slug": "change-the-world"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/collaborations/",
+    "display": "ssmrv.edu.in/collaborations",
+    "title": "Collaborations",
+    "category": "General",
+    "slug": "collaborations"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/contact_us/",
+    "display": "ssmrv.edu.in/contact_us",
+    "title": "Contact SSMRV \u2013 Leading Degree College in Jayanagar",
+    "category": "Contact",
+    "slug": "contact_us"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/dr_h_c_a_v_s_murthy/",
+    "display": "ssmrv.edu.in/dr_h_c_a_v_s_murthy",
+    "title": "Dr.(h.c.) A.V.S. Murthy",
+    "category": "General",
+    "slug": "dr_h_c_a_v_s_murthy"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/dr_m_p_shyam/",
+    "display": "ssmrv.edu.in/dr_m_p_shyam",
+    "title": "Dr. M.P. Shyam",
+    "category": "General",
+    "slug": "dr_m_p_shyam"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/dr_vijayashree_l_message/",
+    "display": "ssmrv.edu.in/dr_vijayashree_l_message",
+    "title": "Dr. Vijayashree L. Message",
+    "category": "General",
+    "slug": "dr_vijayashree_l_message"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/events/",
+    "display": "ssmrv.edu.in/events",
+    "title": "Events",
+    "category": "General",
+    "slug": "events"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/faculty_training_session_on_azure_for_timetable_and_attendance/",
+    "display": "ssmrv.edu.in/faculty_training_session_on_azure_for_timetable_and_attendance",
+    "title": "Faculty training session on Azure for Timetable and Attendance",
+    "category": "General",
+    "slug": "faculty_training_session_on_azure_for_timetable_and_attendance"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/",
+    "display": "ssmrv.edu.in",
+    "title": "Top Degree College in Jayanagar Bangalore",
+    "category": "General",
+    "slug": "homepage"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/iim_c_workshop/",
+    "display": "ssmrv.edu.in/iim_c_workshop",
+    "title": "IIM-C workshop",
+    "category": "General",
+    "slug": "iim_c_workshop"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/inter_institutional_naacseminar_10th_oct_2022/",
+    "display": "ssmrv.edu.in/inter_institutional_naacseminar_10th_oct_2022",
+    "title": "Inter-Institutional NAACseminar \u2013 10th Oct 2022",
+    "category": "General",
+    "slug": "inter_institutional_naacseminar_10th_oct_2022"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/ipr_awareness_session_1st_and_2nd_dec_2022/",
+    "display": "ssmrv.edu.in/ipr_awareness_session_1st_and_2nd_dec_2022",
+    "title": "IPR Awareness Session \u2013 1st and 2nd Dec 2022",
+    "category": "General",
+    "slug": "ipr_awareness_session_1st_and_2nd_dec_2022"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/iqac/",
+    "display": "ssmrv.edu.in/iqac",
+    "title": "IQAC",
+    "category": "Accreditation & Disclosures",
+    "slug": "iqac"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/iqac_events/",
+    "display": "ssmrv.edu.in/iqac_events",
+    "title": "IQAC-Events",
+    "category": "Accreditation & Disclosures",
+    "slug": "iqac_events"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/mr_d_p_nagaraj/",
+    "display": "ssmrv.edu.in/mr_d_p_nagaraj",
+    "title": "Mr. D.P. Nagaraj",
+    "category": "General",
+    "slug": "mr_d_p_nagaraj"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/national_level_online_business_plan_competition/",
+    "display": "ssmrv.edu.in/national_level_online_business_plan_competition",
+    "title": "National Level Online Business Plan Competition",
+    "category": "General",
+    "slug": "national_level_online_business_plan_competition"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/news_events/",
+    "display": "ssmrv.edu.in/news_events",
+    "title": "News and Events",
+    "category": "General",
+    "slug": "news_events"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/nirf/",
+    "display": "ssmrv.edu.in/nirf",
+    "title": "NIRF",
+    "category": "Accreditation & Disclosures",
+    "slug": "nirf"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/participation-in-capacity-building-programme-27th-to-29th-apr-2023/",
+    "display": "ssmrv.edu.in/participation-in-capacity-building-programme-27th-to-29th-apr-2023",
+    "title": "Participation in Capacity Building Programme \u2013 27th to 29th Apr 2023",
+    "category": "General",
+    "slug": "participation-in-capacity-building-programme-27th-to-29th-apr-2023"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/participation_in_capacity_building_programme_27th_to_29th_apr_2023/",
+    "display": "ssmrv.edu.in/participation_in_capacity_building_programme_27th_to_29th_apr_2023",
+    "title": "Participation in Capacity Building Programme \u2013 27th to 29th Apr 2023",
+    "category": "General",
+    "slug": "participation_in_capacity_building_programme_27th_to_29th_apr_2023"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/privacy-policy/",
+    "display": "ssmrv.edu.in/privacy-policy",
+    "title": "Privacy Policy",
+    "category": "General",
+    "slug": "privacy-policy"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/sdp_on_leadership_skills_and_team_building_5th_nov_2022/",
+    "display": "ssmrv.edu.in/sdp_on_leadership_skills_and_team_building_5th_nov_2022",
+    "title": "SDP on Leadership skills and Team Building \u2013 5th Nov 2022",
+    "category": "General",
+    "slug": "sdp_on_leadership_skills_and_team_building_5th_nov_2022"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/skill_up_workshop_on_student_leadership/",
+    "display": "ssmrv.edu.in/skill_up_workshop_on_student_leadership",
+    "title": "SKILL UP \u2013 Workshop on Student Leadership",
+    "category": "General",
+    "slug": "skill_up_workshop_on_student_leadership"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/student_scholarship_orientation_report/",
+    "display": "ssmrv.edu.in/student_scholarship_orientation_report",
+    "title": "Student Scholarship Orientation Report",
+    "category": "General",
+    "slug": "student_scholarship_orientation_report"
+  },
+  {
+    "url": "https://www.ssmrv.edu.in/webinar_on_mediation_26th_to_29th_april_2022/",
+    "display": "ssmrv.edu.in/webinar_on_mediation_26th_to_29th_april_2022",
+    "title": "Webinar on Mediation 26th to 29th April 2022",
+    "category": "General",
+    "slug": "webinar_on_mediation_26th_to_29th_april_2022"
+  }
+]

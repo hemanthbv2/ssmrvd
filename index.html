@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSMRV Degree College, Jayanagar | Admissions Chatbot Demo</title>
+  <meta name="description" content="Official Chatbot Preview for Sivananda Sarma Memorial RV Degree College (SSMRV), Jayanagar Bangalore.">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Demo Landing Page Styling replicating ssmrv.edu.in */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #faf8f5;
+      color: #172844;
+      line-height: 1.6;
+    }
+
+    .demo-top-bar {
+      background: #172844;
+      color: #ffffff;
+      padding: 8px 5%;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #f3b743;
+    }
+
+    .demo-top-bar a {
+      color: #f3b743;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .demo-header {
+      background: #ffffff;
+      padding: 16px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(23, 40, 68, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .demo-logo {
+      height: 60px;
+      object-fit: contain;
+    }
+
+    .demo-nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .demo-nav a {
+      color: #172844;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14.5px;
+      transition: color 0.2s;
+    }
+
+    .demo-nav a:hover {
+      color: #cf5d41;
+    }
+
+    .demo-cta-btn {
+      background: #cf5d41;
+      color: #ffffff !important;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .demo-cta-btn:hover {
+      background: #b84b31;
+      transform: translateY(-2px);
+    }
+
+    .demo-hero {
+      background: linear-gradient(135deg, #172844 0%, #1e3a64 60%, #233a60 100%);
+      color: #ffffff;
+      padding: 80px 5%;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .demo-hero::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: rgba(243, 183, 67, 0.15);
+      filter: blur(50px);
+    }
+
+    .demo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(243, 183, 67, 0.15);
+      border: 1px solid #f3b743;
+      color: #f3b743;
+      padding: 6px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .demo-headline {
+      font-size: 42px;
+      font-weight: 800;
+      margin: 0 auto 16px;
+      max-width: 900px;
+      line-height: 1.25;
+      letter-spacing: -0.5px;
+    }
+
+    .demo-headline span {
+      color: #f3b743;
+    }
+
+    .demo-subtitle {
+      font-size: 18px;
+      color: #cbd5e1;
+      max-width: 760px;
+      margin: 0 auto 32px;
+    }
+
+    .demo-hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .demo-btn-primary {
+      background: #cf5d41;
+      color: #ffffff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 15px;
+      cursor: pointer;
+      border: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .demo-btn-primary:hover {
+      background: #b84b31;
+      transform: translateY(-2px);
+    }
+
+    .demo-btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 15px;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: background 0.2s;
+    }
+
+    .demo-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .demo-stats {
+      background: #faf0dc;
+      padding: 30px 5%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .demo-stat-item h3 {
+      font-size: 32px;
+      color: #172844;
+      margin: 0 0 4px;
+      font-weight: 800;
+    }
+
+    .demo-stat-item p {
+      margin: 0;
+      font-size: 13.5px;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    .demo-programs-section {
+      padding: 60px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .demo-section-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 800;
+      color: #172844;
+      margin-bottom: 8px;
+    }
+
+    .demo-section-desc {
+      text-align: center;
+      font-size: 16px;
+      color: #64748b;
+      margin-bottom: 40px;
+    }
+
+    .demo-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .demo-prog-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(23, 40, 68, 0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .demo-prog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(23, 40, 68, 0.12);
+      border-color: #cf5d41;
+    }
+
+    .demo-card-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #cf5d41;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .demo-card-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: #172844;
+      margin: 0 0 12px;
+    }
+
+    .demo-card-text {
+      font-size: 13.5px;
+      color: #64748b;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .demo-card-btn {
+      color: #3e3ff0;
+      font-weight: 600;
+      font-size: 13.5px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .demo-footer {
+      background: #172844;
+      color: #cbd5e1;
+      padding: 40px 5% 20px;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .demo-footer a {
+      color: #f3b743;
+      text-decoration: none;
+    }
+
+    /* Floating test trigger pill */
+    .demo-tester-callout {
+      position: fixed;
+      bottom: 100px;
+      left: 24px;
+      background: #172844;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+      border-left: 4px solid #f3b743;
+      z-index: 9999;
+      font-size: 13px;
+      max-width: 280px;
+    }
+
+    .demo-tester-callout strong {
+      color: #f3b743;
+      display: block;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div>
+      📍 #17, 36th Cross, 4th T Block East, Jayanagar, Bengaluru - 560041
+    </div>
+    <div>
+      📞 Admissions Helpline: <b>97395 88855 / 97396 55500</b> | <a href="https://www.ssmrv.edu.in" target="_blank">Official Website &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="demo-header">
+    <a href="#">
+      <img src="assets/logo.png" alt="SSMRV College" class="demo-logo">
+    </a>
+    <ul class="demo-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#programmes">Programmes</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#placements">Placements</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="javascript:void(0)" onclick="openChatAndSelect('inquiry_form')" class="demo-cta-btn">Apply Now</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero -->
+  <section class="demo-hero">
+    <div class="demo-badge">
+      <span>🏛️</span> NAAC 'A' Accredited | RSST Legacy Since 1940
+    </div>
+    <h1 class="demo-headline">
+      Sivananda Sarma Memorial RV Degree College<br>
+      <span>360-degree Education for Wholeness</span>
+    </h1>
+    <p class="demo-subtitle">
+      Empowering students in commerce, management, and technology at our iconic Jayanagar campus. Ranked 4th in India for 'Value for Money'.
+    </p>
+    <div class="demo-hero-actions">
+      <button class="demo-btn-primary" onclick="openChatAndSelect('programmes')">
+        Explore Programmes &rarr;
+      </button>
+      <button class="demo-btn-secondary" onclick="openChatAndSelect('admissions')">
+        Admission Details (Praveshan)
+      </button>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="demo-stats">
+    <div class="demo-stat-item">
+      <h3>90%+</h3>
+      <p>Placement Record</p>
+    </div>
+    <div class="demo-stat-item">
+      <h3>4th</h3>
+      <p>Top Value for Money College in India</p>
+    </div>
+    <div class="demo-stat-item">
+      <h3>80+</h3>
+      <p>Years of RSST Educational Legacy</p>
+    </div>
+    <div class="demo-stat-item">
+      <h3>11 LPA</h3>
+      <p>Highest Package CTC</p>
+    </div>
+  </section>
+
+  <!-- Programmes Grid -->
+  <section class="demo-programs-section" id="programmes">
+    <h2 class="demo-section-title">Academic Programmes</h2>
+    <p class="demo-section-desc">Industry-aligned degrees affiliated with Bengaluru City University</p>
+
+    <div class="demo-cards-grid">
+      <!-- B.Com -->
+      <div class="demo-prog-card">
+        <div>
+          <span class="demo-card-tag">UG • Commerce</span>
+          <h3 class="demo-card-title">B.Com Regular & Professional</h3>
+          <p class="demo-card-text">Specializations in Accounting, Taxation, Digital Marketing, and Forensic Accounting with integrated CA/CS/ACCA pathways.</p>
+        </div>
+        <a href="javascript:void(0)" onclick="openChatAndSelect('bcom_details')" class="demo-card-btn">
+          Chat about B.Com &rarr;
+        </a>
+      </div>
+
+      <!-- BBA -->
+      <div class="demo-prog-card">
+        <div>
+          <span class="demo-card-tag">UG • Management</span>
+          <h3 class="demo-card-title">BBA (Honours)</h3>
+          <p class="demo-card-text">NEP/SEP curriculum with specializations in Finance, Marketing, HR, and Supply Chain. Corporate collaborations and startup incubation.</p>
+        </div>
+        <a href="javascript:void(0)" onclick="openChatAndSelect('bba_details')" class="demo-card-btn">
+          Chat about BBA &rarr;
+        </a>
+      </div>
+
+      <!-- BBA Aviation -->
+      <div class="demo-prog-card">
+        <div>
+          <span class="demo-card-tag">UG • Aviation</span>
+          <h3 class="demo-card-title">BBA – Aviation Management</h3>
+          <p class="demo-card-text">Comprehensive airline operations, airport terminal logistics, air cargo management, and airport industrial exposure.</p>
+        </div>
+        <a href="javascript:void(0)" onclick="openChatAndSelect('aviation_details')" class="demo-card-btn">
+          Chat about Aviation &rarr;
+        </a>
+      </div>
+
+      <!-- BCA -->
+      <div class="demo-prog-card">
+        <div>
+          <span class="demo-card-tag">UG • Technology</span>
+          <h3 class="demo-card-title">BCA (Computer Applications)</h3>
+          <p class="demo-card-text">Full Stack Development, Python Data Analytics, Cloud Computing, and Cybersecurity. Hands-on coding and hackathons.</p>
+        </div>
+        <a href="javascript:void(0)" onclick="openChatAndSelect('bca_details')" class="demo-card-btn">
+          Chat about BCA &rarr;
+        </a>
+      </div>
+
+      <!-- M.Com -->
+      <div class="demo-prog-card">
+        <div>
+          <span class="demo-card-tag">PG • Commerce</span>
+          <h3 class="demo-card-title">Master of Commerce (M.Com)</h3>
+          <p class="demo-card-text">Advanced corporate finance, taxation, econometric analytics, and dissertation guidance for leadership in corporate & research careers.</p>
+        </div>
+        <a href="javascript:void(0)" onclick="openChatAndSelect('mcom_details')" class="demo-card-btn">
+          Chat about M.Com &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="demo-footer">
+    <p>&copy; 2026 Sivananda Sarma Memorial RV Degree College (SSMRV). All Rights Reserved.</p>
+    <p>Part of Rashtreeya Sikshana Samithi Trust (RSST). Designed for Admissions & Student Engagement.</p>
+  </footer>
+
+  <!-- Floating Test Callout -->
+  <div class="demo-tester-callout">
+    <strong>⚡ Chatbot Live Demo</strong>
+    Click the floating chat icon on the bottom right or test any link to launch the conversational admissions assistant.
+  </div>
+
+  <!-- Settings and Scripts -->
+  <script>
+    window.ssmrvChatbotSettings = {
+      logoUrl: 'assets/logo.png',
+      rvLogoUrl: 'assets/rv-logo.png',
+      wpRestUrl: '/wp-json/ssmrv-chatbot/v1',
+      vercelUrl: '', // Can be linked to any Vercel deployment
+      instituteId: 'SSMRVD'
+    };
+
+    function openChatAndSelect(flowId) {
+      const trigger = document.getElementById('ssmrvTrigger');
+      const chatWin = document.getElementById('ssmrvChatWindow');
+      if (trigger && chatWin && !chatWin.classList.contains('is-open')) {
+        trigger.click();
+      }
+      setTimeout(() => {
+        const input = document.getElementById('ssmrvInput');
+        if (input) {
+          if (flowId === 'bcom_details') input.value = 'Tell me about B.Com course';
+          else if (flowId === 'bba_details') input.value = 'What is BBA eligibility and fees?';
+          else if (flowId === 'aviation_details') input.value = 'Details about BBA Aviation Management';
+          else if (flowId === 'bca_details') input.value = 'Tell me about BCA computer applications';
+          else if (flowId === 'mcom_details') input.value = 'M.Com course details';
+          else if (flowId === 'programmes') input.value = 'Show all programmes';
+          else if (flowId === 'admissions') input.value = 'How does admission work?';
+          else if (flowId === 'inquiry_form') input.value = 'I want to apply';
+          const form = document.getElementById('ssmrvInputForm');
+          if (form) form.dispatchEvent(new Event('submit'));
+        }
+      }, 350);
+    }
+  </script>
+  <script src="telemetry.js"></script>
+  <script src="chatbot-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

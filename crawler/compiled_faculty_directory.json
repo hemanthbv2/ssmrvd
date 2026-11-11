@@ -1,0 +1,626 @@
+[
+  {
+    "name": "Avinash K V",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash-k-v/"
+  },
+  {
+    "name": "Chiranjivi M S",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s/"
+  },
+  {
+    "name": "Dr. Vijayashree L.",
+    "designation": "Principal & Professor",
+    "department": "Commerce",
+    "qualifications": "MBA, NET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr-vijayashree-l/"
+  },
+  {
+    "name": "Dr. D. Kannan",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan/"
+  },
+  {
+    "name": "Dr. Jyothi N. Hosurkar",
+    "designation": "HOD & Assistant Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "",
+    "specialisation": "Kannada Folklore Publi",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_jyothi_n_hosurkar/"
+  },
+  {
+    "name": "Dr. Kanchan G. Rajput",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput/"
+  },
+  {
+    "name": "Dr. Lalitha B.S.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Accounting, Finance, Banking, Supply Chain Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s/"
+  },
+  {
+    "name": "Dr. Lavanya Balaji",
+    "designation": "HOD - Postgraduate Department & Asst. Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA",
+    "specialisation": "Finance and Banking, Accounting, Taxation Back to Faculty Stay Conn",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji/"
+  },
+  {
+    "name": "Dr. Malini N.",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_malini_n/"
+  },
+  {
+    "name": "Dr. Prathima Vijay",
+    "designation": "Assistant Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "",
+    "specialisation": "Kannada Litera",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_prathima_vijay/"
+  },
+  {
+    "name": "Dr. Rajini K.S.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA, B.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s/"
+  },
+  {
+    "name": "Dr. Revathy Shivashankaran",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA, M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran/"
+  },
+  {
+    "name": "Dr. R. Sheela Chandrashekar",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_r_sheela_chandrashekar/"
+  },
+  {
+    "name": "Dr. Shashikala C.S.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s/"
+  },
+  {
+    "name": "Dr. Shruti Khemashetty",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA",
+    "specialisation": "Human Resource Management and Marketing Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty/"
+  },
+  {
+    "name": "Dr. Suma Sannamani",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_suma_sannamani/"
+  },
+  {
+    "name": "Dr. Sushma C.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA",
+    "specialisation": "Accounts and Finance",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c/"
+  },
+  {
+    "name": "Dr. S. Chethana",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_s_chethana/"
+  },
+  {
+    "name": "Dr. Vinaya T.",
+    "designation": "Assistant Professor & Coordinator (BCom 2nd Year)",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t/"
+  },
+  {
+    "name": "Dr. V. Sudha",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "NET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_v_sudha/"
+  },
+  {
+    "name": "Kalaimathi S",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "NET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s/"
+  },
+  {
+    "name": "Kavitha H S",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kavitha_h_s/"
+  },
+  {
+    "name": "Malini N.",
+    "designation": "Associate Professor & HOD",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/malini-n/"
+  },
+  {
+    "name": "Mrs. Lavanya B.K.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, KSET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k/"
+  },
+  {
+    "name": "Mrs. Malasa M.R.",
+    "designation": "HOD & Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "IoT Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_malasa_m_r/"
+  },
+  {
+    "name": "Mrs. Pavana R. Kulkarni",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA, M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni/"
+  },
+  {
+    "name": "Mrs. Preethi Dwarakanath",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_preethi_dwarakanath/"
+  },
+  {
+    "name": "Mrs. Puja Biswas",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "Information Technology, Cloud Computing, IoT Back to Faculty Stay Connect",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas/"
+  },
+  {
+    "name": "Mrs. Vidya U. Jambagi",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, KSET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi/"
+  },
+  {
+    "name": "Mr. Akshay Kumar A.V.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "Accountancy, Taxation and Finance Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v/"
+  },
+  {
+    "name": "Mr. Arunkumar R.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "MBA",
+    "specialisation": "Finance and Human Resources",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r/"
+  },
+  {
+    "name": "Mr. Getendra Kumar M.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "Database Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_getendra_kumar_m/"
+  },
+  {
+    "name": "Mr. Gokul C.",
+    "designation": "Assistant Professor & Coordinator (BCom 1st Year)",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "B.Com, MBA, M.Com, KSET",
+    "specialisation": "Accounting and General Management Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c/"
+  },
+  {
+    "name": "Mr. Jagadish A.",
+    "designation": "HOD & Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a/"
+  },
+  {
+    "name": "Mr. Santosh D Bendigeri",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri/"
+  },
+  {
+    "name": "Mr. Shivakumara N.",
+    "designation": "Assistant Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "qualifications": "M.Com, NET",
+    "specialisation": "Accounts and Taxation Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n/"
+  },
+  {
+    "name": "Mr. Yallappa M.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "Finance Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m/"
+  },
+  {
+    "name": "Ms. Bharathi N.S.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "Marketing, Finance, Accou",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s/"
+  },
+  {
+    "name": "Ms. Bhargavi Iyer B.S.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s/"
+  },
+  {
+    "name": "Ms. Deepika L.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "Human Resource Management, Fashion Design, Marketing and Auditing Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l/"
+  },
+  {
+    "name": "Ms. Deepthi Raju",
+    "designation": "Assistant Professor",
+    "department": "Languages & Humanities",
+    "qualifications": "",
+    "specialisation": "Gen",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju/"
+  },
+  {
+    "name": "Ms. Gayathri Kempurajan",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "English Literature Papers",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan/"
+  },
+  {
+    "name": "Ms. Jahanavi Rao A.V.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "Computer Science Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_jahanavi_rao_a_v/"
+  },
+  {
+    "name": "Ms. Mokshamala U.",
+    "designation": "Professor",
+    "department": "Commerce (B.Com)",
+    "qualifications": "B.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u/"
+  },
+  {
+    "name": "Ms. M. Rajatha",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com, MBA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha/"
+  },
+  {
+    "name": "Ms. M. Roopa Latha",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA",
+    "specialisation": "Finance and Human Resources Back to Faculty",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_roopa_latha/"
+  },
+  {
+    "name": "Ms. Neha Banu",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu/"
+  },
+  {
+    "name": "Ms. R. Shanthi Krishna",
+    "designation": "HOD & Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MCA",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna/"
+  },
+  {
+    "name": "Ms. Shakeela M.K.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "M.Com",
+    "specialisation": "Finance, Accounting, Taxation, HR and Management",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_shakeela_m_k/"
+  },
+  {
+    "name": "Ms. Soujanya D.",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "Humanities",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d/"
+  },
+  {
+    "name": "Ms. Vasugi Mudaliar R.K.",
+    "designation": "Assistant Professor & Coordinator",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k/"
+  },
+  {
+    "name": "Nandini J",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/nandini_j/"
+  },
+  {
+    "name": "Prakasha V",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "MBA, B.Com, M.Com",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/prakasha_v/"
+  },
+  {
+    "name": "Ramamishra Yashaswi M",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ramamishra_yashaswi_m/"
+  },
+  {
+    "name": "Sharavana M",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/sharavana_m/"
+  },
+  {
+    "name": "Swathi S Nair",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/swathi_s_nair/"
+  },
+  {
+    "name": "Ume Salma",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ume_salma/"
+  },
+  {
+    "name": "Vaishnavi R",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "KSET, M.Com, NET",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vaishnavi_r/"
+  },
+  {
+    "name": "Vedamurthy Y N",
+    "designation": "Assistant Professor",
+    "department": "Computer Applications (BCA)",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n/"
+  },
+  {
+    "name": "Mrs. Shylaja T.M.",
+    "designation": "Library Assistant",
+    "department": "Library",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mr. Guranna Sajjan",
+    "designation": "Senior Executive (Library)",
+    "department": "Library",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Sumana H.N.",
+    "designation": "Placement Officer",
+    "department": "Training and Placement",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Vani M.U.",
+    "designation": "Manager of Finance & Administration",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Ms. Yeshwanthi R.",
+    "designation": "Assistant Manager \u2013 HR & Admin",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Ms. Jyothi K.S.",
+    "designation": "Assistant Manager \u2013 Accounts",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Sunithamba K",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Shashikala G.T.",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mr. Dileepa Kumara H.M.",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Nethravathi B.V.",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mr. Roopesh R.K.",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mr. Hanumantha Reddy B",
+    "designation": "IT Executive",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mr. Raviraj P",
+    "designation": "IT Executive",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Nethravathi M",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Jayashree",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Mrs. Latha K.M.",
+    "designation": "Staff",
+    "department": "Administration",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Sri. Chandrashekar M",
+    "designation": "Staff",
+    "department": "Group D Staff",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Sri. Dasegowda S.T.",
+    "designation": "Staff",
+    "department": "Group D Staff",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "name": "Smt. Nandini H.K.",
+    "designation": "Staff",
+    "department": "Group D Staff",
+    "qualifications": "",
+    "specialisation": "",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  }
+]
