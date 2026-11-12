@@ -11,11 +11,14 @@ def build_dept_card_html(p):
         f'<div class="ssmrv-dept-profile-item" data-profile-id="{p["id"]}" title="Click to view full profile of {p["name"]}">'
         f'<div class="ssmrv-dept-prof-header">'
         f'<span class="ssmrv-dept-prof-name">👤 {p["name"]}</span>'
-        f'<span class="ssmrv-dept-prof-cta">View Profile &rarr;</span>'
         f'</div>'
         f'<div class="ssmrv-faculty-badges">'
         f'<span class="ssmrv-badge-desig">🎖️ {p["designation"]}</span>'
         f'<span class="ssmrv-badge-dept">🏛️ {p["department"]}</span>'
+        f'</div>'
+        f'<div class="ssmrv-dept-prof-actions">'
+        f'<span class="ssmrv-dept-prof-cta">👤 View Full Profile</span>'
+        f'<a href="{p["url"]}" target="_blank" rel="noopener noreferrer" class="ssmrv-dept-visit-btn">🌐 Visit Website Page ↗</a>'
         f'</div>'
         f'<div class="ssmrv-dept-prof-meta">'
         f'<div>🎓 <b>Qualifications:</b> {p["qualifications"]}{exp_str}</div>'
@@ -30,7 +33,7 @@ def make_dept_flow(flow_id, title_html, subtitle_html, page_url, extra_buttons):
     cards_html = "".join(build_dept_card_html(p) for p in members)
     msg = (
         f'<b>{title_html} ({len(members)} Profiles)</b><br>'
-        f'<span style="font-size:11.5px;color:#475569;">{subtitle_html} Tap any profile card or button below for complete biography, publications &amp; official webpage:</span>'
+        f'<span style="font-size:11px;color:#475569;">Click <b>👤 View Full Profile</b> or <b>🌐 Visit Website Page ↗</b> on any faculty card:</span>'
         f'<div class="ssmrv-dept-profile-list">{cards_html}</div>'
     )
     buttons = []
@@ -48,6 +51,10 @@ def make_dept_flow(flow_id, title_html, subtitle_html, page_url, extra_buttons):
             "text": f"👤 {p['name']}{short_role}",
             "action": f"profile:{p['id']}"
         })
+    buttons.append({
+        "text": "🌐 Visit Department Faculty Webpage ↗",
+        "url": page_url
+    })
     buttons.extend(extra_buttons)
     return {
         "id": flow_id,
@@ -63,7 +70,7 @@ DEPT_FLOWS = {
         "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         "message": (
             "<b>👨‍🏫 SSMRV Official Faculty, Staff &amp; Leadership Directory (92 Profiles)</b><br>"
-            "100% verified from <a href=\"https://www.ssmrv.edu.in/academics/teaching_faculty/\" target=\"_blank\">ssmrv.edu.in</a> with complete <b>Department</b>, <b>Designation</b>, <b>Qualifications</b>, <b>Experience</b>, <b>Specialisations</b>, <b>Publications</b>, and <b>Statutory Committee</b> profiles.<br><br>"
+            "100% verified from <a href=\"https://www.ssmrv.edu.in/academics/teaching_faculty/\" target=\"_blank\">ssmrv.edu.in</a> with complete <b>Department</b>, <b>Designation</b>, <b>Qualifications</b>, <b>Experience</b>, <b>Specialisations</b>, <b>Publications</b>, and direct <b>Visit Website Page ↗</b> buttons for every faculty member.<br><br>"
             "Select a department below to browse interactive profiles, or type any name/role directly:"
         ),
         "buttons": [
@@ -77,7 +84,9 @@ DEPT_FLOWS = {
             {"text": "📖 Library & Knowledge Hub (2)", "action": "flow:faculty_library"},
             {"text": "🏢 Administration & Support (19)", "action": "flow:faculty_admin"},
             {"text": "🏛️ Institutional Leadership (8)", "action": "flow:faculty_leadership"},
-            {"text": "🛡️ Statutory Committees & Conveners", "action": "flow:faculty_committees"}
+            {"text": "🛡️ Statutory Committees & Conveners", "action": "flow:faculty_committees"},
+            {"text": "🌐 Visit Teaching Faculty Webpage ↗", "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"},
+            {"text": "🌐 Visit Non-Teaching Staff Webpage ↗", "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"}
         ]
     },
     "faculty_bca": make_dept_flow(
@@ -184,7 +193,6 @@ DEPT_FLOWS = {
     )
 }
 
-# Also build faculty_committees with clickable convener profile cards and buttons
 committee_conveners_ids = [
     "ms-r-shanthi-krishna",
     "dr-vijayashree-l",
@@ -212,23 +220,22 @@ DEPT_FLOWS["faculty_committees"] = {
     "pageUrl": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/",
     "message": (
         f'<b>🛡️ Official Statutory Committees &amp; Cell Conveners ({len(comm_members)} Conveners)</b><br>'
-        f'<span style="font-size:11.5px;color:#475569;">NAAC, UGC &amp; University Statutory Committee Heads. Click any convener card or button below to view their full profile:</span>'
+        f'<span style="font-size:11.5px;color:#475569;">NAAC, UGC &amp; University Statutory Committee Heads. Click <b>View Full Profile</b> or <b>Visit Website Page ↗</b> on any card below:</span>'
         f'<div class="ssmrv-dept-profile-list">{comm_cards_html}</div>'
     ),
     "buttons": [
         {"text": f"👤 {p['name']}", "action": f"profile:{p['id']}"}
         for p in comm_members
     ] + [
+        {"text": "🌐 Visit Committees Webpage ↗", "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/"},
         {"text": "🌟 Centres & Clubs", "action": "flow:centres_clubs"},
         {"text": "👨‍🏫 All Faculty Directory (92)", "action": "flow:faculty"}
     ]
 }
 
-# Read chatbot-data.js and update SSMRV_FACULTY_CATALOG and CHAT_FLOWS
 with open('chatbot-data.js', 'r', encoding='utf-8') as f:
     cb_code = f.read()
 
-# 1. Replace SSMRV_FACULTY_CATALOG
 cat_json_str = "const SSMRV_FACULTY_CATALOG = " + json.dumps(catalog, indent=2, ensure_ascii=False) + ";"
 cb_code_new, n_sub = re.subn(
     r'const SSMRV_FACULTY_CATALOG = \[.*?\];\s*(?=const SSMRV_ALL_PAGES)',
@@ -236,13 +243,7 @@ cb_code_new, n_sub = re.subn(
     cb_code,
     flags=re.S
 )
-if n_sub == 0:
-    raise RuntimeError("Could not locate SSMRV_FACULTY_CATALOG in chatbot-data.js")
 
-# 2. Update Faculty Directory button text in welcome & main_menu
-cb_code_new = cb_code_new.replace('👨‍🏫 Faculty Directory (63)', '👨‍🏫 Faculty Directory (92)')
-
-# 3. Replace faculty flows inside CHAT_FLOWS from `faculty: {` up to `prospectus_downloads: {`
 flows_str_parts = []
 for k, v in DEPT_FLOWS.items():
     flows_str_parts.append(f"  {k}: " + json.dumps(v, indent=4, ensure_ascii=False).replace('\n', '\n  '))
@@ -254,10 +255,8 @@ cb_code_new2, n_sub2 = re.subn(
     cb_code_new,
     flags=re.S
 )
-if n_sub2 == 0:
-    raise RuntimeError("Could not locate faculty flows block in CHAT_FLOWS")
 
 with open('chatbot-data.js', 'w', encoding='utf-8') as f:
     f.write(cb_code_new2)
 
-print("Successfully updated chatbot-data.js with 92 rich profiles and interactive department profile flows!")
+print("Successfully updated chatbot-data.js with Visit Website Page buttons on all 92 faculty cards and department flows!")

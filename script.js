@@ -240,6 +240,7 @@
 
     if (chatMessages) {
       chatMessages.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
         const profileCard = e.target.closest('.ssmrv-dept-profile-item[data-profile-id]');
         if (profileCard) {
           const pid = profileCard.getAttribute('data-profile-id');
@@ -618,7 +619,7 @@
       if (btn.isNavBack) chip.classList.add('is-nav-back');
       if (btn.isNavHome) chip.classList.add('is-nav-home');
       if (btn.action && btn.action.startsWith('profile:')) chip.classList.add('is-profile-chip');
-      if (btn.action && (btn.action.includes('inquiry') || btn.action.includes('fee'))) chip.classList.add('is-primary');
+      if (btn.isPrimary || (btn.action && (btn.action.includes('inquiry') || btn.action.includes('fee')))) chip.classList.add('is-primary');
       chip.innerHTML = btn.text;
 
       chip.addEventListener('click', () => {
@@ -676,6 +677,12 @@
     const emailHtml = fac.email ? `✉️ <b>Email:</b> <a href="mailto:${fac.email}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.email}</a>` : '';
     const phoneHtml = fac.phone ? `📞 <b>Phone:</b> <a href="tel:${fac.phone.replace(/\s+/g, '')}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.phone}</a>` : '';
     const contactBar = (emailHtml || phoneHtml) ? `<div class="ssmrv-fac-contact">${emailHtml}${emailHtml && phoneHtml ? ' &nbsp;|&nbsp; ' : ''}${phoneHtml}</div>` : '';
+    const visitWebsiteBtn = fac.url ? `
+      <div class="ssmrv-fac-actions">
+        <a href="${fac.url}" target="_blank" rel="noopener noreferrer" class="ssmrv-visit-website-btn">
+          🌐 Visit Official Website Page ↗
+        </a>
+      </div>` : '';
 
     return `
       <div class="ssmrv-faculty-card">
@@ -684,6 +691,7 @@
           <span class="ssmrv-badge-desig">🎖️ ${fac.designation}</span>
           <span class="ssmrv-badge-dept">🏛️ ${fac.department}</span>
         </div>
+        ${visitWebsiteBtn}
         <div class="ssmrv-faculty-meta">
           <div class="ssmrv-fac-row">🏛️ <b>Department:</b> ${fac.department}</div>
           <div class="ssmrv-fac-row">🎖️ <b>Designation:</b> ${fac.designation}</div>
@@ -708,8 +716,8 @@
       pageUrl: fac.url,
       message: buildFacultyProfileCardHtml(fac),
       buttons: [
+        { text: "🌐 Visit Official Website Page ↗", url: fac.url, isPrimary: true },
         ...extraButtons,
-        { text: "🌐 Official Webpage Profile", url: fac.url },
         deptBtn,
         { text: "👨‍🏫 All Faculty Directory (92)", action: "flow:faculty" }
       ]

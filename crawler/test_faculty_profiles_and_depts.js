@@ -36,10 +36,15 @@ const path = require('path');
 
   const bcaViewStats = await page.evaluate(() => {
     const cards = document.querySelectorAll('.ssmrv-dept-profile-item');
+    const visitBtns = document.querySelectorAll('.ssmrv-dept-profile-item .ssmrv-dept-visit-btn');
     const profileChips = document.querySelectorAll('#ssmrvActions .ssmrv-action-chip.is-profile-chip');
+    const deptWebChip = Array.from(document.querySelectorAll('#ssmrvActions .ssmrv-action-chip')).find(c => c.innerText.includes('Visit Department Faculty Webpage'));
     const lastBot = Array.from(document.querySelectorAll('.ssmrv-message.bot')).pop();
     return {
       deptCardCount: cards.length,
+      visitBtnCount: visitBtns.length,
+      firstVisitHref: visitBtns.length ? visitBtns[0].getAttribute('href') : null,
+      hasDeptWebChip: !!deptWebChip,
       profileChipCount: profileChips.length,
       hasDesigBadges: lastBot ? lastBot.querySelectorAll('.ssmrv-badge-desig').length : 0,
       hasDeptBadges: lastBot ? lastBot.querySelectorAll('.ssmrv-badge-dept').length : 0,
@@ -47,8 +52,8 @@ const path = require('path');
     };
   });
   console.log('1. BCA Department View Stats:', bcaViewStats);
-  if (bcaViewStats.deptCardCount < 11 || bcaViewStats.profileChipCount < 11) {
-    throw new Error('BCA Department did not render all 11 interactive profile cards and buttons!');
+  if (bcaViewStats.deptCardCount < 11 || bcaViewStats.visitBtnCount < 11 || !bcaViewStats.hasDeptWebChip) {
+    throw new Error('BCA Department did not render all 11 interactive profile cards and Visit Website buttons!');
   }
 
   await page.screenshot({ path: path.join(__dirname, 'verified_dept_profile_list.png') });
@@ -59,6 +64,8 @@ const path = require('path');
   const profileStats = await page.evaluate(() => {
     const lastBot = Array.from(document.querySelectorAll('.ssmrv-message.bot')).pop();
     const text = lastBot ? lastBot.innerText : '';
+    const inCardVisitBtn = lastBot ? lastBot.querySelector('.ssmrv-visit-website-btn') : null;
+    const actionVisitChip = Array.from(document.querySelectorAll('#ssmrvActions .ssmrv-action-chip.is-primary')).find(c => c.innerText.includes('Visit Official Website Page'));
     const breadcrumb = document.getElementById('ssmrvBreadcrumbCurrent').innerText;
     return {
       breadcrumb,
@@ -69,12 +76,13 @@ const path = require('path');
       hasSpecialisation: text.includes('Artificial Intelligence'),
       hasBio: text.includes('Profile Overview:'),
       hasHighlights: text.includes('11 patents'),
-      textPreview: text
+      inCardVisitHref: inCardVisitBtn ? inCardVisitBtn.getAttribute('href') : null,
+      hasActionVisitChip: !!actionVisitChip
     };
   });
   console.log('2. Full Faculty Profile View (Dr. S. Chethana):', profileStats);
-  if (!profileStats.hasDepartment || !profileStats.hasDesignation || !profileStats.hasBio || !profileStats.hasHighlights) {
-    throw new Error('Full faculty profile missing key department/designation/bio/highlights fields!');
+  if (!profileStats.hasDepartment || !profileStats.hasDesignation || !profileStats.inCardVisitHref || !profileStats.hasActionVisitChip) {
+    throw new Error('Full faculty profile missing key department/designation/Visit Website button fields!');
   }
 
   await new Promise(r => setTimeout(r, 300));

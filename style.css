@@ -984,6 +984,33 @@
   font-size: 11px;
 }
 
+.ssmrv-fac-actions {
+  margin: 4px 0 8px 0;
+}
+
+.ssmrv-visit-website-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 6px 12px;
+  background: var(--ssmrv-coral);
+  color: #ffffff !important;
+  border-radius: var(--radius-sm);
+  font-size: 11.5px;
+  font-weight: 700;
+  text-decoration: none !important;
+  box-shadow: 0 2px 6px rgba(207, 93, 65, 0.22);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.ssmrv-visit-website-btn:hover {
+  background: var(--ssmrv-navy);
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
 /* Department Faculty List Interactive Profile Items */
 .ssmrv-dept-profile-list {
   display: flex;
@@ -1025,14 +1052,53 @@
   color: var(--ssmrv-navy);
 }
 
+.ssmrv-dept-prof-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin: 5px 0 6px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed #e2e8f0;
+}
+
 .ssmrv-dept-prof-cta {
-  font-size: 10px;
+  font-size: 10.5px;
   font-weight: 700;
-  color: var(--ssmrv-coral);
-  background: rgba(207, 93, 65, 0.1);
-  padding: 2px 7px;
+  color: var(--ssmrv-navy);
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  padding: 3.5px 9px;
   border-radius: var(--radius-full);
   white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.ssmrv-dept-profile-item:hover .ssmrv-dept-prof-cta {
+  background: rgba(207, 93, 65, 0.1);
+  color: var(--ssmrv-coral);
+  border-color: rgba(207, 93, 65, 0.3);
+}
+
+.ssmrv-dept-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #ffffff !important;
+  background: var(--ssmrv-coral);
+  padding: 3.5px 10px;
+  border-radius: var(--radius-full);
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.ssmrv-dept-visit-btn:hover {
+  background: var(--ssmrv-navy);
+  color: #ffffff !important;
+  transform: translateY(-1px);
 }
 
 .ssmrv-dept-prof-meta {
