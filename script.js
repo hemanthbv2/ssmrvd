@@ -158,19 +158,10 @@
           </div>
         </header>
 
-        <!-- Interactive Navigation Bar with Multi-Level Backtracking -->
-        <div class="ssmrv-nav-bar" id="ssmrvNavBar">
-          <button class="ssmrv-nav-btn ssmrv-nav-back" id="ssmrvNavBack" type="button" title="Back to previous view" disabled>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            <span>Back</span>
-          </button>
-          <div class="ssmrv-nav-breadcrumbs">
-            <span class="ssmrv-crumb-trail" id="ssmrvBreadcrumbCurrent">Main Menu</span>
-          </div>
-          <button class="ssmrv-nav-btn ssmrv-nav-home" id="ssmrvNavHome" type="button" title="Return to Main Menu">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-            <span>Main Menu</span>
-          </button>
+        <!-- Breadcrumb Bar -->
+        <div class="ssmrv-breadcrumb-bar" id="ssmrvBreadcrumb">
+          <span>Navigation:</span>
+          <span class="ssmrv-breadcrumb-link" id="ssmrvBreadcrumbCurrent">Main Menu</span>
         </div>
 
         <!-- Messages Area -->
@@ -244,10 +235,8 @@
       handleUserSubmit();
     });
 
-    const navBackBtn = document.getElementById('ssmrvNavBack');
-    const navHomeBtn = document.getElementById('ssmrvNavHome');
-    if (navBackBtn) navBackBtn.addEventListener('click', goBack);
-    if (navHomeBtn) navHomeBtn.addEventListener('click', goToMainMenu);
+    const breadcrumbLink = document.getElementById('ssmrvBreadcrumbCurrent');
+    if (breadcrumbLink) breadcrumbLink.addEventListener('click', goToMainMenu);
   }
 
   function toggleChat() {
@@ -641,8 +630,7 @@
 
   // ─── Dynamic Form Rendering ───────────────────────────────────
   function renderInquiryForm(formType = 'admission_inquiry') {
-    actionsContainer.innerHTML = '';
-    actionsContainer.style.display = 'none';
+    renderButtons([]);
 
     let title = '📝 SSMRV Admission Callback Request';
     let extraFields = '';
