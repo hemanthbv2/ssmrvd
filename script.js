@@ -143,12 +143,6 @@
             </div>
           </div>
           <div class="ssmrv-header-actions">
-            <a href="tel:${primaryPhone.replace(/\s+/g, '')}" class="ssmrv-header-btn" title="Call Admissions Desk (${primaryPhone})">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            </a>
-            <a href="${waUrl}" target="_blank" class="ssmrv-header-btn" title="Chat on WhatsApp">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-            </a>
             <button class="ssmrv-header-btn" id="ssmrvClearChat" title="Clear Chat History">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
             </button>
@@ -286,14 +280,13 @@
     if (isOpen) {
       inactivityTimer = setTimeout(() => {
         appendBotMessage(
-          `Hello 👋<br><br>Just checking in to see if you need assistance regarding <b>SSMRV College admissions, fee structures, or placements</b>.<br><br><b>Admissions for 2026-27 are currently ongoing!</b>`
+          `Hello 👋<br><br>Let us know if you need any details regarding <b>SSMRV College programmes, faculty, admissions, or placements</b>.`
         );
         renderButtons([
-          { text: "📊 B.Com Admissions", action: "flow:bcom_details" },
-          { text: "📈 BBA Honours", action: "flow:bba_details" },
-          { text: "💻 BCA Tech", action: "flow:bca_details" },
-          { text: "💰 Request Fee Sheet", action: "flow:fee_enquiry" },
-          { text: "📞 Call Helpline", url: "tel:9739588855" }
+          { text: "📚 Explore Programmes", action: "flow:programmes" },
+          { text: "📝 Admissions & Apply", action: "flow:admissions" },
+          { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
+          { text: "💼 Placements & Packages", action: "flow:placements" }
         ]);
         saveState();
       }, INACTIVITY_TIMEOUT);
@@ -320,32 +313,26 @@
       bca_details: "BCA Details",
       mcom_details: "M.Com Details",
       admissions: "Admissions",
-      fee_enquiry: "Fee Inquiry",
-      campus_visit: "Campus Visit",
-      placements: "Placements (11 LPA)",
-      faculty: "Faculty Directory (92)",
-      faculty_bca: "BCA Faculty (11)",
-      faculty_commerce: "Commerce Faculty (23)",
-      faculty_bba: "BBA & Aviation (11)",
-      faculty_mcom: "M.Com Faculty (3)",
-      faculty_languages: "Languages Faculty (10)",
-      faculty_placement: "Placement Cell (2)",
-      faculty_leadership: "Leadership (8)",
-      faculty_sports: "Sports Leadership (3)",
-      faculty_library: "Library Hub (2)",
-      faculty_admin: "Administration (19)",
+      placements: "Placements & Packages",
+      faculty: "Faculty Directory",
+      faculty_bca: "BCA Faculty",
+      faculty_commerce: "Commerce Faculty",
+      faculty_bba: "BBA & Aviation Faculty",
+      faculty_mcom: "M.Com Faculty",
+      faculty_languages: "Languages Faculty",
+      faculty_placement: "Placement Cell",
+      faculty_leadership: "Institutional Leadership",
+      faculty_sports: "Sports & Wellness",
+      faculty_library: "Library & Knowledge Hub",
+      faculty_admin: "Administration & Support",
       faculty_committees: "Statutory Committees",
       cancellation_refund: "Refund Policy",
       alumni: "Alumni Network",
-      sitemap_links: "All College Links",
-      links_programmes: "Program Links",
-      links_admissions: "Admission Links",
       prospectus_downloads: "Official Downloads",
       campus_navigation: "Campus Directions",
       centres_clubs: "Centres & Clubs",
       campus: "Campus Life",
-      contact: "Contact Us",
-      inquiry_form: "Inquiry Form"
+      contact: "Contact Us"
     };
     return names[flowId] || flowId;
   }
@@ -482,20 +469,12 @@
       setTimeout(() => {
         showTyping(false);
         appendBotMessage(flow.message, flow.pageUrl);
-        if (flow.showForm) {
-          renderInquiryForm(flow.formType || 'admission_inquiry');
-        } else {
-          renderButtons(flow.buttons || []);
-        }
+        renderButtons(flow.buttons || []);
         saveState();
       }, 450);
     } else {
       appendBotMessage(flow.message, flow.pageUrl);
-      if (flow.showForm) {
-        renderInquiryForm(flow.formType || 'admission_inquiry');
-      } else {
-        renderButtons(flow.buttons || []);
-      }
+      renderButtons(flow.buttons || []);
       saveState();
     }
 
@@ -668,15 +647,15 @@
 
   function buildFacultyProfileCardHtml(fac) {
     if (!fac) return '';
-    const qualHtml = fac.qualifications ? `<div class="ssmrv-fac-row">🎓 <b>Qualifications:</b> ${fac.qualifications}</div>` : '';
-    const expHtml = fac.experience ? `<div class="ssmrv-fac-row">⏳ <b>Experience:</b> ${fac.experience}</div>` : '';
-    const specHtml = fac.specialisation ? `<div class="ssmrv-fac-row">🔬 <b>Specialisations &amp; Interests:</b> <i>${fac.specialisation}</i></div>` : '';
-    const commHtml = fac.committee ? `<div class="ssmrv-fac-row">🛡️ <b>Committee / Role:</b> <span style="color:#b45309; font-weight:600;">${fac.committee}</span></div>` : '';
-    const bioHtml = fac.bio ? `<div class="ssmrv-fac-row ssmrv-fac-bio">📖 <b>Profile Overview:</b> ${fac.bio}</div>` : '';
-    const highHtml = fac.highlights ? `<div class="ssmrv-fac-row ssmrv-fac-high">🏆 <b>Publications &amp; Highlights:</b> ${fac.highlights}</div>` : '';
-    const emailHtml = fac.email ? `✉️ <b>Email:</b> <a href="mailto:${fac.email}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.email}</a>` : '';
-    const phoneHtml = fac.phone ? `📞 <b>Phone:</b> <a href="tel:${fac.phone.replace(/\s+/g, '')}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.phone}</a>` : '';
-    const contactBar = (emailHtml || phoneHtml) ? `<div class="ssmrv-fac-contact">${emailHtml}${emailHtml && phoneHtml ? ' &nbsp;|&nbsp; ' : ''}${phoneHtml}</div>` : '';
+    const qualHtml = fac.qualifications ? `<div class="ssmrv-fac-row"><span class="ssmrv-fac-label">🎓 Qualifications</span><span class="ssmrv-fac-val">${fac.qualifications}</span></div>` : '';
+    const expHtml = fac.experience ? `<div class="ssmrv-fac-row"><span class="ssmrv-fac-label">⏳ Experience</span><span class="ssmrv-fac-val">${fac.experience}</span></div>` : '';
+    const specHtml = fac.specialisation ? `<div class="ssmrv-fac-row"><span class="ssmrv-fac-label">🔬 Areas of Expertise</span><span class="ssmrv-fac-val">${fac.specialisation}</span></div>` : '';
+    const commHtml = fac.committee ? `<div class="ssmrv-fac-row"><span class="ssmrv-fac-label">🛡️ Institutional Role</span><span class="ssmrv-fac-val ssmrv-fac-role-val">${fac.committee}</span></div>` : '';
+    const bioHtml = fac.bio ? `<div class="ssmrv-fac-section"><div class="ssmrv-fac-sec-title">📖 Profile Overview</div><div class="ssmrv-fac-sec-text">${fac.bio}</div></div>` : '';
+    const highHtml = fac.highlights ? `<div class="ssmrv-fac-section"><div class="ssmrv-fac-sec-title">🏆 Publications &amp; Highlights</div><div class="ssmrv-fac-sec-text">${fac.highlights}</div></div>` : '';
+    const emailHtml = fac.email ? `✉️ <a href="mailto:${fac.email}">${fac.email}</a>` : '';
+    const phoneHtml = fac.phone ? `📞 <a href="tel:${fac.phone.replace(/\s+/g, '')}">${fac.phone}</a>` : '';
+    const contactBar = (emailHtml || phoneHtml) ? `<div class="ssmrv-fac-contact">${emailHtml}${emailHtml && phoneHtml ? ' &nbsp;•&nbsp; ' : ''}${phoneHtml}</div>` : '';
     const visitWebsiteBtn = fac.url ? `
       <div class="ssmrv-fac-actions">
         <a href="${fac.url}" target="_blank" rel="noopener noreferrer" class="ssmrv-visit-website-btn">
@@ -686,23 +665,21 @@
 
     return `
       <div class="ssmrv-faculty-card">
-        <div class="ssmrv-faculty-name">👤 ${fac.name}</div>
+        <div class="ssmrv-faculty-name">${fac.name}</div>
         <div class="ssmrv-faculty-badges">
-          <span class="ssmrv-badge-desig">🎖️ ${fac.designation}</span>
-          <span class="ssmrv-badge-dept">🏛️ ${fac.department}</span>
+          <span class="ssmrv-badge-desig">${fac.designation}</span>
+          <span class="ssmrv-badge-dept">${fac.department}</span>
         </div>
         ${visitWebsiteBtn}
         <div class="ssmrv-faculty-meta">
-          <div class="ssmrv-fac-row">🏛️ <b>Department:</b> ${fac.department}</div>
-          <div class="ssmrv-fac-row">🎖️ <b>Designation:</b> ${fac.designation}</div>
           ${qualHtml}
           ${expHtml}
           ${specHtml}
           ${commHtml}
-          ${bioHtml}
-          ${highHtml}
-          ${contactBar}
         </div>
+        ${bioHtml}
+        ${highHtml}
+        ${contactBar}
       </div>`;
   }
 
@@ -710,7 +687,7 @@
     if (!fac) return null;
     const deptBtn = fac.deptFlow
       ? { text: `🏛️ ${fac.department} Faculty`, action: `flow:${fac.deptFlow}` }
-      : { text: "👨‍🏫 All Faculty (92)", action: "flow:faculty" };
+      : { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" };
     return {
       type: 'response',
       pageUrl: fac.url,
@@ -719,7 +696,7 @@
         { text: "🌐 Visit Official Website Page ↗", url: fac.url, isPrimary: true },
         ...extraButtons,
         deptBtn,
-        { text: "👨‍🏫 All Faculty Directory (92)", action: "flow:faculty" }
+        { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
       ]
     };
   }
@@ -730,7 +707,7 @@
 
     pushNavState(currentViewState);
     resetInactivityTimer();
-    appendUserMessage(`👤 ${fac.name} (${fac.designation})`);
+    appendUserMessage(`${fac.name}`);
 
     const resolution = buildFacultyProfileResolution(fac);
     currentFlowId = null;
@@ -755,220 +732,6 @@
     if (telemetry) {
       telemetry.trackEvent('faculty_profile_viewed', { id: fac.id, name: fac.name, department: fac.department });
     }
-  }
-
-  // ─── Dynamic Form Rendering ───────────────────────────────────
-  function renderInquiryForm(formType = 'admission_inquiry') {
-    renderButtons([]);
-
-    let title = '📝 SSMRV Admission Callback Request';
-    let extraFields = '';
-    let submitText = 'Submit Inquiry & Request Callback 🚀';
-
-    if (formType === 'fee_enquiry') {
-      title = '💰 Official Fee Structure & Prospectus Request';
-      submitText = 'Send Me the Complete Fee Details 📊';
-      extraFields = `
-        <div class="ssmrv-input-group">
-          <label class="ssmrv-input-label">12th / PUC Percentage (%) *</label>
-          <input type="number" class="ssmrv-form-input" id="leadMarks" placeholder="e.g. 85" min="35" max="100">
-          <span class="ssmrv-error-msg" id="errLeadMarks">Please enter your percentage or expected score.</span>
-        </div>
-      `;
-    } else if (formType === 'campus_visit') {
-      title = '🏫 Schedule Guided Campus Visit';
-      submitText = 'Confirm Campus Tour Booking 📍';
-      extraFields = `
-        <div class="ssmrv-input-group">
-          <label class="ssmrv-input-label">Preferred Date of Visit *</label>
-          <input type="date" class="ssmrv-form-input" id="leadDate" required>
-          <span class="ssmrv-error-msg" id="errLeadDate">Please pick a preferred date (Mon-Sat).</span>
-        </div>
-      `;
-    }
-
-    const formEl = document.createElement('div');
-    formEl.className = 'ssmrv-form-card';
-    formEl.innerHTML = `
-      <div class="ssmrv-form-title">${title}</div>
-      <div class="ssmrv-input-group">
-        <label class="ssmrv-input-label">Student Name *</label>
-        <input type="text" class="ssmrv-form-input" id="leadName" placeholder="e.g. Rahul Sharma" required>
-        <span class="ssmrv-error-msg" id="errLeadName">Please enter full name (at least 3 characters).</span>
-      </div>
-      <div class="ssmrv-input-group">
-        <label class="ssmrv-input-label">Mobile Number *</label>
-        <input type="tel" class="ssmrv-form-input" id="leadPhone" placeholder="10-digit mobile number" maxlength="10" required>
-        <span class="ssmrv-error-msg" id="errLeadPhone">Please enter a valid 10-digit Indian mobile number.</span>
-      </div>
-      <div class="ssmrv-input-group">
-        <label class="ssmrv-input-label">Email ID *</label>
-        <input type="email" class="ssmrv-form-input" id="leadEmail" placeholder="e.g. rahul@gmail.com" required>
-        <span class="ssmrv-error-msg" id="errLeadEmail">Please enter a valid email address.</span>
-      </div>
-      <div class="ssmrv-input-group">
-        <label class="ssmrv-input-label">Programme of Interest *</label>
-        <select class="ssmrv-form-select" id="leadProgram">
-          <option value="B.Com">B.Com (General / Professional CA/CS/ACCA)</option>
-          <option value="BBA">BBA (General Honours)</option>
-          <option value="BBA Aviation">BBA – Aviation Management (BBA-AM)</option>
-          <option value="BCA">BCA (Computer Applications / Emerging Tech)</option>
-          <option value="M.Com">M.Com (Postgraduate)</option>
-        </select>
-      </div>
-      ${extraFields}
-      <button type="button" class="ssmrv-form-submit-btn" id="leadSubmitBtn">
-        ${submitText}
-      </button>
-    `;
-
-    chatMessages.appendChild(formEl);
-    scrollToBottom();
-
-    const submitBtn = formEl.querySelector('#leadSubmitBtn');
-    submitBtn.addEventListener('click', () => handleLeadSubmission(formEl, formType));
-  }
-
-  function handleLeadSubmission(formEl, formType) {
-    const nameInput = formEl.querySelector('#leadName');
-    const phoneInput = formEl.querySelector('#leadPhone');
-    const emailInput = formEl.querySelector('#leadEmail');
-    const progSelect = formEl.querySelector('#leadProgram');
-    const marksInput = formEl.querySelector('#leadMarks');
-    const dateInput = formEl.querySelector('#leadDate');
-
-    const errName = formEl.querySelector('#errLeadName');
-    const errPhone = formEl.querySelector('#errLeadPhone');
-    const errEmail = formEl.querySelector('#errLeadEmail');
-    const errMarks = formEl.querySelector('#errLeadMarks');
-    const errDate = formEl.querySelector('#errLeadDate');
-
-    let isValid = true;
-
-    // Name
-    const name = nameInput.value.trim();
-    if (name.length < 3) {
-      nameInput.classList.add('is-invalid');
-      errName.classList.add('is-visible');
-      isValid = false;
-    } else {
-      nameInput.classList.remove('is-invalid');
-      errName.classList.remove('is-visible');
-    }
-
-    // Phone (10 digits starting with 6-9)
-    const phone = phoneInput.value.trim();
-    const phoneRegex = /^[6-9]\d{9}$/;
-    if (!phoneRegex.test(phone)) {
-      phoneInput.classList.add('is-invalid');
-      errPhone.classList.add('is-visible');
-      isValid = false;
-    } else {
-      phoneInput.classList.remove('is-invalid');
-      errPhone.classList.remove('is-visible');
-    }
-
-    // Email
-    const email = emailInput.value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      emailInput.classList.add('is-invalid');
-      errEmail.classList.add('is-visible');
-      isValid = false;
-    } else {
-      emailInput.classList.remove('is-invalid');
-      errEmail.classList.remove('is-visible');
-    }
-
-    // Optional marks
-    let marks = '';
-    if (marksInput) {
-      marks = marksInput.value.trim();
-      if (!marks || Number(marks) < 30 || Number(marks) > 100) {
-        marksInput.classList.add('is-invalid');
-        if (errMarks) errMarks.classList.add('is-visible');
-        isValid = false;
-      } else {
-        marksInput.classList.remove('is-invalid');
-        if (errMarks) errMarks.classList.remove('is-visible');
-      }
-    }
-
-    // Optional date
-    let visitDate = '';
-    if (dateInput) {
-      visitDate = dateInput.value;
-      if (!visitDate) {
-        dateInput.classList.add('is-invalid');
-        if (errDate) errDate.classList.add('is-visible');
-        isValid = false;
-      } else {
-        dateInput.classList.remove('is-invalid');
-        if (errDate) errDate.classList.remove('is-visible');
-      }
-    }
-
-    if (!isValid) return;
-
-    const submitBtn = formEl.querySelector('#leadSubmitBtn');
-    submitBtn.disabled = true;
-    submitBtn.innerText = 'Submitting...';
-
-    const leadData = {
-      formType,
-      name,
-      phone,
-      email,
-      program: progSelect.value,
-      marks: marks || undefined,
-      visitDate: visitDate || undefined,
-      source: 'SSMRV Chatbot',
-      timestamp: new Date().toISOString()
-    };
-
-    // 1. Dual-Write Telemetry
-    if (telemetry) {
-      telemetry.trackLead(leadData);
-    }
-
-    // 2. Google Sheets Webhook Dispatch (if configured)
-    const sheetsUrl = (typeof GOOGLE_SHEETS_URL !== 'undefined' && GOOGLE_SHEETS_URL) ? GOOGLE_SHEETS_URL : '';
-    if (sheetsUrl) {
-      fetch(sheetsUrl, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(leadData)
-      }).catch(err => console.debug('[SSMRV Sheets]', err));
-    }
-
-    // Confirmation message
-    setTimeout(() => {
-      let confirmMsg = `Your inquiry for <b>${escapeHtml(progSelect.value)}</b> has been registered. An admission counselor will contact you at <b>${escapeHtml(phone)}</b>.`;
-      if (formType === 'fee_enquiry') {
-        confirmMsg = `Thank you! The fee breakdown for <b>${escapeHtml(progSelect.value)}</b> has been routed. Our counseling desk will call you at <b>${escapeHtml(phone)}</b> with scholarship eligibility details.`;
-      } else if (formType === 'campus_visit') {
-        confirmMsg = `Your campus visit for <b>${escapeHtml(visitDate)}</b> has been requested! Our team will contact you at <b>${escapeHtml(phone)}</b> to finalize your campus tour slot.`;
-      }
-
-      formEl.innerHTML = `
-        <div style="text-align:center; padding: 14px 4px;">
-          <div style="font-size:32px; margin-bottom:6px;">🎉</div>
-          <div style="font-weight:700; color:var(--ssmrv-navy); font-size:15px;">Thank You, ${escapeHtml(name)}!</div>
-          <div style="font-size:12.5px; color:var(--text-secondary); margin-top:6px; line-height:1.5;">
-            ${confirmMsg}
-          </div>
-        </div>
-      `;
-      saveState();
-
-      renderButtons([
-        { text: "📚 Explore Programmes", action: "flow:programmes" },
-        { text: "💬 Chat on WhatsApp", url: "https://wa.me/919739588855?text=Hello%20SSMRV%20Admissions%20Team" },
-        { text: "📞 Call Helpline", url: "tel:9739588855" },
-        { text: "↩️ Main Menu", action: "flow:welcome" }
-      ]);
-    }, 500);
   }
 
   // ─── Algorithms: Fuzzy Search & Intent Matching ───────────────
@@ -1035,14 +798,14 @@
     if (/^(hi|hello|hey|good morning|good afternoon|namaste|vanakkam)/i.test(text)) {
       return {
         type: 'response',
-        message: "Hello! Welcome to <b>SSMRV Degree College</b>, Jayanagar. How may I help you with admissions, faculty, courses, fees, or placements today?",
+        message: "Hello! Welcome to <b>SSMRV Degree College</b>, Jayanagar. How may I help you with programmes, faculty, admissions, or placements today?",
         buttons: [
-          { text: "📚 Programmes", action: "flow:programmes" },
-          { text: "📝 Admissions", action: "flow:admissions" },
-          { text: "💰 Fees Structure", action: "flow:fee_enquiry" },
-          { text: "👨‍🏫 Faculty Roster", action: "flow:faculty" },
+          { text: "📚 Explore Programmes", action: "flow:programmes" },
+          { text: "📝 Admissions & Apply", action: "flow:admissions" },
+          { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
+          { text: "💼 Placements & Packages", action: "flow:placements" },
           { text: "📄 Official Downloads", action: "flow:prospectus_downloads" },
-          { text: "📍 Campus Maps", action: "flow:campus_navigation" }
+          { text: "📍 Campus Navigation", action: "flow:campus_navigation" }
         ]
       };
     }
@@ -1055,11 +818,6 @@
     // 1.c Alumni Association Intent
     if (/\b(alumni|alumnus|sammilana|past students|old students)\b/i.test(text)) {
       return { type: 'flow', flowId: 'alumni' };
-    }
-
-    // 1.d All Links & Sitemap Directory Intent
-    if (/\b(all links|page links|sitemap|website links|all pages|directory|all urls)\b/i.test(text)) {
-      return { type: 'flow', flowId: 'sitemap_links' };
     }
 
     // 1.e Smart URL Matcher for "link for X" or "website for Y"
@@ -1086,9 +844,8 @@
           pageUrl: matchedPage.url,
           message: `Official web link for <b>${escapeHtml(matchedPage.title)}</b>:`,
           buttons: [
-            { text: "🌐 Open on ssmrv.edu.in", url: matchedPage.url },
-            { text: "🌐 Browse All Links (120+)", action: "flow:sitemap_links" },
-            { text: "↩️ Main Menu", action: "flow:welcome" }
+            { text: "🌐 Visit Official Webpage ↗", url: matchedPage.url },
+            { text: "📚 Explore Programmes", action: "flow:programmes" }
           ]
         };
       }
@@ -1100,42 +857,41 @@
     }
 
     // 3. Campus Navigation & Directions
-    if (/\b(map|maps|location|address|direction|directions|where is|how to reach|metro|bus|route|campus tour|landmark)\b/i.test(text)) {
+    if (/\b(map|maps|location|address|direction|directions|where is|how to reach|metro|bus|route|campus tour|landmark|visit|come to college|see campus)\b/i.test(text)) {
       return { type: 'flow', flowId: 'campus_navigation' };
     }
 
-    // 4. Comprehensive Faculty, Staff & Statutory Intelligence (92 Profiles)
+    // 4. Comprehensive Faculty, Staff & Statutory Intelligence
     if (typeof SSMRV_FACULTY_CATALOG !== 'undefined' && SSMRV_FACULTY_CATALOG.length > 0) {
       
       // A. Statutory Committee & Cell Conveners
       if (/\b(nss|national service scheme)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('mr-yallappa-m'), [
-          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+          { text: "🛡️ Statutory Committees", action: "flow:faculty_committees" }
         ]);
       }
 
       if (/\b(ncc|national cadet corps)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('avinash-k-v'), [
-          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+          { text: "🛡️ Statutory Committees", action: "flow:faculty_committees" }
         ]);
       }
 
       if (/\b(iqac|naac coordinator|quality assurance)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('ms-r-shanthi-krishna'), [
-          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+          { text: "🛡️ Statutory Committees", action: "flow:faculty_committees" }
         ]);
       }
 
       if (/\b(exam|examination|chief superintendent)\b/i.test(text) && /\b(head|convener|incharge|officer|who|committee)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('dr-mohan-rao-c-n'), [
-          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+          { text: "🛡️ Statutory Committees", action: "flow:faculty_committees" }
         ]);
       }
 
       if (/\b(sports|physical education|gym|wellness|athletics)\b/i.test(text) && /\b(director|head|faculty|teacher|officer|who)\b/i.test(text)) {
         const teja = findFacultyById('mrs-teja-k-r');
         const bopanna = findFacultyById('mr-m-m-bopanna');
-        const chiranjivi = findFacultyById('chiranjivi-m-s');
         return {
           type: 'response',
           pageUrl: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
@@ -1144,7 +900,7 @@
             { text: "👤 Mrs. Teja K.R. Profile", action: "profile:mrs-teja-k-r" },
             { text: "👤 Mr. M.M. Bopanna Profile", action: "profile:mr-m-m-bopanna" },
             { text: "👤 Mr. Chiranjivi M S Profile", action: "profile:chiranjivi-m-s" },
-            { text: "⚽ All Sports Leadership (3)", action: "flow:faculty_sports" }
+            { text: "⚽ Physical Education & Sports", action: "flow:faculty_sports" }
           ]
         };
       }
@@ -1159,7 +915,7 @@
           buttons: [
             { text: "👤 Mrs. Shylaja T.M. Profile", action: "profile:mrs-shylaja-t-m" },
             { text: "👤 Mr. Guranna Sajjan Profile", action: "profile:mr-guranna-sajjan" },
-            { text: "📖 Library Hub Details", action: "flow:faculty_library" }
+            { text: "📖 Library & Knowledge Hub", action: "flow:faculty_library" }
           ]
         };
       }
@@ -1167,7 +923,7 @@
       // B. Direct HOD & Principal Lookups
       if (/\b(principal)\b/i.test(text) && /\b(who|name|profile|message|college|ssmrv)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('dr-vijayashree-l'), [
-          { text: "🏛️ All Leadership (8)", action: "flow:faculty_leadership" }
+          { text: "🏛️ Institutional Leadership", action: "flow:faculty_leadership" }
         ]);
       }
 
@@ -1187,7 +943,7 @@
           buttons: [
             { text: "👤 Dr. Malini N. Profile", action: "profile:dr-malini-n" },
             { text: "👤 Ms. Samskruthi B. L. Profile", action: "profile:ms-samskruthi-b-l" },
-            { text: "📊 Commerce Faculty (23)", action: "flow:faculty_commerce" },
+            { text: "📊 Commerce / B.Com Faculty", action: "flow:faculty_commerce" },
             { text: "📊 B.Com Details", action: "flow:bcom_details" }
           ]
         };
@@ -1209,7 +965,7 @@
           buttons: [
             { text: "👤 Dr. Revathy Shivashankaran", action: "profile:dr-revathy-shivashankaran" },
             { text: "👤 Mr. Jagadish A. (Aviation)", action: "profile:mr-jagadish-a" },
-            { text: "📈 BBA & Aviation Faculty (11)", action: "flow:faculty_bba" },
+            { text: "📈 BBA & Aviation Faculty", action: "flow:faculty_bba" },
             { text: "📈 BBA Course Details", action: "flow:bba_details" }
           ]
         };
@@ -1228,7 +984,7 @@
       if (/\b(placement|paryapti)\b/i.test(text) && /\b(officer|head|incharge|in-charge|who is)\b/i.test(text)) {
         return buildFacultyProfileResolution(findFacultyById('mrs-sumana-h-n'), [
           { text: "👤 Mr. Naresh K.N. (HR)", action: "profile:mr-naresh-k-n" },
-          { text: "💼 Placements & Packages (11 LPA)", action: "flow:placements" }
+          { text: "💼 Placements & Packages", action: "flow:placements" }
         ]);
       }
 
@@ -1290,14 +1046,8 @@
     }
 
     // 5. Intent Routing for Programs & Flow Targets
-    if (/\b(fee|fees|cost|tuition|price|fee structure)\b/i.test(text)) {
-      return { type: 'flow', flowId: 'fee_enquiry' };
-    }
     if (/\b(placement|placements|package|salary|recruitment|recruiter|paryapti)\b/i.test(text)) {
       return { type: 'flow', flowId: 'placements' };
-    }
-    if (/\b(visit|campus tour|come to college|see campus)\b/i.test(text)) {
-      return { type: 'flow', flowId: 'campus_visit' };
     }
     if (/\b(admission|admissions|apply|application|eligibility|praveshan)\b/i.test(text)) {
       return { type: 'flow', flowId: 'admissions' };
@@ -1341,10 +1091,9 @@
         type: 'response',
         message: `<b>${bestMatch.q}</b><br><br>${bestMatch.a}`,
         buttons: [
-          { text: "📋 Request a Callback", action: "flow:inquiry_form" },
-          { text: "💰 Request Fee Details", action: "flow:fee_enquiry" },
           { text: "📚 Explore Programmes", action: "flow:programmes" },
-          { text: "↩️ Main Menu", action: "flow:welcome" }
+          { text: "📝 Admission Procedure", action: "flow:admissions" },
+          { text: "📞 Contact College Office", action: "flow:contact" }
         ]
       };
     }
@@ -1352,12 +1101,12 @@
     // 7. Fallback handler
     return {
       type: 'response',
-      message: "I want to make sure you get the exact information! Could you please select an option below, or request a call from our admission counselors?",
+      message: "I want to make sure you get the exact information! Please select an option below:",
       buttons: [
-        { text: "📚 Programmes Offered", action: "flow:programmes" },
-        { text: "📝 Admission Process (Praveshan)", action: "flow:admissions" },
-        { text: "💰 Fee Structure Inquiry", action: "flow:fee_enquiry" },
+        { text: "📚 Explore Programmes", action: "flow:programmes" },
+        { text: "📝 Admissions & Apply", action: "flow:admissions" },
         { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
+        { text: "💼 Placements & Packages", action: "flow:placements" },
         { text: "📄 Official Downloads", action: "flow:prospectus_downloads" },
         { text: "📍 Campus Navigation", action: "flow:campus_navigation" }
       ]
@@ -1424,9 +1173,9 @@
         type: 'response',
         message: `<b>${faq.q}</b><br><br>${faq.a}`,
         buttons: [
-          { text: "📋 Request a Callback", action: "flow:inquiry_form" },
-          { text: "💰 Fee Structure Inquiry", action: "flow:fee_enquiry" },
-          { text: "📚 Explore Programmes", action: "flow:programmes" }
+          { text: "📚 Explore Programmes", action: "flow:programmes" },
+          { text: "📝 Admission Procedure", action: "flow:admissions" },
+          { text: "📞 Contact College Office", action: "flow:contact" }
         ]
       };
       currentFlowId = null;

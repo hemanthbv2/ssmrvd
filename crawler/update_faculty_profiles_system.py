@@ -5,24 +5,25 @@ with open('crawler/deep_faculty_catalog.json', 'r', encoding='utf-8') as f:
     catalog = json.load(f)
 
 def build_dept_card_html(p):
-    comm_html = f'<div class="ssmrv-dept-prof-comm">🛡️ <b>Role:</b> {p["committee"]}</div>' if p.get("committee") else ''
-    exp_str = f' • {p["experience"]}' if p.get("experience") else ''
+    comm_html = f'<div class="ssmrv-dept-prof-row ssmrv-dept-prof-comm"><b>Role:</b> {p["committee"]}</div>' if p.get("committee") else ''
+    exp_html = f'<div class="ssmrv-dept-prof-row"><b>Experience:</b> {p["experience"]}</div>' if p.get("experience") else ''
     return (
         f'<div class="ssmrv-dept-profile-item" data-profile-id="{p["id"]}" title="Click to view full profile of {p["name"]}">'
         f'<div class="ssmrv-dept-prof-header">'
-        f'<span class="ssmrv-dept-prof-name">👤 {p["name"]}</span>'
+        f'<span class="ssmrv-dept-prof-name">{p["name"]}</span>'
         f'</div>'
         f'<div class="ssmrv-faculty-badges">'
-        f'<span class="ssmrv-badge-desig">🎖️ {p["designation"]}</span>'
-        f'<span class="ssmrv-badge-dept">🏛️ {p["department"]}</span>'
+        f'<span class="ssmrv-badge-desig">{p["designation"]}</span>'
+        f'<span class="ssmrv-badge-dept">{p["department"]}</span>'
         f'</div>'
         f'<div class="ssmrv-dept-prof-actions">'
         f'<span class="ssmrv-dept-prof-cta">👤 View Full Profile</span>'
         f'<a href="{p["url"]}" target="_blank" rel="noopener noreferrer" class="ssmrv-dept-visit-btn">🌐 Visit Website Page ↗</a>'
         f'</div>'
         f'<div class="ssmrv-dept-prof-meta">'
-        f'<div>🎓 <b>Qualifications:</b> {p["qualifications"]}{exp_str}</div>'
-        f'<div>🔬 <b>Specialisation:</b> {p["specialisation"]}</div>'
+        f'<div class="ssmrv-dept-prof-row"><b>Qualifications:</b> {p["qualifications"]}</div>'
+        f'{exp_html}'
+        f'<div class="ssmrv-dept-prof-row"><b>Expertise:</b> {p["specialisation"]}</div>'
         f'{comm_html}'
         f'</div>'
         f'</div>'
@@ -32,8 +33,8 @@ def make_dept_flow(flow_id, title_html, subtitle_html, page_url, extra_buttons):
     members = [p for p in catalog if p.get('deptFlow') == flow_id]
     cards_html = "".join(build_dept_card_html(p) for p in members)
     msg = (
-        f'<b>{title_html} ({len(members)} Profiles)</b><br>'
-        f'<span style="font-size:11px;color:#475569;">Click <b>👤 View Full Profile</b> or <b>🌐 Visit Website Page ↗</b> on any faculty card:</span>'
+        f'<div class="ssmrv-flow-heading">{title_html}</div>'
+        f'<div class="ssmrv-flow-subheading">Select <b>View Full Profile</b> or <b>Visit Website Page ↗</b> on any card below:</div>'
         f'<div class="ssmrv-dept-profile-list">{cards_html}</div>'
     )
     buttons = []
@@ -63,27 +64,26 @@ def make_dept_flow(flow_id, title_html, subtitle_html, page_url, extra_buttons):
         "buttons": buttons
     }
 
-# Build all department flows dynamically from the 92-member catalog
 DEPT_FLOWS = {
     "faculty": {
         "id": "faculty",
         "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         "message": (
-            "<b>👨‍🏫 SSMRV Official Faculty, Staff &amp; Leadership Directory (92 Profiles)</b><br>"
-            "100% verified from <a href=\"https://www.ssmrv.edu.in/academics/teaching_faculty/\" target=\"_blank\">ssmrv.edu.in</a> with complete <b>Department</b>, <b>Designation</b>, <b>Qualifications</b>, <b>Experience</b>, <b>Specialisations</b>, <b>Publications</b>, and direct <b>Visit Website Page ↗</b> buttons for every faculty member.<br><br>"
-            "Select a department below to browse interactive profiles, or type any name/role directly:"
+            "<div class=\"ssmrv-flow-heading\">👨‍🏫 SSMRV Faculty, Staff &amp; Leadership Directory</div>"
+            "<div class=\"ssmrv-flow-body\">Browse verified profiles from <a href=\"https://www.ssmrv.edu.in/academics/teaching_faculty/\" target=\"_blank\">ssmrv.edu.in</a> with complete <b>Department</b>, <b>Designation</b>, <b>Qualifications</b>, <b>Experience</b>, <b>Areas of Expertise</b>, and direct <b>Visit Website Page ↗</b> links.<br><br>"
+            "Select a department below or type any faculty name in the search bar:</div>"
         ),
         "buttons": [
-            {"text": "💻 BCA Faculty (11)", "action": "flow:faculty_bca"},
-            {"text": "📊 Commerce / B.Com Faculty (23)", "action": "flow:faculty_commerce"},
-            {"text": "📈 BBA & Aviation Faculty (11)", "action": "flow:faculty_bba"},
-            {"text": "🎓 M.Com Postgraduate Faculty (3)", "action": "flow:faculty_mcom"},
-            {"text": "🗣️ Languages & Humanities (10)", "action": "flow:faculty_languages"},
-            {"text": "⚽ Physical Education & Sports (3)", "action": "flow:faculty_sports"},
-            {"text": "💼 Placement Cell — Paryapti (2)", "action": "flow:faculty_placement"},
-            {"text": "📖 Library & Knowledge Hub (2)", "action": "flow:faculty_library"},
-            {"text": "🏢 Administration & Support (19)", "action": "flow:faculty_admin"},
-            {"text": "🏛️ Institutional Leadership (8)", "action": "flow:faculty_leadership"},
+            {"text": "💻 BCA Faculty", "action": "flow:faculty_bca"},
+            {"text": "📊 Commerce / B.Com Faculty", "action": "flow:faculty_commerce"},
+            {"text": "📈 BBA & Aviation Faculty", "action": "flow:faculty_bba"},
+            {"text": "🎓 M.Com Postgraduate Faculty", "action": "flow:faculty_mcom"},
+            {"text": "🗣️ Languages & Humanities", "action": "flow:faculty_languages"},
+            {"text": "⚽ Physical Education & Sports", "action": "flow:faculty_sports"},
+            {"text": "💼 Placement Cell — Paryapti", "action": "flow:faculty_placement"},
+            {"text": "📖 Library & Knowledge Hub", "action": "flow:faculty_library"},
+            {"text": "🏢 Administration & Support", "action": "flow:faculty_admin"},
+            {"text": "🏛️ Institutional Leadership", "action": "flow:faculty_leadership"},
             {"text": "🛡️ Statutory Committees & Conveners", "action": "flow:faculty_committees"},
             {"text": "🌐 Visit Teaching Faculty Webpage ↗", "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"},
             {"text": "🌐 Visit Non-Teaching Staff Webpage ↗", "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"}
@@ -96,7 +96,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         [
             {"text": "💻 BCA Course Details", "action": "flow:bca_details"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_commerce": make_dept_flow(
@@ -106,7 +106,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         [
             {"text": "📊 B.Com Course Details", "action": "flow:bcom_details"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_bba": make_dept_flow(
@@ -117,7 +117,7 @@ DEPT_FLOWS = {
         [
             {"text": "📈 BBA Honours Details", "action": "flow:bba_details"},
             {"text": "✈️ BBA Aviation Details", "action": "flow:aviation_details"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_mcom": make_dept_flow(
@@ -127,7 +127,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         [
             {"text": "🎓 M.Com Course Details", "action": "flow:mcom_details"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_languages": make_dept_flow(
@@ -137,7 +137,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/academics/teaching_faculty/",
         [
             {"text": "🌟 Centres & Literary Clubs", "action": "flow:centres_clubs"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_sports": make_dept_flow(
@@ -147,28 +147,27 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
         [
             {"text": "🌟 Sports & Wellness Centre", "action": "flow:centres_clubs"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_placement": make_dept_flow(
         "faculty_placement",
         "💼 Paryapti Training &amp; Placement Cell",
-        "Corporate Relations, Pre-Placement Training & Campus Recruitment (Up to 11 LPA CTC).",
+        "Corporate Relations, Pre-Placement Training & Campus Recruitment.",
         "https://www.ssmrv.edu.in/campus_life/placement/",
         [
-            {"text": "💼 Placement Packages (11 LPA)", "action": "flow:placements"},
-            {"text": "📞 Call Placement Office", "url": "tel:9606067551"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "💼 Placements & Career Cell", "action": "flow:placements"},
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_library": make_dept_flow(
         "faculty_library",
         "📖 Central Library &amp; Information Center (Knowledge Hub)",
-        "40,000+ Books, Koha ILMS Automation, DELNET, NDLI & INFLIBNET Digital Repositories.",
+        "Koha ILMS Automation, DELNET, NDLI & INFLIBNET Digital Repositories.",
         "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
         [
             {"text": "🏛️ Campus Infrastructure", "action": "flow:campus"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_admin": make_dept_flow(
@@ -178,7 +177,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
         [
             {"text": "📞 Contact Administrative Office", "action": "flow:contact"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     ),
     "faculty_leadership": make_dept_flow(
@@ -188,7 +187,7 @@ DEPT_FLOWS = {
         "https://www.ssmrv.edu.in/about_us/board_of_management/",
         [
             {"text": "📞 Contact Principal's Office", "action": "flow:contact"},
-            {"text": "👨‍🏫 All Departments (92)", "action": "flow:faculty"}
+            {"text": "👨‍🏫 All Departments", "action": "flow:faculty"}
         ]
     )
 }
@@ -219,8 +218,8 @@ DEPT_FLOWS["faculty_committees"] = {
     "id": "faculty_committees",
     "pageUrl": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/",
     "message": (
-        f'<b>🛡️ Official Statutory Committees &amp; Cell Conveners ({len(comm_members)} Conveners)</b><br>'
-        f'<span style="font-size:11.5px;color:#475569;">NAAC, UGC &amp; University Statutory Committee Heads. Click <b>View Full Profile</b> or <b>Visit Website Page ↗</b> on any card below:</span>'
+        f'<div class="ssmrv-flow-heading">🛡️ Statutory Committees &amp; Cell Conveners</div>'
+        f'<div class="ssmrv-flow-subheading">Select <b>View Full Profile</b> or <b>Visit Website Page ↗</b> on any card below:</div>'
         f'<div class="ssmrv-dept-profile-list">{comm_cards_html}</div>'
     ),
     "buttons": [
@@ -229,7 +228,7 @@ DEPT_FLOWS["faculty_committees"] = {
     ] + [
         {"text": "🌐 Visit Committees Webpage ↗", "url": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/"},
         {"text": "🌟 Centres & Clubs", "action": "flow:centres_clubs"},
-        {"text": "👨‍🏫 All Faculty Directory (92)", "action": "flow:faculty"}
+        {"text": "👨‍🏫 Faculty Directory", "action": "flow:faculty"}
     ]
 }
 
@@ -259,4 +258,4 @@ cb_code_new2, n_sub2 = re.subn(
 with open('chatbot-data.js', 'w', encoding='utf-8') as f:
     f.write(cb_code_new2)
 
-print("Successfully updated chatbot-data.js with Visit Website Page buttons on all 92 faculty cards and department flows!")
+print("Successfully updated faculty flows in chatbot-data.js!")

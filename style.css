@@ -420,11 +420,11 @@
 .ssmrv-chat-messages {
   flex: 1;
   overflow-y: auto;
-  padding: var(--space-lg);
+  padding: 14px 12px;
   background: var(--bg-messages);
   display: flex;
   flex-direction: column;
-  gap: var(--space-md);
+  gap: 12px;
   scroll-behavior: smooth;
 }
 
@@ -449,13 +449,15 @@
 .ssmrv-message {
   display: flex;
   align-items: flex-start;
-  gap: var(--space-sm);
-  max-width: 88%;
+  gap: 8px;
+  max-width: 90%;
   animation: ssmrv-fade-in 200ms ease-out;
 }
 
 .ssmrv-message.bot {
   align-self: flex-start;
+  max-width: 96%;
+  width: 100%;
 }
 
 .ssmrv-message.user {
@@ -464,8 +466,8 @@
 }
 
 .ssmrv-msg-avatar {
-  width: 28px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   border-radius: var(--radius-full);
   background: #ffffff;
   display: flex;
@@ -477,6 +479,7 @@
   color: var(--ssmrv-navy);
   flex-shrink: 0;
   overflow: hidden;
+  margin-top: 2px;
 }
 
 .ssmrv-msg-avatar img {
@@ -494,21 +497,23 @@
 .ssmrv-msg-content-wrap {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
+  flex: 1;
+  min-width: 0;
 }
 
 .ssmrv-message-bubble {
-  padding: 12px 16px;
+  padding: 13px 15px;
   font-size: 13.5px;
-  line-height: 1.55;
+  line-height: 1.6;
   box-shadow: var(--shadow-msg);
   word-break: break-word;
 }
 
 .ssmrv-message.bot .ssmrv-message-bubble {
   background: var(--bg-msg-bot);
-  color: var(--text-main);
-  border-radius: 16px 16px 16px 4px;
+  color: #1e293b;
+  border-radius: 14px 14px 14px 4px;
   border: 1px solid #e2e8f0;
 }
 
@@ -891,117 +896,95 @@
 }
 
 /* Faculty Profile Cards & Department Directory Cards */
-.ssmrv-faculty-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
-  border-left: 4px solid var(--ssmrv-coral);
-  border-radius: var(--radius-md);
-  padding: 12px 13px;
-  box-shadow: var(--shadow-sm);
-  margin-top: 6px;
-  margin-bottom: 6px;
-  transition: all var(--transition-fast);
+.ssmrv-flow-heading {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ssmrv-navy);
+  margin-bottom: 4px;
+  line-height: 1.4;
 }
 
-.ssmrv-faculty-card:hover {
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-  border-left-color: var(--ssmrv-navy);
+.ssmrv-flow-subheading {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 10px;
+  line-height: 1.45;
+}
+
+.ssmrv-flow-body {
+  font-size: 13px;
+  color: #334155;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.ssmrv-faculty-card {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 2px 0;
+  box-shadow: none;
+  margin: 0;
 }
 
 .ssmrv-faculty-name {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 800;
   color: var(--ssmrv-navy);
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  line-height: 1.3;
 }
 
 .ssmrv-faculty-badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 10px;
 }
 
 .ssmrv-badge-desig {
   display: inline-flex;
   align-items: center;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   color: #ffffff;
   background: var(--ssmrv-navy);
-  padding: 2.5px 8px;
+  padding: 3px 9px;
   border-radius: var(--radius-full);
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 .ssmrv-badge-dept {
   display: inline-flex;
   align-items: center;
-  font-size: 10.5px;
-  font-weight: 700;
-  color: var(--ssmrv-coral);
-  background: rgba(207, 93, 65, 0.1);
-  border: 1px solid rgba(207, 93, 65, 0.28);
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  line-height: 1.3;
-}
-
-.ssmrv-faculty-role {
-  font-size: 11.5px;
-  font-weight: 600;
-  color: var(--ssmrv-coral);
-  margin-bottom: 4px;
-}
-
-.ssmrv-faculty-meta {
-  font-size: 11.5px;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.ssmrv-fac-row {
-  line-height: 1.45;
-}
-
-.ssmrv-fac-bio,
-.ssmrv-fac-high {
-  background: #f8fafc;
-  border-left: 2.5px solid var(--ssmrv-gold);
-  padding: 5px 8px;
-  border-radius: 4px;
-  margin-top: 2px;
-}
-
-.ssmrv-fac-contact {
-  margin-top: 4px;
-  padding-top: 5px;
-  border-top: 1px dashed #e2e8f0;
   font-size: 11px;
+  font-weight: 700;
+  color: #9a3412;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  line-height: 1.35;
 }
 
 .ssmrv-fac-actions {
-  margin: 4px 0 8px 0;
+  margin: 0 0 12px 0;
 }
 
 .ssmrv-visit-website-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 6px;
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px 12px;
   background: var(--ssmrv-coral);
   color: #ffffff !important;
-  border-radius: var(--radius-sm);
-  font-size: 11.5px;
+  border-radius: 8px;
+  font-size: 12.5px;
   font-weight: 700;
   text-decoration: none !important;
-  box-shadow: 0 2px 6px rgba(207, 93, 65, 0.22);
+  box-shadow: 0 2px 6px rgba(207, 93, 65, 0.2);
   transition: background var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -1011,11 +994,85 @@
   transform: translateY(-1px);
 }
 
+.ssmrv-faculty-meta {
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ssmrv-fac-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.ssmrv-fac-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.ssmrv-fac-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #64748b;
+}
+
+.ssmrv-fac-val {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.ssmrv-fac-role-val {
+  color: #b45309;
+  font-weight: 600;
+}
+
+.ssmrv-fac-section {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-top: 2px;
+}
+
+.ssmrv-fac-sec-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ssmrv-navy);
+  margin-bottom: 4px;
+}
+
+.ssmrv-fac-sec-text {
+  font-size: 12.5px;
+  color: #334155;
+  line-height: 1.6;
+}
+
+.ssmrv-fac-contact {
+  margin-top: 2px;
+  padding-top: 8px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 /* Department Faculty List Interactive Profile Items */
 .ssmrv-dept-profile-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   margin-top: 8px;
 }
 
@@ -1023,11 +1080,11 @@
   background: #ffffff;
   border: 1px solid #e2e8f0;
   border-left: 3.5px solid var(--ssmrv-navy);
-  border-radius: var(--radius-sm);
-  padding: 9px 11px;
+  border-radius: 8px;
+  padding: 11px 12px;
   cursor: pointer;
   transition: all var(--transition-fast);
-  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04);
 }
 
 .ssmrv-dept-profile-item:hover {
@@ -1035,40 +1092,43 @@
   border-left-color: var(--ssmrv-coral);
   background: #fffaf8;
   transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(207, 93, 65, 0.12);
+  box-shadow: 0 3px 10px rgba(207, 93, 65, 0.12);
 }
 
 .ssmrv-dept-prof-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .ssmrv-dept-prof-name {
-  font-size: 12.5px;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--ssmrv-navy);
+  line-height: 1.35;
 }
 
 .ssmrv-dept-prof-actions {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 6px;
-  margin: 5px 0 6px 0;
-  padding-bottom: 6px;
-  border-bottom: 1px dashed #e2e8f0;
+  margin: 6px 0 8px 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #f1f5f9;
 }
 
 .ssmrv-dept-prof-cta {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--ssmrv-navy);
   background: #f1f5f9;
   border: 1px solid #cbd5e1;
-  padding: 3.5px 9px;
+  padding: 4px 10px;
   border-radius: var(--radius-full);
   white-space: nowrap;
   transition: all var(--transition-fast);
@@ -1083,12 +1143,12 @@
 .ssmrv-dept-visit-btn {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  font-size: 10.5px;
+  gap: 4px;
+  font-size: 11px;
   font-weight: 700;
   color: #ffffff !important;
   background: var(--ssmrv-coral);
-  padding: 3.5px 10px;
+  padding: 4px 10px;
   border-radius: var(--radius-full);
   text-decoration: none !important;
   white-space: nowrap;
@@ -1102,12 +1162,16 @@
 }
 
 .ssmrv-dept-prof-meta {
-  font-size: 11px;
-  color: var(--text-secondary);
-  line-height: 1.4;
+  font-size: 12px;
+  color: #334155;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
+}
+
+.ssmrv-dept-prof-row {
+  line-height: 1.45;
 }
 
 .ssmrv-dept-prof-comm {

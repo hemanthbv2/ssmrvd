@@ -495,8 +495,7 @@
           else if (flowId === 'bca_details') input.value = 'Tell me about BCA computer applications';
           else if (flowId === 'mcom_details') input.value = 'M.Com course details';
           else if (flowId === 'programmes') input.value = 'Show all programmes';
-          else if (flowId === 'admissions') input.value = 'How does admission work?';
-          else if (flowId === 'inquiry_form') input.value = 'I want to apply';
+          else if (flowId === 'admissions' || flowId === 'inquiry_form') input.value = 'How does admission work?';
           const form = document.getElementById('ssmrvInputForm');
           if (form) form.dispatchEvent(new Event('submit'));
         }
