@@ -237,6 +237,16 @@
 
     const breadcrumbLink = document.getElementById('ssmrvBreadcrumbCurrent');
     if (breadcrumbLink) breadcrumbLink.addEventListener('click', goToMainMenu);
+
+    if (chatMessages) {
+      chatMessages.addEventListener('click', (e) => {
+        const profileCard = e.target.closest('.ssmrv-dept-profile-item[data-profile-id]');
+        if (profileCard) {
+          const pid = profileCard.getAttribute('data-profile-id');
+          if (pid) showFacultyProfile(pid);
+        }
+      });
+    }
   }
 
   function toggleChat() {
@@ -312,17 +322,17 @@
       fee_enquiry: "Fee Inquiry",
       campus_visit: "Campus Visit",
       placements: "Placements (11 LPA)",
-      faculty: "Faculty Directory",
-      faculty_bca: "BCA Faculty",
-      faculty_commerce: "Commerce Faculty",
-      faculty_bba: "BBA Faculty",
-      faculty_mcom: "M.Com Faculty",
-      faculty_languages: "Languages Faculty",
-      faculty_placement: "Placement Cell",
-      faculty_leadership: "Leadership (7)",
-      faculty_sports: "Sports Leadership",
-      faculty_library: "Library Hub",
-      faculty_admin: "Administration (12)",
+      faculty: "Faculty Directory (92)",
+      faculty_bca: "BCA Faculty (11)",
+      faculty_commerce: "Commerce Faculty (23)",
+      faculty_bba: "BBA & Aviation (11)",
+      faculty_mcom: "M.Com Faculty (3)",
+      faculty_languages: "Languages Faculty (10)",
+      faculty_placement: "Placement Cell (2)",
+      faculty_leadership: "Leadership (8)",
+      faculty_sports: "Sports Leadership (3)",
+      faculty_library: "Library Hub (2)",
+      faculty_admin: "Administration (19)",
       faculty_committees: "Statutory Committees",
       cancellation_refund: "Refund Policy",
       alumni: "Alumni Network",
@@ -542,7 +552,23 @@
       </div>
     `;
     chatMessages.appendChild(msgEl);
-    scrollToBottom();
+    smartScrollLatestBotMessage();
+  }
+
+  function smartScrollLatestBotMessage() {
+    requestAnimationFrame(() => {
+      const botMsgs = chatMessages.querySelectorAll('.ssmrv-message.bot');
+      if (!botMsgs.length) {
+        scrollToBottom();
+        return;
+      }
+      const lastMsg = botMsgs[botMsgs.length - 1];
+      if (lastMsg.offsetHeight > chatMessages.clientHeight * 0.65) {
+        chatMessages.scrollTop = Math.max(0, lastMsg.offsetTop - chatMessages.offsetTop - 8);
+      } else {
+        scrollToBottom();
+      }
+    });
   }
 
   function showTyping(show) {
@@ -591,6 +617,7 @@
       chip.className = 'ssmrv-action-chip';
       if (btn.isNavBack) chip.classList.add('is-nav-back');
       if (btn.isNavHome) chip.classList.add('is-nav-home');
+      if (btn.action && btn.action.startsWith('profile:')) chip.classList.add('is-profile-chip');
       if (btn.action && (btn.action.includes('inquiry') || btn.action.includes('fee'))) chip.classList.add('is-primary');
       chip.innerHTML = btn.text;
 
@@ -608,7 +635,10 @@
           }
           if (telemetry) telemetry.trackEvent('external_link_clicked', { url: btn.url, label: btn.text });
         } else if (btn.action) {
-          if (btn.action.startsWith('flow:')) {
+          if (btn.action.startsWith('profile:')) {
+            const profileId = btn.action.replace('profile:', '');
+            showFacultyProfile(profileId);
+          } else if (btn.action.startsWith('flow:')) {
             const targetFlow = btn.action.replace('flow:', '');
             appendUserMessage(btn.text.replace(/^[^\w\s]+/, '').trim());
             if (targetFlow === 'welcome' || targetFlow === 'main_menu') {
@@ -626,6 +656,97 @@
 
       actionsContainer.appendChild(chip);
     });
+    smartScrollLatestBotMessage();
+  }
+
+  // ─── Rich Faculty Profile Rendering & Navigation ──────────────
+  function findFacultyById(facultyId) {
+    if (typeof SSMRV_FACULTY_CATALOG === 'undefined') return null;
+    return SSMRV_FACULTY_CATALOG.find(f => f.id === facultyId) || null;
+  }
+
+  function buildFacultyProfileCardHtml(fac) {
+    if (!fac) return '';
+    const qualHtml = fac.qualifications ? `<div class="ssmrv-fac-row">🎓 <b>Qualifications:</b> ${fac.qualifications}</div>` : '';
+    const expHtml = fac.experience ? `<div class="ssmrv-fac-row">⏳ <b>Experience:</b> ${fac.experience}</div>` : '';
+    const specHtml = fac.specialisation ? `<div class="ssmrv-fac-row">🔬 <b>Specialisations &amp; Interests:</b> <i>${fac.specialisation}</i></div>` : '';
+    const commHtml = fac.committee ? `<div class="ssmrv-fac-row">🛡️ <b>Committee / Role:</b> <span style="color:#b45309; font-weight:600;">${fac.committee}</span></div>` : '';
+    const bioHtml = fac.bio ? `<div class="ssmrv-fac-row ssmrv-fac-bio">📖 <b>Profile Overview:</b> ${fac.bio}</div>` : '';
+    const highHtml = fac.highlights ? `<div class="ssmrv-fac-row ssmrv-fac-high">🏆 <b>Publications &amp; Highlights:</b> ${fac.highlights}</div>` : '';
+    const emailHtml = fac.email ? `✉️ <b>Email:</b> <a href="mailto:${fac.email}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.email}</a>` : '';
+    const phoneHtml = fac.phone ? `📞 <b>Phone:</b> <a href="tel:${fac.phone.replace(/\s+/g, '')}" style="color:var(--ssmrv-navy); font-weight:600;">${fac.phone}</a>` : '';
+    const contactBar = (emailHtml || phoneHtml) ? `<div class="ssmrv-fac-contact">${emailHtml}${emailHtml && phoneHtml ? ' &nbsp;|&nbsp; ' : ''}${phoneHtml}</div>` : '';
+
+    return `
+      <div class="ssmrv-faculty-card">
+        <div class="ssmrv-faculty-name">👤 ${fac.name}</div>
+        <div class="ssmrv-faculty-badges">
+          <span class="ssmrv-badge-desig">🎖️ ${fac.designation}</span>
+          <span class="ssmrv-badge-dept">🏛️ ${fac.department}</span>
+        </div>
+        <div class="ssmrv-faculty-meta">
+          <div class="ssmrv-fac-row">🏛️ <b>Department:</b> ${fac.department}</div>
+          <div class="ssmrv-fac-row">🎖️ <b>Designation:</b> ${fac.designation}</div>
+          ${qualHtml}
+          ${expHtml}
+          ${specHtml}
+          ${commHtml}
+          ${bioHtml}
+          ${highHtml}
+          ${contactBar}
+        </div>
+      </div>`;
+  }
+
+  function buildFacultyProfileResolution(fac, extraButtons = []) {
+    if (!fac) return null;
+    const deptBtn = fac.deptFlow
+      ? { text: `🏛️ ${fac.department} Faculty`, action: `flow:${fac.deptFlow}` }
+      : { text: "👨‍🏫 All Faculty (92)", action: "flow:faculty" };
+    return {
+      type: 'response',
+      pageUrl: fac.url,
+      message: buildFacultyProfileCardHtml(fac),
+      buttons: [
+        ...extraButtons,
+        { text: "🌐 Official Webpage Profile", url: fac.url },
+        deptBtn,
+        { text: "👨‍🏫 All Faculty Directory (92)", action: "flow:faculty" }
+      ]
+    };
+  }
+
+  function showFacultyProfile(facultyId) {
+    const fac = findFacultyById(facultyId);
+    if (!fac || isTyping) return;
+
+    pushNavState(currentViewState);
+    resetInactivityTimer();
+    appendUserMessage(`👤 ${fac.name} (${fac.designation})`);
+
+    const resolution = buildFacultyProfileResolution(fac);
+    currentFlowId = null;
+    currentViewState = {
+      type: 'search',
+      flowId: null,
+      searchQuery: fac.name,
+      resolution: resolution,
+      title: `Profile: ${fac.name}`
+    };
+    updateBreadcrumbTitle(`Profile: ${fac.name}`);
+    updateNavUI();
+
+    showTyping(true);
+    setTimeout(() => {
+      showTyping(false);
+      appendBotMessage(resolution.message, resolution.pageUrl);
+      renderButtons(resolution.buttons || []);
+      saveState();
+    }, 300);
+
+    if (telemetry) {
+      telemetry.trackEvent('faculty_profile_viewed', { id: fac.id, name: fac.name, department: fac.department });
+    }
   }
 
   // ─── Dynamic Form Rendering ───────────────────────────────────
@@ -975,274 +1096,136 @@
       return { type: 'flow', flowId: 'campus_navigation' };
     }
 
-    // 4. Comprehensive Faculty, Staff & Statutory Intelligence (85+ Members)
+    // 4. Comprehensive Faculty, Staff & Statutory Intelligence (92 Profiles)
     if (typeof SSMRV_FACULTY_CATALOG !== 'undefined' && SSMRV_FACULTY_CATALOG.length > 0) {
       
       // A. Statutory Committee & Cell Conveners
       if (/\b(nss|national service scheme)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Mr. Yallappa M.</div>
-              <div class="ssmrv-faculty-role">NSS Program Officer & Assistant Professor — Department of Computer Applications (BCA)</div>
-              <div class="ssmrv-faculty-meta">
-                🛡️ <b>Statutory Unit:</b> National Service Scheme (NSS Unit — Ministry of Youth Affairs & Sports)<br>
-                🎓 <b>Qualifications:</b> MCA, M.Phil | Community Outreach & Student Leadership<br>
-                ✉️ <b>Email:</b> <a href="mailto:yallappam.ssmrv@rvei.edu.in">yallappam.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🛡️ All Committees", action: "flow:faculty_committees" },
-            { text: "💻 BCA Faculty List", action: "flow:faculty_bca" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('mr-yallappa-m'), [
+          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+        ]);
       }
 
       if (/\b(ncc|national cadet corps)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Mr. Avinash K.V.</div>
-              <div class="ssmrv-faculty-role">Associate NCC Officer (ANO) & Assistant Professor — Department of Management (BBA)</div>
-              <div class="ssmrv-faculty-meta">
-                🛡️ <b>Statutory Unit:</b> National Cadet Corps (NCC Army Wing)<br>
-                🎓 <b>Role:</b> Youth Development, Drill Certification & Armed Forces Mentorship<br>
-                ✉️ <b>Email:</b> <a href="mailto:avinashkv.ssmrv@rvei.edu.in">avinashkv.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🛡️ All Committees", action: "flow:faculty_committees" },
-            { text: "📈 BBA Faculty List", action: "flow:faculty_bba" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('avinash-k-v'), [
+          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+        ]);
       }
 
       if (/\b(iqac|naac coordinator|quality assurance)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Ms. R. Shanthi Krishna</div>
-              <div class="ssmrv-faculty-role">IQAC Convener & Assistant Professor — Department of Computer Applications (BCA)</div>
-              <div class="ssmrv-faculty-meta">
-                🛡️ <b>Statutory Unit:</b> Internal Quality Assurance Cell (IQAC — NAAC 'A' Grade Oversight)<br>
-                🎓 <b>Qualifications:</b> MCA, M.Phil | Institutional Accreditation & Academic Audits<br>
-                ✉️ <b>Email:</b> <a href="mailto:shanthikrishna.ssmrv@rvei.edu.in">shanthikrishna.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🛡️ All Committees", action: "flow:faculty_committees" },
-            { text: "💻 BCA Faculty List", action: "flow:faculty_bca" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('ms-r-shanthi-krishna'), [
+          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+        ]);
       }
 
       if (/\b(exam|examination|chief superintendent)\b/i.test(text) && /\b(head|convener|incharge|officer|who|committee)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. Mohan Rao C.N.</div>
-              <div class="ssmrv-faculty-role">Chief Superintendent & Convener — Examination Committee</div>
-              <div class="ssmrv-faculty-meta">
-                🛡️ <b>University Section:</b> Bengaluru City University (BCU) Examinations & Evaluation<br>
-                🎓 <b>Qualifications:</b> Ph.D., M.Com | Examination Oversight & Academic Assessments<br>
-                ✉️ <b>Email:</b> <a href="mailto:office.ssmrv@rvei.edu.in">office.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🛡️ All Committees", action: "flow:faculty_committees" },
-            { text: "📊 Commerce Faculty", action: "flow:faculty_commerce" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('dr-mohan-rao-c-n'), [
+          { text: "🛡️ All Statutory Committees", action: "flow:faculty_committees" }
+        ]);
       }
 
       if (/\b(sports|physical education|gym|wellness|athletics)\b/i.test(text) && /\b(director|head|faculty|teacher|officer|who)\b/i.test(text)) {
+        const teja = findFacultyById('mrs-teja-k-r');
+        const bopanna = findFacultyById('mr-m-m-bopanna');
+        const chiranjivi = findFacultyById('chiranjivi-m-s');
         return {
           type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Mrs. Teja K.R. & Mr. M.M. Bopanna</div>
-              <div class="ssmrv-faculty-role">Physical Education & Sports Wellness Centre Leadership</div>
-              <div class="ssmrv-faculty-meta">
-                ⚽ <b>Mrs. Teja K.R.:</b> Junior Director of Physical Education (M.P.Ed)<br>
-                🏅 <b>Mr. M.M. Bopanna:</b> Senior Executive PE & Discipline Committee<br>
-                🏟️ <b>Facilities:</b> State-of-the-art Gym, Yoga Hall, Table Tennis, Cricket & Football Grounds<br>
-                ✉️ <b>Email:</b> <a href="mailto:office.ssmrv@rvei.edu.in">office.ssmrv@rvei.edu.in</a> | 📞 <b>Phone:</b> 080 6824 0999
-              </div>
-            </div>`,
+          pageUrl: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
+          message: `${buildFacultyProfileCardHtml(teja)}${buildFacultyProfileCardHtml(bopanna)}`,
           buttons: [
-            { text: "⚽ Sports Leadership Details", action: "flow:faculty_sports" },
-            { text: "🌟 Sports & Wellness Centre", action: "flow:centres_clubs" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
+            { text: "👤 Mrs. Teja K.R. Profile", action: "profile:mrs-teja-k-r" },
+            { text: "👤 Mr. M.M. Bopanna Profile", action: "profile:mr-m-m-bopanna" },
+            { text: "👤 Mr. Chiranjivi M S Profile", action: "profile:chiranjivi-m-s" },
+            { text: "⚽ All Sports Leadership (3)", action: "flow:faculty_sports" }
           ]
         };
       }
 
       if (/\b(library|librarian|knowledge hub)\b/i.test(text) && /\b(head|incharge|officer|who|staff)\b/i.test(text)) {
+        const shylaja = findFacultyById('mrs-shylaja-t-m');
+        const guranna = findFacultyById('mr-guranna-sajjan');
         return {
           type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Mrs. Shylaja T.M. & Mr. Guranna Sajjan</div>
-              <div class="ssmrv-faculty-role">Central Library & Information Center (Knowledge Hub)</div>
-              <div class="ssmrv-faculty-meta">
-                📖 <b>Mrs. Shylaja T.M.:</b> Library Assistant & In-Charge (M.Lib.I.Sc)<br>
-                📚 <b>Mr. Guranna Sajjan:</b> Senior Executive Library (B.A., B.Lib)<br>
-                💻 <b>Resources:</b> 40,000+ Books, Koha Automation, DELNET, NDLI, INFLIBNET N-LIST<br>
-                ✉️ <b>Email:</b> <a href="mailto:library.ssmrv@rvei.edu.in">library.ssmrv@rvei.edu.in</a> | 📞 <b>Phone:</b> 080 6824 0999
-              </div>
-            </div>`,
+          pageUrl: "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
+          message: `${buildFacultyProfileCardHtml(shylaja)}${buildFacultyProfileCardHtml(guranna)}`,
           buttons: [
-            { text: "📖 Library Hub Details", action: "flow:faculty_library" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
-            { text: "🏛️ Campus Infrastructure", action: "flow:campus" }
+            { text: "👤 Mrs. Shylaja T.M. Profile", action: "profile:mrs-shylaja-t-m" },
+            { text: "👤 Mr. Guranna Sajjan Profile", action: "profile:mr-guranna-sajjan" },
+            { text: "📖 Library Hub Details", action: "flow:faculty_library" }
           ]
         };
       }
 
-      // B. Direct HOD Lookups
+      // B. Direct HOD & Principal Lookups
+      if (/\b(principal)\b/i.test(text) && /\b(who|name|profile|message|college|ssmrv)\b/i.test(text)) {
+        return buildFacultyProfileResolution(findFacultyById('dr-vijayashree-l'), [
+          { text: "🏛️ All Leadership (8)", action: "flow:faculty_leadership" }
+        ]);
+      }
+
       if (/\b(bca|computer)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. R. Sheela Chandrashekar</div>
-              <div class="ssmrv-faculty-role">Associate Professor & HOD — Department of Computer Applications (BCA)</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Qualifications:</b> Ph.D., MCA, M.Phil<br>
-                🔬 <b>Expertise:</b> Cloud Computing, Database Management Systems<br>
-                ✉️ <b>Email:</b> <a href="mailto:sheelac.ssmrv@rvei.edu.in">sheelac.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "💻 BCA Faculty List (17)", action: "flow:faculty_bca" },
-            { text: "💻 BCA Course Details", action: "flow:bca_details" },
-            { text: "👨‍🏫 All Faculty", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('dr-r-sheela-chandrashekar'), [
+          { text: "💻 BCA Course Details", action: "flow:bca_details" }
+        ]);
       }
 
       if (/\b(commerce|b\.?com)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+        const malini = findFacultyById('dr-malini-n');
+        const samskruthi = findFacultyById('ms-samskruthi-b-l');
         return {
           type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. Malini N. & Ms. Samskruthi B. L.</div>
-              <div class="ssmrv-faculty-role">Associate Professors & Heads of Department — Commerce (B.Com)</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Dr. Malini N.:</b> B.Com, M.Com, MBA, Ph.D. (Taxation, Climate Governance, HR Analytics)<br>
-                🎓 <b>Ms. Samskruthi B. L.:</b> M.Com, M.Phil, NET/KSET (Corporate Accounting, Banking)<br>
-                ✉️ <b>Email:</b> <a href="mailto:malinin.ssmrv@rvei.edu.in">malinin.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Direct Line:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
+          pageUrl: malini ? malini.url : "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+          message: `${buildFacultyProfileCardHtml(malini)}${buildFacultyProfileCardHtml(samskruthi)}`,
           buttons: [
-            { text: "📊 Commerce Faculty (11)", action: "flow:faculty_commerce" },
-            { text: "📊 B.Com Details", action: "flow:bcom_details" },
-            { text: "👨‍🏫 All Faculty", action: "flow:faculty" }
+            { text: "👤 Dr. Malini N. Profile", action: "profile:dr-malini-n" },
+            { text: "👤 Ms. Samskruthi B. L. Profile", action: "profile:ms-samskruthi-b-l" },
+            { text: "📊 Commerce Faculty (23)", action: "flow:faculty_commerce" },
+            { text: "📊 B.Com Details", action: "flow:bcom_details" }
           ]
         };
       }
 
-      if (/\b(bba|business administration|aviation)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+      if (/\b(aviation|bba am)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+        return buildFacultyProfileResolution(findFacultyById('mr-jagadish-a'), [
+          { text: "✈️ BBA Aviation Details", action: "flow:aviation_details" }
+        ]);
+      }
+
+      if (/\b(bba|business administration)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
+        const revathy = findFacultyById('dr-revathy-shivashankaran');
+        const jagadish = findFacultyById('mr-jagadish-a');
         return {
           type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. Revathy Shivashankaran & Mr. Jagadish A.</div>
-              <div class="ssmrv-faculty-role">Department Leadership — Business Administration (BBA & Aviation)</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Dr. Revathy Shivashankaran:</b> Assoc. Professor & HOD — BBA Honours | POSH Chairperson<br>
-                🎓 <b>Mr. Jagadish A.:</b> Asst. Professor & HOD — BBA Aviation Management (IATA Certified)<br>
-                ✉️ <b>Email:</b> <a href="mailto:revathy.ssmrv@rvei.edu.in">revathy.ssmrv@rvei.edu.in</a> | 📞 <b>Helpline:</b> 080 6824 0999
-              </div>
-            </div>`,
+          pageUrl: revathy ? revathy.url : "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+          message: `${buildFacultyProfileCardHtml(revathy)}${buildFacultyProfileCardHtml(jagadish)}`,
           buttons: [
-            { text: "📈 BBA Faculty (16)", action: "flow:faculty_bba" },
-            { text: "📈 BBA Course Details", action: "flow:bba_details" },
-            { text: "✈️ BBA Aviation Details", action: "flow:aviation_details" }
+            { text: "👤 Dr. Revathy Shivashankaran", action: "profile:dr-revathy-shivashankaran" },
+            { text: "👤 Mr. Jagadish A. (Aviation)", action: "profile:mr-jagadish-a" },
+            { text: "📈 BBA & Aviation Faculty (11)", action: "flow:faculty_bba" },
+            { text: "📈 BBA Course Details", action: "flow:bba_details" }
           ]
         };
       }
 
       if (/\b(m\.?com|postgraduate|pg)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. Lavanya Balaji</div>
-              <div class="ssmrv-faculty-role">Associate Professor & Head of PG Department — Master of Commerce (M.Com)</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Qualifications:</b> M.Com, MBA, Ph.D. | 18+ yrs Research & Teaching Experience<br>
-                🔬 <b>Expertise:</b> Accounting, Taxation, Corporate Finance, Capital Markets<br>
-                ✉️ <b>Email:</b> <a href="mailto:lavanyab.ssmrv@rvei.edu.in">lavanyab.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🎓 M.Com Faculty (6)", action: "flow:faculty_mcom" },
-            { text: "🎓 M.Com Course Details", action: "flow:mcom_details" },
-            { text: "👨‍🏫 All Faculty", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('dr-lavanya-balaji'), [
+          { text: "🎓 M.Com Course Details", action: "flow:mcom_details" }
+        ]);
       }
 
       if (/\b(languages?|humanities|kannada|english|hindi|sanskrit)\b/i.test(text) && /\b(hod|head)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Dr. Jyothi N. Hosurkar</div>
-              <div class="ssmrv-faculty-role">Assistant Professor & HOD — Department of Languages & Humanities</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Qualifications:</b> M.A., Ph.D. | Literature, Linguistics & Cultural Studies<br>
-                ✉️ <b>Email:</b> <a href="mailto:jyothinh.ssmrv@rvei.edu.in">jyothinh.ssmrv@rvei.edu.in</a><br>
-                📞 <b>Helpline:</b> <a href="tel:08068240999">080 6824 0999</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🗣️ Languages Faculty (10)", action: "flow:faculty_languages" },
-            { text: "👨‍🏫 All Faculty", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('dr-jyothi-n-hosurkar'));
       }
 
       if (/\b(placement|paryapti)\b/i.test(text) && /\b(officer|head|incharge|in-charge|who is)\b/i.test(text)) {
-        return {
-          type: 'response',
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">Mrs. Sumana H.N.</div>
-              <div class="ssmrv-faculty-role">Placement Officer — Paryapti Training & Placement Cell</div>
-              <div class="ssmrv-faculty-meta">
-                🎓 <b>Corporate Relations & Recruitment Specialist</b><br>
-                🔬 <b>Network:</b> 100+ Tier-1 Recruiters (Deloitte, Accenture, Infosys, KPMG, EY)<br>
-                📞 <b>Direct Helpline:</b> <a href="tel:9606067551">+91 96060 67551</a><br>
-                ✉️ <b>Email:</b> <a href="mailto:placement.ssmrv@rvei.edu.in">placement.ssmrv@rvei.edu.in</a>
-              </div>
-            </div>`,
-          buttons: [
-            { text: "💼 Placements & Packages (11 LPA)", action: "flow:placements" },
-            { text: "📞 Call Placement Office", url: "tel:9606067551" },
-            { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" }
-          ]
-        };
+        return buildFacultyProfileResolution(findFacultyById('mrs-sumana-h-n'), [
+          { text: "👤 Mr. Naresh K.N. (HR)", action: "profile:mr-naresh-k-n" },
+          { text: "💼 Placements & Packages (11 LPA)", action: "flow:placements" }
+        ]);
       }
 
-      // C. Multi-Token Individual Search across ALL 85 Profiles
-      let matchedFaculty = null;
+      // C. Multi-Token Individual Search across ALL 92 Profiles
+      const matchedList = [];
       const textWords = text.replace(/[^a-zA-Z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length >= 3);
       
       // 1. Exact token search
@@ -1251,50 +1234,27 @@
         const rawTokens = cleanName.split(/\s+/).map(t => t.replace(/[^a-zA-Z0-9]/g, '')).filter(t => t.length >= 3);
         const matchesExactWord = rawTokens.some(tok => textWords.includes(tok));
         if (matchesExactWord) {
-          matchedFaculty = fac;
-          break;
+          matchedList.push(fac);
         }
       }
 
       // 2. Substring search fallback
-      if (!matchedFaculty) {
+      if (matchedList.length === 0) {
         for (const fac of SSMRV_FACULTY_CATALOG) {
           const cleanName = fac.name.replace(/^(Dr\.|Mr\.|Mrs\.|Ms\.|Sri\.|Smt\.|Prof\.)\s*/i, '').toLowerCase();
           if (text.includes(cleanName) || cleanName.includes(text)) {
-            matchedFaculty = fac;
-            break;
+            matchedList.push(fac);
           }
         }
       }
 
-      if (matchedFaculty) {
-        const emailHtml = matchedFaculty.email ? `<br>✉️ <b>Email:</b> <a href="mailto:${matchedFaculty.email}" style="color:var(--ssmrv-navy); font-weight:600;">${matchedFaculty.email}</a>` : '';
-        const phoneHtml = matchedFaculty.phone ? `<br>📞 <b>Direct Line:</b> <a href="tel:${matchedFaculty.phone.replace(/\s+/g, '')}" style="color:var(--ssmrv-navy); font-weight:600;">${matchedFaculty.phone}</a>` : '';
-        const qualHtml = matchedFaculty.qualifications ? `<br>🎓 <b>Qualifications:</b> ${matchedFaculty.qualifications}` : '';
-        const specHtml = matchedFaculty.specialisation ? `<br>🔬 <b>Specialisation:</b> <i>${matchedFaculty.specialisation}</i>` : '';
-        const commHtml = matchedFaculty.committee ? `<br>🛡️ <b>Committee / Role:</b> <span style="color:#b45309; font-weight:600;">${matchedFaculty.committee}</span>` : '';
-
-        return {
-          type: 'response',
-          pageUrl: matchedFaculty.url,
-          message: `
-            <div class="ssmrv-faculty-card">
-              <div class="ssmrv-faculty-name">${matchedFaculty.name}</div>
-              <div class="ssmrv-faculty-role">${matchedFaculty.designation} — ${matchedFaculty.department}</div>
-              <div class="ssmrv-faculty-meta">
-                ${commHtml}
-                ${qualHtml}
-                ${specHtml}
-                ${emailHtml}
-                ${phoneHtml}
-              </div>
-            </div>`,
-          buttons: [
-            { text: "🌐 View Official Webpage Profile", url: matchedFaculty.url },
-            { text: "👨‍🏫 Explore All Faculty (85)", action: "flow:faculty" },
-            { text: "📞 Contact Academic Desk", action: "flow:contact" }
-          ]
-        };
+      if (matchedList.length > 0) {
+        const primary = matchedList[0];
+        const relatedBtns = matchedList.slice(1, 5).map(other => ({
+          text: `👤 ${other.name} (${other.department})`,
+          action: `profile:${other.id}`
+        }));
+        return buildFacultyProfileResolution(primary, relatedBtns);
       }
 
       // Department-specific faculty queries
@@ -1307,7 +1267,7 @@
       if (/\b(bba|management|aviation)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff|who teaches)\b/i.test(text)) {
         return { type: 'flow', flowId: 'faculty_bba' };
       }
-      if (/\b(language|languages|kannada|english|hindi)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff)\b/i.test(text)) {
+      if (/\b(language|languages|kannada|english|hindi|sanskrit)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff)\b/i.test(text)) {
         return { type: 'flow', flowId: 'faculty_languages' };
       }
       if (/\b(m\.?com|postgraduate|pg)\b/i.test(text) && /\b(faculty|teacher|professor|hod|staff)\b/i.test(text)) {

@@ -207,169 +207,97 @@ const SSMRV_PROGRAMMES = {
 
 const SSMRV_FACULTY_CATALOG = [
   {
-    "id": "mr-dileepa-kumara-h-m",
-    "name": "Mr. Dileepa Kumara H.M.",
-    "designation": "Executive \u2014 Student Services",
-    "department": "Administration",
-    "qualifications": "Student Services",
-    "specialisation": "Bus Passes, ID Cards & Certifications",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+    "id": "dr-vijayashree-l",
+    "name": "Dr. Vijayashree L.",
+    "designation": "Principal & Professor",
+    "department": "Institutional Leadership",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "MBA, M.Phil., Ph.D., NET | Certified Harvard Design Thinker",
+    "experience": "19+ Years Academic Experience (incl. 3 yrs Head & Professor of MBA) + 4 Years Industry Experience",
+    "specialisation": "Academic Leadership, Innovation Strategy, Entrepreneurship & Start-up Incubation, IP Creation",
+    "bio": "Dr. L. Vijayashree is an accomplished academic leader, innovation strategist, and entrepreneurship mentor. A certified Harvard Design Thinker and regular newspaper columnist, she has secured multi-crore grants for student-led innovation projects and collaborated with international universities in Singapore, Taiwan, RIPO Belarus, and EDII.",
+    "highlights": "Secured multi-crore innovation grants; international collaborations with universities in Singapore, Taiwan & RIPO Belarus; Chairperson of Grievance Redressal Cell.",
+    "committee": "Principal — SSMRV College | Chairperson — Grievance Redressal Cell",
+    "email": "principal.ssmrv@rvei.edu.in",
+    "phone": "96060 67553",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr-vijayashree-l/"
   },
   {
-    "id": "mr-raviraj-p",
-    "name": "Mr. Raviraj P",
-    "designation": "Executive \u2014 General Administration",
-    "department": "Administration",
-    "qualifications": "Administrative Coordination",
-    "specialisation": "Event Logistics & College Operations",
-    "committee": "",
+    "id": "dr-m-p-shyam",
+    "name": "Dr. M.P. Shyam",
+    "designation": "President — RSST / RVEI",
+    "department": "Board of Management (RSST)",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "Prominent Industrialist & Visionary Educational Leader",
+    "experience": "President, Rashtreeya Sikshana Samithi Trust (RV Institutions)",
+    "specialisation": "Institutional Governance, Strategic Vision & Philanthropy",
+    "bio": "Dr. M.P. Shyam serves as the President of Rashtreeya Sikshana Samithi Trust (RSST), guiding over 20+ premier RV educational institutions across Bengaluru.",
+    "highlights": "President of RSST / RV Educational Institutions (Est. 1940).",
+    "committee": "President — Board of Management (RSST / RVEI)",
     "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mr-roopesh-r-k",
-    "name": "Mr. Roopesh R.K.",
-    "designation": "Executive \u2014 Operations",
-    "department": "Administration",
-    "qualifications": "Campus Facilities",
-    "specialisation": "Classroom Management & Logistics",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-jayashree",
-    "name": "Mrs. Jayashree",
-    "designation": "Executive \u2014 Office Staff",
-    "department": "Administration",
-    "qualifications": "Administration Assistance",
-    "specialisation": "Inward/Outward Dispatch",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-latha-k-m",
-    "name": "Mrs. Latha K.M.",
-    "designation": "Executive \u2014 Administration",
-    "department": "Administration",
-    "qualifications": "Administrative Office",
-    "specialisation": "Student Inquiries & Reception",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-nethravathi-b-v",
-    "name": "Mrs. Nethravathi B.V.",
-    "designation": "Executive \u2014 Office Administration",
-    "department": "Administration",
-    "qualifications": "Office Management",
-    "specialisation": "Government & University Liaison",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-nethravathi-m",
-    "name": "Mrs. Nethravathi M",
-    "designation": "Executive \u2014 Office Support",
-    "department": "Administration",
-    "qualifications": "Office Support",
-    "specialisation": "Documentation & Filing",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-shashikala-g-t",
-    "name": "Mrs. Shashikala G.T.",
-    "designation": "Executive \u2014 Academic Section",
-    "department": "Administration",
-    "qualifications": "Academic Liaison",
-    "specialisation": "University BCU Affiliation Records",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "ms-jyothi-k-s",
-    "name": "Ms. Jyothi K.S.",
-    "designation": "Executive \u2014 Administration",
-    "department": "Administration",
-    "qualifications": "Office Administration",
-    "specialisation": "Admissions Documentation & Verification",
-    "committee": "Assistant Professor & HOD \u2014 Department of Languages & Humanities",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "ms-yeshwanthi-r",
-    "name": "Ms. Yeshwanthi R.",
-    "designation": "Administrative Executive",
-    "department": "Administration",
-    "qualifications": "Administrative Services",
-    "specialisation": "Student Records & Examination Support",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-sunithamba-k",
-    "name": "Mrs. Sunithamba K",
-    "designation": "Executive \u2014 Accounts & Administration",
-    "department": "Administration & Finance",
-    "qualifications": "Accounts Operations",
-    "specialisation": "Fee Verification & Accounts Desk",
-    "committee": "",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-vani-m-u",
-    "name": "Mrs. Vani M.U.",
-    "designation": "Manager of Finance & Administration",
-    "department": "Administration & Finance",
-    "qualifications": "M.Com, Administration Specialist",
-    "specialisation": "Institutional Financial Planning & Administrative Oversight",
-    "committee": "Manager of Finance & Administration",
-    "email": "office.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+    "url": "https://www.ssmrv.edu.in/dr_m_p_shyam/"
   },
   {
     "id": "dr-h-c-a-v-s-murthy",
     "name": "Dr. (h.c.) A.V.S. Murthy",
-    "designation": "Hon. Secretary \u2014 RSST / RVEI",
+    "designation": "Hon. Secretary — RSST / RVEI",
     "department": "Board of Management (RSST)",
-    "qualifications": "Doyen of Education & Philanthropist",
-    "specialisation": "Honorary Secretary, Rashtreeya Sikshana Samithi Trust",
-    "committee": "Hon. Secretary \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
-    "email": "hon.secretary@rvei.edu.in",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "Doctorate (Honoris Causa) | Educational Administrator",
+    "experience": "Honorary Secretary, Rashtreeya Sikshana Samithi Trust (RSST)",
+    "specialisation": "Educational Administration, Institutional Growth & Trust Governance",
+    "bio": "Dr. (h.c.) A.V.S. Murthy is the Honorary Secretary of RSST / RVEI and a member of the SSMRV Governing Council, championing holistic 360-degree education across RV institutions.",
+    "highlights": "Honorary Secretary of RSST & Governing Council Member.",
+    "committee": "Hon. Secretary — RSST / RVEI | Governing Council Member",
+    "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/dr_h_c_a_v_s_murthy/"
   },
   {
+    "id": "mr-d-p-nagaraj",
+    "name": "Mr. D.P. Nagaraj",
+    "designation": "Hon. Joint Secretary — RSST / RVEI",
+    "department": "Board of Management (RSST)",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "Educational Administrator & Strategic Planner",
+    "experience": "Honorary Joint Secretary, Rashtreeya Sikshana Samithi Trust (RSST)",
+    "specialisation": "Institutional Development, Infrastructure & Academic Operations",
+    "bio": "Mr. D.P. Nagaraj serves as the Honorary Joint Secretary of RSST / RVEI, overseeing institutional expansion, governance, and academic quality across RV institutions.",
+    "highlights": "Honorary Joint Secretary of RSST & Governing Council Member.",
+    "committee": "Hon. Joint Secretary — RSST / RVEI | Governing Council Member",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/mr_d_p_nagaraj/"
+  },
+  {
+    "id": "mr-p-s-venkatesh-babu",
+    "name": "Mr. P.S. Venkatesh Babu",
+    "designation": "Hon. Treasurer — RSST / RVEI",
+    "department": "Board of Management (RSST)",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "Financial Governance & Trust Management",
+    "experience": "Honorary Treasurer, Rashtreeya Sikshana Samithi Trust (RSST)",
+    "specialisation": "Financial Stewardship, Institutional Audits & Resource Allocation",
+    "bio": "Mr. P.S. Venkatesh Babu is the Honorary Treasurer of RSST / RVEI and serves on the Governing Council of SSMRV College.",
+    "highlights": "Honorary Treasurer of RSST & Governing Council Member.",
+    "committee": "Hon. Treasurer — RSST / RVEI | Governing Council Member",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/about_us/board_of_management/"
+  },
+  {
     "id": "dr-a-c-chandrashekar-raju",
     "name": "Dr. A.C. Chandrashekar Raju",
-    "designation": "Vice President \u2014 RSST / RVEI",
+    "designation": "Vice President — RSST / RVEI",
     "department": "Board of Management (RSST)",
+    "deptFlow": "faculty_leadership",
     "qualifications": "Trustee & Vice President, RSST",
-    "specialisation": "Institutional Governance & RSST Leadership",
-    "committee": "Vice President \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
+    "experience": "Supervising Committee & Board of Management, RVEI",
+    "specialisation": "Institutional Governance & Higher Education Leadership",
+    "bio": "Dr. A.C. Chandrashekar Raju serves as Vice President of Rashtreeya Sikshana Samithi Trust (RVEI) on the Board of Management.",
+    "highlights": "Vice President, RVEI Supervising Committee.",
+    "committee": "Vice President — RSST / RVEI Board of Management",
     "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/about_us/board_of_management/"
@@ -377,854 +305,1378 @@ const SSMRV_FACULTY_CATALOG = [
   {
     "id": "dr-c-vinod-hayagriv",
     "name": "Dr. C. Vinod Hayagriv",
-    "designation": "Vice President \u2014 RSST / RVEI",
+    "designation": "Vice President — RSST / RVEI",
     "department": "Board of Management (RSST)",
+    "deptFlow": "faculty_leadership",
     "qualifications": "Trustee & Vice President, RSST",
-    "specialisation": "Industry Partnerships & Strategic Development",
-    "committee": "Vice President \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
+    "experience": "Supervising Committee & Board of Management, RVEI",
+    "specialisation": "Strategic Partnerships & Institutional Excellence",
+    "bio": "Dr. C. Vinod Hayagriv serves as Vice President of Rashtreeya Sikshana Samithi Trust (RVEI) on the Board of Management.",
+    "highlights": "Vice President, RVEI Supervising Committee.",
+    "committee": "Vice President — RSST / RVEI Board of Management",
     "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/about_us/board_of_management/"
   },
   {
-    "id": "dr-m-p-shyam",
-    "name": "Dr. M.P. Shyam",
-    "designation": "President \u2014 RSST / RVEI",
+    "id": "mr-m-r-arvind",
+    "name": "Mr. M.R. Arvind",
+    "designation": "Chairman — Governing Council",
     "department": "Board of Management (RSST)",
-    "qualifications": "Prominent Industrialist & Visionary Leader",
-    "specialisation": "President, Rashtreeya Sikshana Samithi Trust (RSST)",
-    "committee": "President \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
-    "email": "president.rsst@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/dr_m_p_shyam/"
-  },
-  {
-    "id": "mr-d-p-nagaraj",
-    "name": "Mr. D.P. Nagaraj",
-    "designation": "Hon. Joint Secretary \u2014 RSST / RVEI",
-    "department": "Board of Management (RSST)",
-    "qualifications": "Education Administrator & Strategic Planner",
-    "specialisation": "Honorary Joint Secretary, Rashtreeya Sikshana Samithi Trust",
-    "committee": "Hon. Joint Secretary \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
-    "email": "jointsecretary@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/mr_d_p_nagaraj/"
-  },
-  {
-    "id": "mr-p-s-venkatesh-babu",
-    "name": "Mr. P.S. Venkatesh Babu",
-    "designation": "Hon. Treasurer \u2014 RSST / RVEI",
-    "department": "Board of Management (RSST)",
-    "qualifications": "Financial Governance & Trust Management",
-    "specialisation": "Honorary Treasurer, Rashtreeya Sikshana Samithi Trust",
-    "committee": "Hon. Treasurer \u2014 Rashtreeya Sikshana Samithi Trust (RSST / RVEI)",
+    "deptFlow": "faculty_leadership",
+    "qualifications": "Trustee, RSST & Chairman, Governing Council",
+    "experience": "Governing Council Leadership, SSMRV Degree College",
+    "specialisation": "Academic Governance & Strategic Institutional Oversight",
+    "bio": "Mr. M.R. Arvind serves as Chairman of the Governing Council at SSMRV College and Trustee of Rashtreeya Sikshana Samithi Trust.",
+    "highlights": "Chairman of the SSMRV College Governing Council.",
+    "committee": "Chairman — Governing Council (SSMRV College)",
     "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/about_us/board_of_management/"
-  },
-  {
-    "id": "avinash-k-v",
-    "name": "Avinash K V",
-    "designation": "Associate Professor & HOD",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com, MBA, B.Com",
-    "specialisation": "Accounting and Taxation, Human Resources Management",
-    "committee": "Associate NCC Officer (ANO \u2014 National Cadet Corps)",
-    "email": "avinashkv.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash-k-v/"
-  },
-  {
-    "id": "dr-rajini-k-s",
-    "name": "Dr. Rajini K.S.",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA, B.Com",
-    "specialisation": "Human Resource Management",
-    "committee": "",
-    "email": "drrajiniks.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s/"
-  },
-  {
-    "id": "dr-shashikala-c-s",
-    "name": "Dr. Shashikala C.S.",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com",
-    "specialisation": "Accounting and Taxation, Marketing",
-    "committee": "",
-    "email": "drshashika.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s/"
-  },
-  {
-    "id": "dr-shruti-khemashetty",
-    "name": "Dr. Shruti Khemashetty",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA",
-    "specialisation": "Human Resource Management and Marketing Back to Faculty",
-    "committee": "",
-    "email": "drshrutikh.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty/"
-  },
-  {
-    "id": "dr-sushma-c",
-    "name": "Dr. Sushma C.",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA",
-    "specialisation": "Accounts and Finance",
-    "committee": "",
-    "email": "drsushmac.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c/"
-  },
-  {
-    "id": "mr-arunkumar-r",
-    "name": "Mr. Arunkumar R.",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA",
-    "specialisation": "Finance and Human Resources",
-    "committee": "",
-    "email": "mrarunkuma.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r/"
-  },
-  {
-    "id": "mr-santosh-bendigeri",
-    "name": "Mr. Santosh Bendigeri",
-    "designation": "Assistant Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "",
-    "specialisation": "",
-    "committee": "",
-    "email": "",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
-  },
-  {
-    "id": "mr-santosh-d-bendigeri",
-    "name": "Mr. Santosh D Bendigeri",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com, MBA",
-    "specialisation": "Finance, Accounting and Taxation",
-    "committee": "",
-    "email": "mrsantoshd.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri/"
-  },
-  {
-    "id": "mrs-pavana-r-kulkarni",
-    "name": "Mrs. Pavana R. Kulkarni",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA, M.Com",
-    "specialisation": "Finance, Human Resource Management Back to Faculty",
-    "committee": "",
-    "email": "mrspavanar.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni/"
-  },
-  {
-    "id": "mrs-vidya-u-jambagi",
-    "name": "Mrs. Vidya U. Jambagi",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com, KSET",
-    "specialisation": "Accounting",
-    "committee": "",
-    "email": "mrsvidyauj.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi/"
-  },
-  {
-    "id": "ms-bharathi-n-s",
-    "name": "Ms. Bharathi N.S.",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com, MBA",
-    "specialisation": "Marketing, Finance, Accountancy, Neuroscience and Psychology",
-    "committee": "Cultural Committee SPOC (Internal Tarangini & Heritage)",
-    "email": "msbharathi.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s/"
-  },
-  {
-    "id": "ms-m-rajatha",
-    "name": "Ms. M. Rajatha",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "M.Com, MBA",
-    "specialisation": "Finance, Marketing Back to Faculty",
-    "committee": "",
-    "email": "msmrajatha.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha/"
-  },
-  {
-    "id": "prakasha-v",
-    "name": "Prakasha V",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "MBA, B.Com, M.Com",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
-    "email": "prakashav.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/prakasha_v/"
-  },
-  {
-    "id": "ume-salma",
-    "name": "Ume Salma",
-    "designation": "Professor",
-    "department": "Business Administration (BBA & Aviation)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
-    "email": "umesalma.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ume_salma/"
-  },
-  {
-    "id": "mr-jagadish-a",
-    "name": "Mr. Jagadish A.",
-    "designation": "Assistant Professor & HOD",
-    "department": "Business Administration (BBA Aviation)",
-    "qualifications": "BCA, MBA",
-    "specialisation": "Aviation Management, Airport Operations, Logistics & Supply Chain",
-    "committee": "Assistant Professor & HOD \u2014 BBA Aviation Management | POSH Committee Member",
-    "email": "jagadisha.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a/"
-  },
-  {
-    "id": "dr-revathy-shivashankaran",
-    "name": "Dr. Revathy Shivashankaran",
-    "designation": "Associate Professor and HOD",
-    "department": "Business Administration (BBA)",
-    "qualifications": "MBA, M.Phil., Ph.D.",
-    "specialisation": "Strategic Management, Organizational Behavior, Consumer Marketing",
-    "committee": "Associate Professor & HOD \u2014 Business Administration (BBA) | POSH Internal Compliance Chairperson",
-    "email": "revathys.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran/"
-  },
-  {
-    "id": "dr-mohan-rao-c-n",
-    "name": "Dr. Mohan Rao C N",
-    "designation": "Assistant Professor",
-    "department": "Commerce & Examination Cell",
-    "qualifications": "",
-    "specialisation": "",
-    "committee": "Chief Superintendent & Convener \u2014 Examination Committee",
-    "email": "",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
-  },
-  {
-    "id": "chiranjivi-m-s",
-    "name": "Chiranjivi M S",
-    "designation": "Assistant Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "Sports Committee Member & Discipline Coordinator",
-    "email": "chiranjivi.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s/"
-  },
-  {
-    "id": "dr-kanchan-g-rajput",
-    "name": "Dr. Kanchan G. Rajput",
-    "designation": "Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "MBA",
-    "specialisation": "Domain of Finance",
-    "committee": "",
-    "email": "drkanchang.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput/"
-  },
-  {
-    "id": "dr-malini-n",
-    "name": "Dr. Malini N.",
-    "designation": "Associate Professor and HOD \u2013 Commerce",
-    "department": "Commerce (B.Com)",
-    "qualifications": "B.Com, M.Com, MBA, Ph.D.",
-    "specialisation": "Accounting and Taxation, Human Resources Management, Climate Governance",
-    "committee": "Associate Professor & HOD \u2014 Commerce (B.Com) | Grievance Redressal Cell",
-    "email": "malinin.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_malini_n/"
-  },
-  {
-    "id": "dr-vinaya-t",
-    "name": "Dr. Vinaya T.",
-    "designation": "Assistant Professor and Coordinator (BCom 2nd Year)",
-    "department": "Commerce (B.Com)",
-    "qualifications": "M.Com",
-    "specialisation": "Finance, Accounting, Taxation and Research",
-    "committee": "Coordinator \u2014 B.Com 2nd Year & Entrepreneurship Cell (RAISE CoE)",
-    "email": "drvinayat.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t/"
-  },
-  {
-    "id": "mr-gokul-c",
-    "name": "Mr. Gokul C.",
-    "designation": "Assistant Professor and Coordinator (BCom 1st Year)",
-    "department": "Commerce (B.Com)",
-    "qualifications": "B.Com, MBA, M.Com, KSET",
-    "specialisation": "Financial Accounting, Corporate Law, Cost Management",
-    "committee": "Coordinator \u2014 B.Com 1st Year & Alumni Association (Sammilana) Convener",
-    "email": "gokulc.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c/"
-  },
-  {
-    "id": "ms-mokshamala-u",
-    "name": "Ms. Mokshamala U.",
-    "designation": "Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "B.Com",
-    "specialisation": "Law Back to Faculty",
-    "committee": "",
-    "email": "msmokshama.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u/"
-  },
-  {
-    "id": "ms-samskruthi-b-l",
-    "name": "Ms. Samskruthi B. L.",
-    "designation": "Associate Professor and HOD \u2013 Commerce",
-    "department": "Commerce (B.Com)",
-    "qualifications": "",
-    "specialisation": "",
-    "committee": "Associate Professor & HOD \u2014 Commerce (B.Com)",
-    "email": "",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
-  },
-  {
-    "id": "nandini-j",
-    "name": "Nandini J",
-    "designation": "Assistant Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "Anti-Ragging Cell & Discipline Committee Convener",
-    "email": "nandinij.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/nandini_j/"
-  },
-  {
-    "id": "sharavana-m",
-    "name": "Sharavana M",
-    "designation": "Assistant Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "SC/ST Cell Convener",
-    "email": "sharavanam.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/sharavana_m/"
-  },
-  {
-    "id": "vedamurthy-y-n",
-    "name": "Vedamurthy Y N",
-    "designation": "Assistant Professor",
-    "department": "Commerce (B.Com)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
-    "email": "vedamurthy.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n/"
   },
   {
     "id": "dr-r-sheela-chandrashekar",
     "name": "Dr. R. Sheela Chandrashekar",
-    "designation": "Associate Professor and HOD \u2013 BCA",
+    "designation": "Associate Professor and HOD – BCA",
     "department": "Computer Applications (BCA)",
-    "qualifications": "Ph.D., MCA, M.Phil",
-    "specialisation": "Computer Applications, Cloud Computing, Database Systems",
-    "committee": "Associate Professor & HOD \u2014 Computer Applications (BCA) | Grievance Redressal Cell",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Sc (Computer Science, Kuvempu University), M.Sc (Computer Science, Kuvempu University), Ph.D. (Jain University)",
+    "experience": "17+ Years Teaching & Research Experience in Computer Science and IT",
+    "specialisation": "Cyber Security, Cyber Forensics, Digital Forensics, Cyber Threat Intelligence, Image Processing & Face Recognition",
+    "bio": "Dr. R. Sheela currently serves as the Head of the BCA Department with over 17 years of progressive teaching experience in Computer Science and IT. Her expertise spans Cyber Security, Forensic Computing, Digital Forensics, Incident Handling, and Periocular Face Recognition.",
+    "highlights": "Authored the book 'Digital Revolution in India: Cybersecurity Essentials for Digital Age'; published in SCI-indexed journals (King Saud University), IGI Global book chapters, and 5 Scopus-indexed papers.",
+    "committee": "Head of Department (BCA) | Grievance Redressal Cell (BCA Representative)",
     "email": "sheelac.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_r_sheela_chandrashekar/"
   },
   {
+    "id": "ms-r-shanthi-krishna",
+    "name": "Mrs. R. Shanthi Krishna",
+    "designation": "Assistant Professor & IQAC Coordinator",
+    "department": "Computer Applications (BCA)",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Sc (Sri Sarada College), MCA (Nehru Memorial College), M.Phil. (Manonmaniam Sundaranar University), PGP-AIML (Great Lakes Executive Learning)",
+    "experience": "19+ Years Collegiate Teaching Experience (Former HOD BCA 2014–2024)",
+    "specialisation": "Machine Learning, Artificial Intelligence, Programming Languages",
+    "bio": "An experienced academician with over 19 years in collegiate teaching specialising in Computer Applications. She served as Head of the BCA Department from 2014 to December 2024 and currently serves as the IQAC Coordinator at SSMRV College since July 2024.",
+    "highlights": "Published 'Machine Learning in Early Detection of Lung Cancer: A Review' in IJSREM (UGC Care Journal); leads NAAC & IQAC quality initiatives.",
+    "committee": "IQAC Coordinator / Convener (Internal Quality Assurance Cell — NAAC)",
+    "email": "shanthikrishna.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna/"
+  },
+  {
     "id": "dr-s-chethana",
     "name": "Dr. S. Chethana",
-    "designation": "Professor",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "MCA",
-    "specialisation": "Artificial Intelligence, IoT",
-    "committee": "Innovation Cell & IPR Cell Convener",
-    "email": "drschethan.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Sc (Electronics, University of Mysore), MCA (IGNOU), Ph.D. (Jain University)",
+    "experience": "22+ Years Teaching Experience in Computer Science",
+    "specialisation": "Artificial Intelligence, Internet of Things (IoT), Software Engineering, Medical Image Processing",
+    "bio": "Dr. S. Chethana is a student-centred educator with over 22 years of experience in teaching Computer Science. Creative and resourceful, she adapts instructional strategies to maximize learning outcomes and student innovation.",
+    "highlights": "Published 11 patents (including 1 Australian Patent) and 4 research publications (including 2 in SCI Journals such as Journal of Healthcare Engineering).",
+    "committee": "College SPOC & Convener — Innovation Cell & IPR Cell | Examination Committee (BCA)",
+    "email": "chethanas.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_s_chethana/"
   },
   {
     "id": "dr-suma-sannamani",
     "name": "Dr. Suma Sannamani",
-    "designation": "Professor",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Memory Architecture, VLSI",
-    "committee": "",
-    "email": "drsumasann.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.E. (Electronics & Communication, VTU), M.Tech (VLSI Design & Embedded Systems, VTU), Ph.D. (VTU)",
+    "experience": "8.6+ Years Teaching Experience in Engineering & Computer Applications",
+    "specialisation": "Memory Architecture, VLSI Design & Embedded Systems",
+    "bio": "Dr. Suma Sannamani is an Assistant Professor in the BCA Department with 8.6 years of teaching experience. She serves as the Convenor of the Consultancy Cell and is an active Innovation Ambassador mentoring students in emerging technologies.",
+    "highlights": "Published Scopus-indexed papers on 'Tiled Cache Implementation for High Performance Processor' and 'Root Tile Design for Level 1 Cache'.",
+    "committee": "Convenor — Consultancy Cell | Innovation Ambassador | Entrepreneurship Cell (BCA)",
+    "email": "sumas.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_suma_sannamani/"
   },
   {
     "id": "dr-v-sudha",
-    "name": "Dr. V. Sudha",
-    "designation": "Professor",
+    "name": "Mrs. V. Sudha (Dr. V. Sudha)",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "NET",
-    "specialisation": "Digital Image Processing, Machine Learning",
-    "committee": "",
-    "email": "drvsudha.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "M.Sc (Software Systems, Bharathiar University), Ph.D. (Computer Science, Bharathiar University), UGC-NET Qualified",
+    "experience": "10+ Years Teaching & Research Experience in Higher Education",
+    "specialisation": "Digital Image Processing, Machine Learning, Remote Sensing & Software Systems",
+    "bio": "Mrs. V. Sudha holds a Ph.D. in Computer Science and NET qualification with over 10 years in higher education. Her research focuses on deep learning, image processing, and remote sensing.",
+    "highlights": "Published Scopus papers including 'Oil Spill Detection and Recognition Utilizing Faster R-CNN with Enhanced MobileNetV2 Architecture' (2024).",
+    "committee": "IPR Cell Representative (BCA)",
+    "email": "sudhav.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_v_sudha/"
   },
   {
     "id": "mr-getendra-kumar-m",
     "name": "Mr. Getendra Kumar M.",
-    "designation": "Professor",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Database Back to Faculty",
-    "committee": "",
-    "email": "mrgetendra.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "M.Sc (Computer Science, University of Madras)",
+    "experience": "18+ Years Teaching Experience in Computer Applications",
+    "specialisation": "Database Management Systems (DBMS), Relational Architecture & SQL",
+    "bio": "Mr. Getendra Kumar M. is a committed educator with 18 years of teaching experience in computer applications, bringing dedication and practical clarity to database systems and programming.",
+    "highlights": "18 years of undergraduate mentoring in Computer Applications; Alumni Association (BCA Coordinator).",
+    "committee": "Alumni Association Representative (BCA)",
+    "email": "getendrakumar.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_getendra_kumar_m/"
   },
   {
-    "id": "mr-shivakumara-n",
-    "name": "Mr. Shivakumara N.",
-    "designation": "Assistant Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "MCA, M.Phil, NET",
-    "specialisation": "Programming Languages, Data Structures, Web Technologies",
-    "committee": "",
-    "email": "shivakumaran.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n/"
-  },
-  {
-    "id": "mr-yallappa-m",
-    "name": "Mr. Yallappa M.",
-    "designation": "Assistant Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "MCA, M.Sc.",
-    "specialisation": "Operating Systems, Computer Networks, Software Engineering",
-    "committee": "NSS Program Officer (National Service Scheme) & Sports Coordinator",
-    "email": "yallappam.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m/"
-  },
-  {
     "id": "mrs-malasa-m-r",
     "name": "Mrs. Malasa M.R.",
-    "designation": "Professor",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "MCA",
-    "specialisation": "IoT Back to Faculty",
-    "committee": "",
-    "email": "mrsmalasam.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Sc (Kuvempu University), M.Sc (Mangalore University), MCA (GITAM University)",
+    "experience": "21+ Years Teaching Experience (UG & PG Computer Science)",
+    "specialisation": "Internet of Things (IoT), Arduino & Electronics-Based Systems",
+    "bio": "Mrs. Malasa M.R. is a passionate teacher and researcher with 21 years of experience teaching undergraduate and postgraduate students. She has guided numerous Arduino and IoT hardware projects.",
+    "highlights": "Former HOD experience; mentored numerous student IoT & embedded systems projects.",
+    "committee": "Placement & Career Guidance Cell (BCA) | Discipline Committee (BCA)",
+    "email": "malasamr.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_malasa_m_r/"
   },
   {
+    "id": "ms-vasugi-mudaliar-r-k",
+    "name": "Ms. Vasugi Mudaliar R.K.",
+    "designation": "Assistant Professor & BCA II Year Coordinator",
+    "department": "Computer Applications (BCA)",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Sc (Computer Science, Bishop Cotton Women's Christian College), M.Sc (Computer Science, St. Joseph's PG College), B.Ed (KIET)",
+    "experience": "15+ Years Teaching Experience in Computer Science",
+    "specialisation": "Social Media Analytics, Data Science, Python Programming, Java Programming, Cyber Security",
+    "bio": "Ms. Vasugi Mudaliar R.K. serves as the II Year BCA Coordinator and Timetable Coordinator with 15 years of teaching experience. As an Innovation Ambassador, she mentors students and organizes Smart India Hackathons and college tech fests.",
+    "highlights": "II Year BCA Coordinator, Timetable Coordinator & Smart India Hackathon Mentor.",
+    "committee": "IQAC Representative (BCA) | II Year BCA & Timetable Coordinator",
+    "email": "vasugirk.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k/"
+  },
+  {
     "id": "mrs-preethi-dwarakanath",
     "name": "Mrs. Preethi Dwarakanath",
-    "designation": "Professor",
+    "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Theoretical Computer Science, Machine Learning Back to Faculty",
-    "committee": "",
-    "email": "mrspreethi.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.E. (Information Science & Engineering, SJCE Mysuru / VTU), M.S. in Software Systems (BITS Pilani)",
+    "experience": "11 Years Industry Experience (Senior Software Engineer) + 5+ Years Teaching Experience",
+    "specialisation": "Theoretical Computer Science, Machine Learning & Software Engineering",
+    "bio": "Mrs. Preethi Dwarakanath earned her B.E. from SJCE Mysuru and Master's in Software Systems from BITS Pilani. With 11 years of corporate experience as a Senior Software Engineer and 5+ years in teaching, she bridges industry software practices with BCA academics.",
+    "highlights": "11 years as Senior Software Engineer; BITS Pilani alumna.",
+    "committee": "Sports Committee (BCA) | Cultural Committee (BCA)",
+    "email": "preethid.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_preethi_dwarakanath/"
   },
   {
     "id": "mrs-puja-biswas",
     "name": "Mrs. Puja Biswas",
-    "designation": "Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Information Technology, Cloud Computing, IoT Back to Faculty",
-    "committee": "Equal Opportunity Cell Member (BCA)",
-    "email": "mrspujabis.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas/"
-  },
-  {
-    "id": "ms-deepika-l",
-    "name": "Ms. Deepika L.",
     "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "MCA",
-    "specialisation": "Java Programming, Database Management Systems",
-    "committee": "",
-    "email": "deepikal.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_bca",
+    "qualifications": "B.Tech (West Bengal University of Technology), M.Tech (West Bengal University of Technology)",
+    "experience": "6+ Years Teaching Experience in Computer Applications",
+    "specialisation": "Information Technology, Cloud Computing, Internet of Things (IoT)",
+    "bio": "Mrs. Puja Biswas is an Assistant Professor in the BCA Department with 6 years of teaching experience. She serves as an active Innovation Ambassador mentoring students in Cloud Computing and IoT.",
+    "highlights": "Innovation Ambassador & Equal Opportunity Cell Coordinator for BCA.",
+    "committee": "Equal Opportunity Cell Representative (BCA) | Innovation Ambassador",
+    "email": "pujabiswas.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_puja_biswas/"
   },
   {
     "id": "ms-jahanavi-rao-a-v",
     "name": "Ms. Jahanavi Rao A.V.",
     "designation": "Assistant Professor",
     "department": "Computer Applications (BCA)",
-    "qualifications": "BCA, MCA",
-    "specialisation": "Full-Stack Development, Mobile App Development",
-    "committee": "",
+    "deptFlow": "faculty_bca",
+    "qualifications": "BCA (Vijaya College, Jayanagar), M.Sc (Computer Science, National College Basavanagudi)",
+    "experience": "5+ Years Teaching & Research Experience in Computer Science",
+    "specialisation": "Computer Science, Web Technologies & Software Development",
+    "bio": "Ms. Jahanavi Rao A.V. is a dedicated academician and researcher with 5 years of teaching and research experience in computer science, guiding BCA students in programming and innovation.",
+    "highlights": "Active contributor to BCA academic research and coding clubs.",
+    "committee": "BCA Academic & Technical Club Mentor",
     "email": "jahanavirao.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_jahanavi_rao_a_v/"
   },
   {
+    "id": "dr-malini-n",
+    "name": "Dr. Malini N.",
+    "designation": "Associate Professor and HOD – Commerce",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Accounting & Taxation, Bangalore University), M.Com (Bangalore University), MBA (HRM, IGNOU), Ph.D. (Jain Deemed-to-be University)",
+    "experience": "20+ Years Experience in Academia & Financial Analysis",
+    "specialisation": "Accounting and Taxation, Human Resources Management, Global Climate Governance",
+    "bio": "An accomplished educationist with a career spanning more than two decades, Dr. Malini N. began her career as a Financial Analyst and has served as Associate Professor, HOD, Vice-Principal, and Principal. She is a member of the Board of Examiners at Bangalore University, NMKRV, JNC, CMR, BMS, and mLAC.",
+    "highlights": "Published 'An Analysis of the Role of G20 in Global Climate Governance'; Board of Examiners Member & Deputy/Assistant Custodian at Bangalore University.",
+    "committee": "Associate Professor & HOD — Commerce | Grievance Redressal Cell (B.Com)",
+    "email": "malinin.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_malini_n/"
+  },
+  {
+    "id": "ms-samskruthi-b-l",
+    "name": "Ms. Samskruthi B. L.",
+    "designation": "Associate Professor and HOD – Commerce",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.Com, M.Phil, UGC-NET / KSET",
+    "experience": "Senior Academic Leadership in Department of Commerce",
+    "specialisation": "Corporate Accounting, Banking, Financial Markets & Taxation",
+    "bio": "Ms. Samskruthi B. L. serves as Associate Professor and Head of the Department of Commerce (B.Com) at SSMRV College, leading curriculum modernization, NEP/SEP implementation, and professional accounting tracks.",
+    "highlights": "Associate Professor and Head of Department – Commerce.",
+    "committee": "Associate Professor & HOD — Department of Commerce (B.Com)",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
+  },
+  {
+    "id": "mr-gokul-c",
+    "name": "Mr. Gokul C.",
+    "designation": "Assistant Professor and Coordinator (B.Com 1st Year)",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), MBA (Bangalore University), M.Com (Annamalai University), PGDBI (Annamalai University), KSET",
+    "experience": "10+ Years Corporate Industry Experience + 10+ Years Academic Experience",
+    "specialisation": "Accounting, Taxation, Financial Management & General Management",
+    "bio": "Mr. Gokul C. brings over 20 years of combined experience—10+ years in corporate accounting and finance and 10+ years in academia. He serves as Coordinator for 1st Year B.Com and College SPOC for the SSMRV Alumni Association (Sammilana).",
+    "highlights": "20+ years combined industry and teaching experience; College SPOC for Alumni Association.",
+    "committee": "B.Com 1st Year Coordinator | College SPOC — Alumni Association (Sammilana) | Innovation Cell (B.Com)",
+    "email": "gokulc.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_gokul_c/"
+  },
+  {
+    "id": "dr-vinaya-t",
+    "name": "Dr. Vinaya T.",
+    "designation": "Assistant Professor and Coordinator (B.Com 2nd Year)",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "BBM, M.Com, Ph.D. (University of Mysore, Manasagangotri)",
+    "experience": "17+ Years Teaching & Corporate Experience",
+    "specialisation": "Finance, Accounting, Taxation and Empirical Research",
+    "bio": "Dr. Vinaya T. is an academician with 17 years of experience spanning both teaching and corporate domains. Known for his student-centric mentorship, he serves as B.Com 2nd Year Coordinator and College SPOC for the Entrepreneurship Cell.",
+    "highlights": "Published research on 'Role of Audit Committees and its Impact on Organisational Performance' (Wesleyan Journal of Research) and IT in Banking.",
+    "committee": "B.Com 2nd Year Coordinator | College SPOC — Entrepreneurship Cell | Sports Committee (B.Com)",
+    "email": "vinayat.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_vinaya_t/"
+  },
+  {
+    "id": "ms-mokshamala-u",
+    "name": "Ms. Mokshamala U.",
+    "designation": "Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.A. (Political Science, Bangalore University), B.Ed (Bangalore University), LL.B. (KSLU)",
+    "experience": "18+ Years Teaching Experience in Higher Education",
+    "specialisation": "Business Law, Corporate Law, Constitutional Law & Political Science",
+    "bio": "Ms. Mokshamala U. is a dedicated Professor in the B.Com department with 18 years of experience. Holding degrees in Law (LL.B.), Political Science (M.A.), and Education (B.Ed.), she brings rich legal and multidisciplinary expertise to commerce education.",
+    "highlights": "18+ years teaching Business & Corporate Law in the Department of Commerce.",
+    "committee": "Senior Professor — Business & Corporate Law (B.Com)",
+    "email": "mokshamalau.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_mokshamala_u/"
+  },
+  {
+    "id": "mr-yallappa-m",
+    "name": "Mr. Yallappa M.",
+    "designation": "Assistant Professor & NSS Programme Officer",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (RC College, Bangalore), MFA (Central College, Bangalore University), M.Com, M.Phil, Ph.D. (Pursuing, Jain University)",
+    "experience": "15+ Years Teaching Experience in Finance & Commerce",
+    "specialisation": "Finance, Financial Analysis & Accounting",
+    "bio": "Mr. Yallappa M. brings over 15 years of teaching experience in finance across reputed colleges. He actively leads social service initiatives as the College NSS Programme Officer and serves on multiple statutory committees for student welfare.",
+    "highlights": "College NSS Programme Officer (Ministry of Youth Affairs & Sports); 15+ years finance teaching.",
+    "committee": "College SPOC — NSS Unit (Programme Officer) | SC/ST Cell, Entrepreneurship & Discipline Committees (B.Com)",
+    "email": "yallappam.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_yallappa_m/"
+  },
+  {
     "id": "ms-m-roopa-latha",
     "name": "Ms. M. Roopa Latha",
     "designation": "Assistant Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "MCA, M.Tech",
-    "specialisation": "Artificial Intelligence, Python, Cloud Infrastructure",
-    "committee": "",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Sc (Computer Science, Shree Venkateshwara University), MBA (Shree Venkateshwara University)",
+    "experience": "16+ Years Teaching & Research Experience in Commerce & Management",
+    "specialisation": "Finance and Human Resources Management",
+    "bio": "Ms. M. Roopa Latha is a dedicated academician and researcher with 16 years of teaching, research, and administrative experience in commerce, finance, and human resources.",
+    "highlights": "16+ years of academic mentorship and research in Finance and HRM.",
+    "committee": "Commerce Academic & Research Committee",
     "email": "roopalatha.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_roopa_latha/"
   },
   {
-    "id": "ms-r-shanthi-krishna",
-    "name": "Ms. R. Shanthi Krishna",
-    "designation": "Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "MCA",
-    "specialisation": "Machine Learning, Programming Languages",
-    "committee": "IQAC Convener / Coordinator (NAAC)",
-    "email": "msrshanthi.ssmrv@rvei.edu.in",
+    "id": "mr-shivakumara-n",
+    "name": "Mr. Shivakumara N.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), M.Com (Bangalore University), B.Ed (Bangalore University), UGC-NET Qualified",
+    "experience": "16+ Years Teaching Experience in Commerce",
+    "specialisation": "Accounts and Taxation",
+    "bio": "Mr. Shivakumara N. is an Assistant Professor with 16 years of teaching experience. A postgraduate in Commerce with UGC-NET qualification and a B.Ed from Bangalore University, he specialises in Accounts and Taxation.",
+    "highlights": "UGC-NET qualified educator with 16 years of commerce teaching experience.",
+    "committee": "Commerce Academic & Mentorship Cell",
+    "email": "shivakumaran.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_r_shanthi_krishna/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_shivakumara_n/"
+  },
+  {
+    "id": "ms-deepika-l",
+    "name": "Ms. Deepika L.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Vijaya Main College, Bengaluru), M.Com (HRM, University of Mysore), Diploma in Fashion Designing (IIFT)",
+    "experience": "9+ Years Teaching Experience in Commerce",
+    "specialisation": "Human Resource Management, Marketing, Auditing & Fashion Design",
+    "bio": "Ms. Deepika L. is an experienced Assistant Professor with 9 years of teaching experience across commerce subjects, skilled in student mentoring, auditing, and HRM.",
+    "highlights": "IQAC Representative and Alumni Association Coordinator for B.Com.",
+    "committee": "IQAC Representative (B.Com) | Alumni Association Representative (B.Com)",
+    "email": "deepikal.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepika_l/"
   },
   {
     "id": "ms-shakeela-m-k",
     "name": "Ms. Shakeela M.K.",
     "designation": "Assistant Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "M.Sc. (Computer Science), M.Phil",
-    "specialisation": "Information Security, Computer Networks, C++",
-    "committee": "",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Procedure & Practices of Taxation), M.Com (Finance, Bangalore University), Diploma in Fashion Designing (IIFT)",
+    "experience": "11+ Years Teaching Experience (formerly at NMKRV College for Women)",
+    "specialisation": "Finance, Accounting, Taxation, HR and Management",
+    "bio": "Ms. Shakeela M.K. is an Assistant Professor with 11 years of teaching experience specialising in finance, accounting, and taxation. She has co-authored two textbooks and published research papers in sustainable business and AI banking.",
+    "highlights": "Co-authored textbook 'Financial Accounting' (Vision Book House, ISBN: 9789358407440, 2024); published papers on Green Marketing and AI Banking.",
+    "committee": "Cultural Committee Representative (B.Com)",
     "email": "shakeelamk.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_shakeela_m_k/"
   },
   {
-    "id": "ms-vasugi-mudaliar-r-k",
-    "name": "Ms. Vasugi Mudaliar R.K.",
-    "designation": "Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "Faculty Member",
-    "specialisation": "Social Media Analytics, Data Science, Python Programming, Java Programming, Cyber Security Back to Faculty",
-    "committee": "",
-    "email": "msvasugimu.ssmrv@rvei.edu.in",
+    "id": "mrs-vidya-u-jambagi",
+    "name": "Mrs. Vidya U. Jambagi",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (PES College), M.Com (Bangalore University), M.Phil. (Dravidian University), KSET, PGDBA (2 Years)",
+    "experience": "21+ Years Teaching & Research Experience",
+    "specialisation": "Accounting, Corporate Financial Reporting & Sustainability",
+    "bio": "An accomplished educator with over 21 years of teaching experience, Mrs. Vidya U. Jambagi holds an M.Com, M.Phil., KSET, and PGDBA. She has contributed extensively to curriculum development, research publications, and student mentoring.",
+    "highlights": "Published papers in IJMSRR (Impact Factor 6.462) and Web of Science indexed Indian Journal of Natural Sciences.",
+    "committee": "Internal Compliance / POSH Committee Representative (B.Com)",
+    "email": "vidyauj.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_vasugi_mudaliar_r_k/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_vidya_u_jambagi/"
+  },
+  {
+    "id": "ms-bharathi-n-s",
+    "name": "Dr. / Ms. Bharathi N.S.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), M.Com (IGNOU), MBA (Alagappa University), PGDBIO (IGNOU), Ph.D. (Christ Deemed-to-be University)",
+    "experience": "10+ Years Teaching & Research Experience",
+    "specialisation": "Marketing, Finance, Accountancy, Cognitive Psychology & Neuroscience",
+    "bio": "A passionate educator with 10 years of experience as an Assistant Professor and researcher. She holds a Ph.D. from Christ University, a patent, and numerous publications in Marketing, Psychology, Finance, and HR.",
+    "highlights": "Patent holder; published research on Intellectual Property Rights (IJARESM) and Gen-Z Purchase Intention.",
+    "committee": "Internal Cultural Committee SPOC (Tarangini) | Examination Committee (B.Com)",
+    "email": "bharathins.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bharathi_n_s/"
+  },
+  {
+    "id": "dr-kanchan-g-rajput",
+    "name": "Dr. Kanchan G. Rajput",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com, MBA (Finance), Ph.D. (ISBR Research Centre, University of Mysore)",
+    "experience": "13+ Years Teaching & Research Experience",
+    "specialisation": "Domain of Finance, Microfinance, Financial Inclusion & Banking",
+    "bio": "Dr. Kanchan G. Rajput is a dedicated academician with 13 years of experience in teaching finance. Her contributions span research publications, international conferences, and book chapters with IGI Global.",
+    "highlights": "Published chapters with IGI Global ('Transforming Economies Through Microfinance') and NeuroQuantology on RBI Financial Inclusion.",
+    "committee": "Commerce Research & Finance Forum",
+    "email": "kanchang.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_kanchan_g_rajput/"
+  },
+  {
+    "id": "dr-rajini-k-s",
+    "name": "Dr. Rajini K.S.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.A. (Mangalore University), MBA (Pondicherry University), Ph.D. (Jain University)",
+    "experience": "12+ Years Teaching Experience in B.Com Department",
+    "specialisation": "Human Resource Management, ESG & Green Marketing Strategies",
+    "bio": "Dr. Rajini K.S. is an Assistant Professor in the B.Com department with 12 years of teaching experience, deeply committed to Human Resource Management, student development, and community service.",
+    "highlights": "Published Scopus-indexed papers on 'ESG Considerations in Retail' (2024) and 'Migrant Labour Upskilling'.",
+    "committee": "B.Com Student Welfare & HRM Mentor",
+    "email": "rajiniks.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_rajini_k_s/"
+  },
+  {
+    "id": "dr-shashikala-c-s",
+    "name": "Dr. Shashikala C.S.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), M.Com (Bangalore University), Ph.D. in Commerce (Tumkur University)",
+    "experience": "8.7+ Years Teaching & Research Experience",
+    "specialisation": "Accounting and Taxation, Marketing, Strategic Management & Consumer Behaviour",
+    "bio": "Dr. Shashikala C.S. holds a Ph.D. in Commerce with over 8.7 years of teaching experience. She has authored a book on Strategic Management and published extensively on social media marketing and consumer behaviour.",
+    "highlights": "Authored book 'Strategic Management' (ISBN: 978-81-985244-3-0, Feb 2025); published in IJFMR and JETIR.",
+    "committee": "IPR Cell Representative (B.Com)",
+    "email": "shashikalacs.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shashikala_c_s/"
+  },
+  {
+    "id": "ms-bhargavi-iyer-b-s",
+    "name": "Mrs. Bhargavi Iyer B.S.",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), M.Com (Bangalore University)",
+    "experience": "4.5+ Years Teaching Experience | In-Charge of RV-Skills",
+    "specialisation": "Accounting and Taxation",
+    "bio": "Mrs. Bhargavi Iyer B.S. is an active member of the Institution's Innovation Council (IIC), Faculty Study Circle (FSC), Taxation Club, and Youth Red Cross (YRC). She oversees skill development initiatives as In-Charge of RV-Skills.",
+    "highlights": "In-Charge of RV-Skills; presented 'Revolutionising Education: A Role of AI in Empowering Teachers' at MS Ramaiah (2024).",
+    "committee": "In-Charge — RV-Skills | Member — IIC, Taxation Club & Youth Red Cross (YRC)",
+    "email": "bhargaviiyer.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s/"
   },
   {
     "id": "vaishnavi-r",
-    "name": "Vaishnavi R",
-    "designation": "Professor",
-    "department": "Computer Applications (BCA)",
-    "qualifications": "KSET, M.Com, NET",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
+    "name": "Ms. Vaishnavi R",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com with Computer Applications (Madurai Kamaraj University), M.Com with Computer Applications (MKU), M.A. Economics (IGNOU), UGC-NET, KSET",
+    "experience": "9.5+ Years Teaching Experience",
+    "specialisation": "Accounting, Economics & Computer Applications in Commerce",
+    "bio": "Ms. Vaishnavi R is a passionate educator with 9.5 years of teaching experience, qualified with both UGC-NET and KSET alongside postgraduates in Commerce (Computer Applications) and Economics.",
+    "highlights": "Dual qualified in UGC-NET and KSET with dual master's degrees (M.Com & M.A. Economics).",
+    "committee": "Commerce Academic & Competitive Exam Mentor",
     "email": "vaishnavir.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vaishnavi_r/"
   },
   {
-    "id": "mr-hanumantha-reddy-b",
-    "name": "Mr. Hanumantha Reddy B",
-    "designation": "Senior IT Executive",
-    "department": "IT Support & Infrastructure",
-    "qualifications": "B.Sc (IT), System Administration",
-    "specialisation": "Campus Networks, Server Infrastructure & Lab Management",
-    "committee": "Senior IT Support & Campus Network Executive",
-    "email": "it.ssmrv@rvei.edu.in",
+    "id": "prakasha-v",
+    "name": "Mr. Prakasha V (Dr. Prakasha V)",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "B.Com (Bangalore University), MBA (Bangalore University), M.Com (KSOU), PGDFM (KSOU), Ph.D. (Kalinga University)",
+    "experience": "16+ Years Teaching Experience in Commerce & Management",
+    "specialisation": "Finance & Marketing, Accounts",
+    "bio": "Mr. Prakasha V has 16 years of teaching experience in commerce and management, holding an MBA, M.Com, PGDFM, and Ph.D. from Kalinga University with multiple UGC Care publications.",
+    "highlights": "Published UGC Care papers on Karnataka Power Sector Organization and Industry 4.0 Industrial Relations.",
+    "committee": "Cultural Committee (B.Com) | Examination Committee (B.Com)",
+    "email": "prakashav.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/prakasha_v/"
   },
   {
-    "id": "dr-d-kannan",
-    "name": "Dr. D. Kannan",
+    "id": "ume-salma",
+    "name": "Mrs. Ume Salma",
     "designation": "Assistant Professor",
-    "department": "Languages & Humanities",
-    "qualifications": "B.A. (English), M.A. (English), Ph.D.",
-    "specialisation": "English Literature, Communicative English, Soft Skills Training",
-    "committee": "",
-    "email": "kannand.ssmrv@rvei.edu.in",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "MBA (Bharathiar University), M.Phil (Dravidian University), M.Com (University of Mysore), PGDIB (Central University Bangalore)",
+    "experience": "17+ Years Teaching Experience at SSMRV College (Since 2008)",
+    "specialisation": "Digital Marketing, Commerce and Management",
+    "bio": "Serving as an Assistant Professor at SSMRV College since 2008, Mrs. Ume Salma specialises in Commerce, Management, and Digital Marketing with a strong commitment to student career readiness.",
+    "highlights": "Published 'Social Media: A Catalyst for Business Growth' in IJFMR (Impact Factor 9.24, Sep-Oct 2024).",
+    "committee": "Placement & Career Guidance Cell Representative (B.Com)",
+    "email": "umesalma.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ume_salma/"
+  },
+  {
+    "id": "nandini-j",
+    "name": "Ms. Nandini J",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.Com, Academic & Statutory Cell Coordinator",
+    "experience": "Commerce Teaching & Institutional Statutory Leadership",
+    "specialisation": "Commerce, Business Ethics & Student Welfare",
+    "bio": "Ms. Nandini J is an Assistant Professor in Commerce and serves as the College SPOC for the Anti-Ragging Cell, Human Rights Protection Cell, Anti-Drug Cell, and Discipline Committee.",
+    "highlights": "Organized the 2025 Awareness Session on Anti-Ragging, Anti-Drug and Human Rights Protection and International FDP on Mental Health.",
+    "committee": "College SPOC — Anti-Ragging Cell, Human Rights Protection Cell, Anti-Drug Cell & Discipline Committee",
+    "email": "nandinij.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/nandini_j/"
+  },
+  {
+    "id": "sharavana-m",
+    "name": "Mr. Sharavana M",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.Com, Statutory Cell Convener",
+    "experience": "Commerce Teaching & Student Support Systems",
+    "specialisation": "Commerce, Accounting & Inclusive Education",
+    "bio": "Mr. Sharavana M serves as an Assistant Professor in Commerce and is the College-Level Faculty SPOC for the SC/ST Statutory Cell under UGC and NAAC regulations.",
+    "highlights": "College SPOC for the SC/ST Statutory Cell.",
+    "committee": "College SPOC & Convener — SC/ST Cell (UGC / NAAC)",
+    "email": "sharavanam.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/sharavana_m/"
+  },
+  {
+    "id": "dr-mohan-rao-c-n",
+    "name": "Dr. Mohan Rao C.N.",
+    "designation": "Assistant Professor & Chief Superintendent of Examinations",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.Com, Ph.D.",
+    "experience": "Senior Academician & Examination Controller",
+    "specialisation": "Commerce, Corporate Accounting & University Examinations",
+    "bio": "Dr. Mohan Rao C.N. is an Assistant Professor and serves as the College-Level SPOC and Chief Superintendent of the Examination Committee overseeing Bengaluru City University (BCU) and internal evaluations.",
+    "highlights": "College SPOC — Examination Committee (University / NAAC).",
+    "committee": "College SPOC & Convener — Examination Committee",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
+  },
+  {
+    "id": "vedamurthy-y-n",
+    "name": "Dr. / Mr. Vedamurthy Y N",
+    "designation": "Assistant Professor",
+    "department": "Commerce (B.Com)",
+    "deptFlow": "faculty_commerce",
+    "qualifications": "M.Com, Ph.D.",
+    "experience": "Academic Teaching & Internal Compliance Member",
+    "specialisation": "Commerce & Academic Governance",
+    "bio": "Mr. Vedamurthy Y N serves as an Assistant Professor at SSMRV College and is a member of the Internal Compliance (POSH) Committee.",
+    "highlights": "Member of the Statutory Internal Compliance Committee.",
+    "committee": "Internal Compliance (POSH) Committee Member",
+    "email": "vedamurthy.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/vedamurthy_y_n/"
+  },
+  {
+    "id": "dr-revathy-shivashankaran",
+    "name": "Dr. Revathy Shivashankaran",
+    "designation": "Associate Professor and HOD – BBA",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Sc (Mathematics, University of Madras), MBA (University of Madras), M.Com (IGNOU), Ph.D. (Mother Teresa Women's University, Kodaikanal)",
+    "experience": "25+ Years Combined Experience (16.5 Years Academia + 8.5 Years Corporate)",
+    "specialisation": "Organisational Behaviour & HRM, HR Analytics, General Management",
+    "bio": "Dr. Revathy Shivashankaran brings over 25 years of combined corporate and academic experience and serves as Associate Professor & HOD of BBA. She chairs the College Internal Compliance (POSH) Committee and serves on the Grievance Redressal Cell.",
+    "highlights": "Published research on 'Mediating Impact of Upskilling on Determinants of Moonlighting' (IJRAR) and Predictive HR Analytics.",
+    "committee": "Associate Professor & HOD — BBA | College Chairperson — Internal Compliance (POSH) | Grievance Redressal Cell (BBA)",
+    "email": "revathys.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_revathy_shivashankaran/"
+  },
+  {
+    "id": "mr-jagadish-a",
+    "name": "Mr. Jagadish A.",
+    "designation": "Assistant Professor and HOD – BBA Aviation Management",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "BCA (Bangalore University), MBA (Bangalore University), Ph.D. (Pursuing at Jain University)",
+    "experience": "16+ Years Teaching Experience + Corporate Experience at Bharti Infotel & ICICI Bank",
+    "specialisation": "Marketing, Information Technology, Consumer Behaviour Analytics, E-Commerce & Aviation Management",
+    "bio": "Mr. Jagadish A. serves as Assistant Professor and Head of the Department for BBA & BBA Aviation Management with over 16 years of teaching experience and corporate stints at Bharti Infotel Ltd. and ICICI Bank Ltd. He has served as IQAC Member, Staff Council Secretary, and Cultural Committee Convenor.",
+    "highlights": "Published patents, book chapters ('Service Value Multiplier'), and research papers on Digital Marketing & Job Satisfaction.",
+    "committee": "HOD — BBA Aviation Management | IQAC Representative (BBA) | Internal Compliance POSH Member (BBA)",
+    "email": "jagadisha.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_jagadish_a/"
+  },
+  {
+    "id": "avinash-k-v",
+    "name": "Mr. Avinash K.V.",
+    "designation": "Assistant Professor & Associate NCC Officer (ANO)",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com, M.Com, MBA",
+    "experience": "Management Educator & Commissioned Associate NCC Officer",
+    "specialisation": "Accounting and Taxation, Human Resources Management & Youth Leadership",
+    "bio": "Mr. Avinash K.V. serves as an Assistant Professor in Management and leads the SSMRV National Cadet Corps (NCC Unit) as the College SPOC and Associate NCC Officer (ANO).",
+    "highlights": "College SPOC — National Cadet Corps (NCC Unit, Ministry of Youth Affairs & Sports).",
+    "committee": "College SPOC — NCC Unit (Associate NCC Officer)",
+    "email": "avinashkv.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/avinash_k_v/"
+  },
+  {
+    "id": "dr-shruti-khemashetty",
+    "name": "Dr. Shruti Khemashetty",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Sc, MBA (Dodappa Appa College), Ph.D. (Dayananda Sagar University)",
+    "experience": "15+ Years Academic Experience in Management",
+    "specialisation": "Human Resource Management and Marketing",
+    "bio": "Dr. Shruti Khemashetty is an Assistant Professor with 15 years of academic experience specialising in Human Resource Management and Marketing, dedicated to student leadership and innovation.",
+    "highlights": "15 years of management teaching; Innovation Cell Coordinator for BBA.",
+    "committee": "Innovation Cell Representative (BBA)",
+    "email": "shrutik.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_shruti_khemashetty/"
+  },
+  {
+    "id": "dr-sushma-c",
+    "name": "Dr. Sushma C.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "BBM (Bangalore University), MBA (Bangalore University), Ph.D. in Management (Bangalore University)",
+    "experience": "13+ Years Academic & Industrial Experience",
+    "specialisation": "Accounts, Finance, Entrepreneurship & Industrial Dynamics",
+    "bio": "Dr. Sushma C. is an Assistant Professor with over 13 years of academic and industrial experience in accounts and finance, holding a BBM, MBA, and Ph.D. in Management from Bangalore University.",
+    "highlights": "Published research on 'Role of Women Entrepreneurs', 'Circular Economy Business Model', and 'Cognitive Factors in Financial Decision Making'.",
+    "committee": "IPR Cell Representative (BBA)",
+    "email": "sushmac.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_sushma_c/"
+  },
+  {
+    "id": "ms-m-rajatha",
+    "name": "Mrs. Rajatha M",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com (Bangalore University), M.Com (Kuvempu University), MBA (ICFAI University)",
+    "experience": "14+ Years Teaching Experience in BBA Department",
+    "specialisation": "Finance and Marketing",
+    "bio": "Mrs. Rajatha M is an Assistant Professor in the Department of BBA with over 14 years of teaching experience. She specialises in Finance and Marketing, incorporating interactive case-based analysis to bridge theory with corporate practice.",
+    "highlights": "14+ years in BBA education; Alumni Association Coordinator for BBA.",
+    "committee": "Alumni Association Representative (BBA)",
+    "email": "rajatham.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_m_rajatha/"
+  },
+  {
+    "id": "mr-santosh-d-bendigeri",
+    "name": "Mr. Santosh D. Bendigeri",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com (Dharwad University), M.Com (Rajasthan University), MBA (Bangalore University), Ph.D. (Pursuing at Annamalai University)",
+    "experience": "10+ Years Teaching Experience + Corporate Experience",
+    "specialisation": "Finance, Accounting and Taxation",
+    "bio": "Mr. Santosh Bendigeri is a dedicated academic with 10 years of teaching experience. Currently pursuing his Ph.D. at Annamalai University, he actively contributes to textbook authorship and curriculum development.",
+    "highlights": "Authored textbooks 'Leading the Future: Progressive Approaches to Modern Management' (2023) and 'Financial Accounting' as per BCU SEP syllabus (2024).",
+    "committee": "Sports Committee Representative (BBA)",
+    "email": "santoshdb.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_santosh_d_bendigeri/"
+  },
+  {
+    "id": "mrs-pavana-r-kulkarni",
+    "name": "Mrs. Pavana R. Kulkarni",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com, MBA (Finance and HR, Bangalore University), M.Com (University of Mysore)",
+    "experience": "9+ Years Undergraduate Teaching Experience (at SSMRV since 2019)",
+    "specialisation": "Finance and Human Resource Management",
+    "bio": "Mrs. Pavana R. Kulkarni is an Assistant Professor in the BBA Department with 9 years of teaching experience. Holding both an MBA in Finance & HR and an M.Com, she has been mentoring BBA students at SSMRV since 2019.",
+    "highlights": "Dual postgraduate in MBA (Finance & HR) and M.Com.",
+    "committee": "BBA Academic & Student Mentoring Cell",
+    "email": "pavanark.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_pavana_r_kulkarni/"
+  },
+  {
+    "id": "mrs-lavanya-b-k",
+    "name": "Ms. Lavanya B.K.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com (NMKRV College for Women), M.Com (Bangalore University), KSET, Ph.D. Candidate (Jain University)",
+    "experience": "9+ Years Academic & Research Experience",
+    "specialisation": "Accounting and Taxation",
+    "bio": "Ms. Lavanya B.K. is a KSET-qualified Assistant Professor with 9 years of experience in academia and a Ph.D. candidate at Jain University, focusing on innovative methodologies in accounting, taxation, and women entrepreneurship.",
+    "highlights": "Presented international conference papers on Circular Economy Business Models and Women Entrepreneurs (2024).",
+    "committee": "OBC Cell Coordinator (BBA) | Cultural Committee (BBA) | Placement Cell (BBA)",
+    "email": "lavanyabk.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k/"
+  },
+  {
+    "id": "mr-arunkumar-r",
+    "name": "Mr. Arun Kumar R.",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "BBM (Marketing), MBA (Finance and HR, Anna University of Technology)",
+    "experience": "Experienced Commerce & Management Educator",
+    "specialisation": "Finance and Human Resources",
+    "bio": "Mr. Arun Kumar R. is an enthusiastic Assistant Professor with a strong foundation in BBA Marketing, Finance, and HR, dedicated to student mentoring and institutional development.",
+    "highlights": "Authored NEP 4th Sem BBA textbook 'Personal Wealth Management' (Kalyani Publishers, ISBN: 978-93-5540-387-1); published in UGC CARE Journal of Asiatic Society of Mumbai.",
+    "committee": "BBA Curriculum & Authorship Cell",
+    "email": "arunkumarr.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_arunkumar_r/"
+  },
+  {
+    "id": "ms-neha-banu",
+    "name": "Ms. Neha Banu",
+    "designation": "Assistant Professor",
+    "department": "Business Administration (BBA & Aviation)",
+    "deptFlow": "faculty_bba",
+    "qualifications": "B.Com (Bangalore University), M.Com (Bangalore University), Ph.D. (Enrolled, Jain Deemed-to-be University)",
+    "experience": "6.5+ Years Academic & Research Experience",
+    "specialisation": "Finance and Banking",
+    "bio": "Ms. Neha Banu is a dedicated Assistant Professor with over 6.5 years of academic experience, conducting research in finance, banking, and financial literacy among youth.",
+    "highlights": "Presented papers on 'Financial Literacy Among Young Generation in Bangalore' and NEP 2020 Teacher Education.",
+    "committee": "Entrepreneurship Cell Representative (BBA) | Examination Committee (BBA)",
+    "email": "nehabanu.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu/"
+  },
+  {
+    "id": "dr-lavanya-balaji",
+    "name": "Dr. Lavanya Balaji",
+    "designation": "Assistant Professor and Head of PG Department – M.Com",
+    "department": "Postgraduate Studies (M.Com)",
+    "deptFlow": "faculty_mcom",
+    "qualifications": "B.Com (SDNB Vaishnav College for Women), MBA (Bharath Engineering College), Ph.D. (Bharath Institute of Higher Education and Research)",
+    "experience": "21+ Years Academic & Postgraduate Leadership Experience",
+    "specialisation": "Finance and Banking, Accounting, Corporate Taxation",
+    "bio": "Dr. Lavanya Balaji is the Head of the Postgraduate Department (M.Com) with over 21 years of academic experience. She specialises in finance, banking, accounting, and taxation, and represents M.Com across key statutory committees.",
+    "highlights": "21+ years of postgraduate leadership; M.Com Coordinator for IQAC, Grievance Redressal, Innovation, Placement, Alumni & Examinations.",
+    "committee": "Head of PG Department (M.Com) | IQAC, Grievance Redressal, Innovation, Alumni, Placement & Exam Committees (M.Com)",
+    "email": "lavanyab.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji/"
+  },
+  {
+    "id": "dr-lalitha-b-s",
+    "name": "Dr. Lalitha B.S.",
+    "designation": "Assistant Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "deptFlow": "faculty_mcom",
+    "qualifications": "B.Com (Bangalore University), M.Com (Bangalore University), MBA (IGNOU), Ph.D. (University of Mysore)",
+    "experience": "19+ Years Teaching Experience in Commerce & PG Studies",
+    "specialisation": "Accounting, Finance, Banking and Supply Chain Management",
+    "bio": "Dr. Lalitha B.S. is an Assistant Professor with 19 years of teaching experience holding an M.Com, MBA, and Ph.D. from the University of Mysore. Her expertise spans accounting, finance, banking, and supply chain management.",
+    "highlights": "19 years of teaching experience; M.Com Representative for Equal Opportunity Cell & Entrepreneurship Cell.",
+    "committee": "Equal Opportunity Cell Representative (M.Com) | Entrepreneurship Cell (M.Com)",
+    "email": "lalithabs.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s/"
+  },
+  {
+    "id": "mr-akshay-kumar-a-v",
+    "name": "Dr. / Mr. Akshay Kumar A.V.",
+    "designation": "Assistant Professor",
+    "department": "Postgraduate Studies (M.Com)",
+    "deptFlow": "faculty_mcom",
+    "qualifications": "B.Com (Christ University), M.Com (Christ University), Ph.D. (Christ University)",
+    "experience": "8+ Years Teaching & Research Experience",
+    "specialisation": "Accountancy, Taxation and Corporate Finance",
+    "bio": "Mr. Akshay Kumar A.V. holds a B.Com, M.Com, and Ph.D. from Christ University with 8 years of teaching experience in Accountancy, Taxation, and Finance.",
+    "highlights": "Ph.D. from Christ University; M.Com Coordinator for IPR Cell, Sports, Cultural & Discipline Committees.",
+    "committee": "IPR Cell, Sports Committee, Cultural Committee & Discipline Committee Representative (M.Com)",
+    "email": "akshaykumar.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v/"
   },
   {
     "id": "dr-jyothi-n-hosurkar",
     "name": "Dr. Jyothi N. Hosurkar",
-    "designation": "Assistant Professor and HOD",
+    "designation": "Assistant Professor and HOD – Languages (Kannada)",
     "department": "Languages & Humanities",
-    "qualifications": "M.A., Ph.D.",
-    "specialisation": "Kannada Literature, Cultural Studies (13+ years experience)",
-    "committee": "Assistant Professor & HOD \u2014 Department of Languages & Humanities",
-    "email": "jyothih.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. (Karnataka University), M.A. in Kannada, M.A. in Folklore, Ph.D. (Karnataka University)",
+    "experience": "13+ Years Teaching Experience in Kannada & Folklore",
+    "specialisation": "Kannada Literature, Kannada Folklore & Creative Writing",
+    "bio": "Dr. Jyothi N. Hosurkar is the Head of the Department of Languages and Assistant Professor in Kannada with over 13 years of teaching experience. Highly skilled in Kannada Folklore, she has also authored more than 10 published poems and short stories.",
+    "highlights": "Authored 10+ published poems and short stories; dual M.A. in Kannada and Folklore with a Ph.D. from Karnataka University.",
+    "committee": "Assistant Professor & HOD — Department of Languages & Humanities",
+    "email": "jyothinh.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_jyothi_n_hosurkar/"
   },
   {
     "id": "dr-prathima-vijay",
     "name": "Dr. Prathima Vijay",
-    "designation": "Professor",
+    "designation": "Assistant Professor (Kannada)",
     "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Kannada Literature, Folklore",
-    "committee": "",
-    "email": "drprathima.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. (Bangur Nagar Degree College), M.A. in Kannada (Karnataka University Dharwad), M.A. in Folklore (Karnataka University Dharwad), Ph.D. (Karnataka University Dharwad)",
+    "experience": "10+ Years Teaching Experience in Kannada Literature",
+    "specialisation": "Kannada Literature, Folklore & Women's Literary Studies",
+    "bio": "Dr. Prathima Vijay is a passionate Kannada Professor with over 10 years of experience and dual Master's degrees in Kannada and Folklore along with a Ph.D. from Karnataka University, Dharwad.",
+    "highlights": "Published chapters in 4 books (2024–2025) including 'Triveni Sahityadalli: Maruthi Chinthane' and 'Vachana Chinthana Vishwa Darshana'.",
+    "committee": "Internal Compliance (POSH) Committee Representative",
+    "email": "prathimav.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_prathima_vijay/"
   },
   {
-    "id": "kalaimathi-s",
-    "name": "Kalaimathi S",
-    "designation": "Professor",
-    "department": "Languages & Humanities",
-    "qualifications": "NET",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
-    "email": "kalaimathi.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s/"
-  },
-  {
     "id": "kavitha-h-s",
-    "name": "Kavitha H S",
-    "designation": "Professor",
+    "name": "Dr. Kavitha H S",
+    "designation": "Assistant Professor (Hindi)",
     "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
+    "deptFlow": "faculty_languages",
+    "qualifications": "Postgraduate & Doctorate in Hindi (Dakshin Bharat Hindi Prachar Sabha)",
+    "experience": "17+ Years Teaching Experience in Hindi Literature",
+    "specialisation": "Hindi Literature, Language Pedagogy & Translation",
+    "bio": "Dr. Kavitha H S serves as Assistant Professor in the Hindi Department at SSMRV Degree College with 17 years of experience helping students master Hindi literature and communication.",
+    "highlights": "17+ years of teaching Hindi Literature; Discipline Committee Representative.",
+    "committee": "Discipline Committee Representative",
     "email": "kavithahs.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kavitha_h_s/"
   },
   {
-    "id": "ms-deepthi-raju",
-    "name": "Ms. Deepthi Raju",
-    "designation": "Professor",
-    "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Gender Studies, Urban Studies, Creative Writing Papers",
-    "committee": "",
-    "email": "msdeepthir.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju/"
-  },
-  {
-    "id": "ms-gayathri-kempurajan",
-    "name": "Ms. Gayathri Kempurajan",
-    "designation": "Professor",
-    "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "English Literature Papers",
-    "committee": "",
-    "email": "msgayathri.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan/"
-  },
-  {
-    "id": "ms-soujanya-d",
-    "name": "Ms. Soujanya D.",
-    "designation": "Professor",
-    "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Humanities",
-    "committee": "Cultural Committee SPOC (External Events & Fest)",
-    "email": "mssoujanya.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d/"
-  },
-  {
     "id": "ramamishra-yashaswi-m",
-    "name": "Ramamishra Yashaswi M",
-    "designation": "Professor",
+    "name": "Mr. Ramamishra Yashaswi M",
+    "designation": "Assistant Professor (Sanskrit)",
     "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
+    "deptFlow": "faculty_languages",
+    "qualifications": "M.Phil (Rashtriya Sanskrit Vidyapeetha, Tirupati), B.Ed (Sringeri)",
+    "experience": "Sanskrit Scholar & Educator",
+    "specialisation": "Sanskrit Literature, Shastras & Indian Knowledge Systems",
+    "bio": "Mr. Ramamishra Yashaswi M is an Assistant Professor of Sanskrit holding an M.Phil from RSVP Tirupati and B.Ed from Sringeri, guiding students in classical Sanskrit and heritage studies.",
+    "highlights": "Examination Committee Representative for Languages.",
+    "committee": "Examination Committee Representative (Languages)",
     "email": "ramamishra.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ramamishra_yashaswi_m/"
   },
   {
-    "id": "swathi-s-nair",
-    "name": "Swathi S Nair",
-    "designation": "Professor",
+    "id": "dr-d-kannan",
+    "name": "Dr. D. Kannan",
+    "designation": "Assistant Professor (English)",
     "department": "Languages & Humanities",
-    "qualifications": "Faculty Member",
-    "specialisation": "Higher Education & Academic Mentorship",
-    "committee": "",
-    "email": "swathisnai.ssmrv@rvei.edu.in",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. (English, Bharathiar University), M.A. (English, Annamalai University), Ph.D. (Presidency University)",
+    "experience": "Experienced English Literature Professor & UGC CARE Researcher",
+    "specialisation": "Gender Studies, Indian Literature, Cinematic Literature & Communicative English",
+    "bio": "Dr. D. Kannan is an Assistant Professor of English holding a Ph.D. from Presidency University. His scholarship explores Gender Studies, Indian Diaspora Literature, and Cinematic Literature.",
+    "highlights": "Published multiple UGC CARE-I papers in Sodha-Prabha (2022) and Shanlax International Journal of English on Perumal Murugan and Shashi Deshpande.",
+    "committee": "English Literary & Communication Forum",
+    "email": "kannand.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_d_kannan/"
+  },
+  {
+    "id": "ms-gayathri-kempurajan",
+    "name": "Mrs. Gayathri Kempurajan",
+    "designation": "Assistant Professor (English)",
+    "department": "Languages & Humanities",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.Com (TTM), M.A. English (Annamalai University), Ph.D. (MP University)",
+    "experience": "17+ Years Teaching Experience in English Literature",
+    "specialisation": "English Literature, Language Etiquette & Analytical Communication",
+    "bio": "Mrs. Gayathri Kempurajan is a passionate educator with over 17 years of experience teaching English literature, focusing on language etiquette, analytical thinking, and kinesthetic learning.",
+    "highlights": "Presented 'Technology, Arts and Aesthetics: A Literary and Social Transformation' at the International Conference on Literature & Linguistics (2024).",
+    "committee": "English Language & Soft Skills Mentor",
+    "email": "gayathrik.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_gayathri_kempurajan/"
+  },
+  {
+    "id": "ms-soujanya-d",
+    "name": "Ms. Soujannya D.",
+    "designation": "Assistant Professor (English)",
+    "department": "Languages & Humanities",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. (English, Psychology, Sociology), M.A. (English)",
+    "experience": "10+ Years Experience in English Literature & Soft Skills Development",
+    "specialisation": "Humanities, English Literature, Poetry & Classical Music",
+    "bio": "Ms. Soujannya D. is a dedicated educator with a decade of experience in English literature and soft skills development. She is also a trained Hindustani Classical singer and published poet.",
+    "highlights": "External Cultural Committee SPOC; published poetry and international conference presentations in Literature & Aesthetics (2024).",
+    "committee": "External Cultural Committee SPOC (Inter-Collegiate Events & Fests)",
+    "email": "soujanyad.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_soujanya_d/"
+  },
+  {
+    "id": "ms-deepthi-raju",
+    "name": "Ms. Deepthi Raju",
+    "designation": "Assistant Professor (English)",
+    "department": "Languages & Humanities",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. (NMKRV College for Women), M.A. English Literature (SDM PG Centre, Mangalore University), Ph.D. (Pursuing at GITAM University)",
+    "experience": "4.7+ Years Teaching, Curriculum & Research Experience",
+    "specialisation": "Gender Studies, Urban Studies, Graphic Narratives & Creative Writing",
+    "bio": "Ms. Deepthi Raju is an Assistant Professor in the English department with over 4.7 years of teaching experience, committed to fostering critical thinking and dialogue through literature.",
+    "highlights": "Presented papers at EFLU International Conference on Graphic Novels (Feb 2025) and Mt. Carmel Discourses '25.",
+    "committee": "English Literary Club & Creative Writing Mentor",
+    "email": "deepthiraju.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_deepthi_raju/"
+  },
+  {
+    "id": "kalaimathi-s",
+    "name": "Ms. Kalaimathi S",
+    "designation": "Assistant Professor (English)",
+    "department": "Languages & Humanities",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. with C.A. English (Manonmaniam Sundaranar University), M.A. English (Madurai Kamaraj University), M.Phil. (MKU), PGCTE, UGC-NET Qualified",
+    "experience": "4+ Years Teaching Experience | University Gold Medalist",
+    "specialisation": "English Language Teaching (ELT) & AI in Language Pedagogy",
+    "bio": "Ms. Kalaimathi S is an Assistant Professor of English, University Gold Medalist, proficiency prize winner, and UGC-NET qualifier holding an M.Phil., M.A., and PGCTE.",
+    "highlights": "University Gold Medalist & NET Qualifier; delivered international conference talk on 'AI and I: English Learning through AI' (2024).",
+    "committee": "English Language Lab & ELT Coordinator",
+    "email": "kalaimathi.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/kalaimathi_s/"
+  },
+  {
+    "id": "swathi-s-nair",
+    "name": "Ms. Swathi S Nair",
+    "designation": "Assistant Professor (English)",
+    "department": "Languages & Humanities",
+    "deptFlow": "faculty_languages",
+    "qualifications": "B.A. English Literature & Communication Studies (St. Xavier's College, Ernakulam), M.A. English Literature (Kristu Jayanti College, Bengaluru), Ph.D. (Pursuing, Presidency University)",
+    "experience": "Assistant Professor & Research Scholar in English Literature",
+    "specialisation": "English Literature, Medical Humanities, Spatial Studies, Gender Studies & Trauma Literature",
+    "bio": "Ms. Swathi S Nair is an Assistant Professor of English and Research Scholar at Presidency University focusing on Medical Humanities, Spatial Studies, and Gender & Trauma Literature.",
+    "highlights": "Published in Journal of English Language and Literature (JOELL) and presented on Medical Humanities at Kristu Jayanti International Conference (2024).",
+    "committee": "English Literary & Theatre Club Coordinator",
+    "email": "swathisnair.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/swathi_s_nair/"
   },
   {
-    "id": "dr-vijayashree-l",
-    "name": "Dr. Vijayashree L.",
-    "designation": "Principal & Professor",
-    "department": "Leadership",
-    "qualifications": "MBA, M.Phil., Ph.D., NET, Certified Harvard Design Thinker",
-    "specialisation": "Academic Leadership, Innovation Strategy, Entrepreneurship & IP Creation (19+ yrs experience)",
-    "committee": "Principal \u2014 SSMRV College | Grievance Redressal Chairperson | Certified Harvard Design Thinker",
-    "email": "principal.ssmrv@rvei.edu.in",
-    "phone": "9606067553",
-    "url": "https://www.ssmrv.edu.in/dr_vijayashree_l_message/"
-  },
-  {
-    "id": "mr-guranna-sajjan",
-    "name": "Mr. Guranna Sajjan",
-    "designation": "Senior Executive (Library)",
-    "department": "Library & Information Center",
-    "qualifications": "B.A., B.Lib",
-    "specialisation": "Resource Management & Student Circulation",
-    "committee": "Senior Executive \u2014 Library & Digital Circulation",
-    "email": "library.ssmrv@rvei.edu.in",
+    "id": "mrs-teja-k-r",
+    "name": "Mrs. Teja K.R.",
+    "designation": "Junior Director of Physical Education",
+    "department": "Physical Education & Sports",
+    "deptFlow": "faculty_sports",
+    "qualifications": "M.P.Ed (Master of Physical Education)",
+    "experience": "Sports & Wellness Centre Leadership",
+    "specialisation": "Athletics, Indoor & Outdoor Sports Coaching, Yoga & Student Wellness",
+    "bio": "Mrs. Teja K.R. serves as the Junior Director of Physical Education at SSMRV College and leads the Sports and Wellness Centre, mentoring university teams across cricket, football, basketball, table tennis, yoga, and athletics.",
+    "highlights": "College SPOC for the NAAC Sports Committee.",
+    "committee": "College SPOC — Sports Committee & Sports Wellness Centre",
+    "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
-  },
-  {
-    "id": "mrs-shylaja-t-m",
-    "name": "Mrs. Shylaja T.M.",
-    "designation": "Library Assistant & In-Charge",
-    "department": "Library & Information Center",
-    "qualifications": "M.Lib.I.Sc",
-    "specialisation": "Library Cataloging & Digital Repositories",
-    "committee": "Library In-Charge & Cataloging Head",
-    "email": "library.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
   },
   {
     "id": "mr-m-m-bopanna",
     "name": "Mr. M.M. Bopanna",
-    "designation": "Sr. Executive PE",
+    "designation": "Senior Executive – Physical Education",
     "department": "Physical Education & Sports",
-    "qualifications": "",
-    "specialisation": "",
-    "committee": "Senior Executive \u2014 Physical Education & Discipline Committee",
-    "email": "",
+    "deptFlow": "faculty_sports",
+    "qualifications": "Physical Education & Sports Coaching Specialist",
+    "experience": "Senior Physical Education & Campus Discipline Officer",
+    "specialisation": "Team Sports Coaching, Tournament Management & Campus Discipline",
+    "bio": "Mr. M.M. Bopanna serves as Senior Executive in Physical Education and is a core College SPOC on both the Anti-Ragging Cell and the Institutional Discipline Committee.",
+    "highlights": "College SPOC — Anti-Ragging Cell & Institutional Discipline Committee.",
+    "committee": "College SPOC — Anti-Ragging Cell & Discipline Committee | Sports Coaching",
+    "email": "office.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
     "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
   },
   {
-    "id": "mrs-teja-k-r",
-    "name": "Mrs. Teja K.R.",
-    "designation": "Junior Director PE",
+    "id": "chiranjivi-m-s",
+    "name": "Mr. Chiranjivi M S",
+    "designation": "Assistant Professor & Sports Coordinator",
     "department": "Physical Education & Sports",
-    "qualifications": "",
-    "specialisation": "",
-    "committee": "Junior Director \u2014 Physical Education & Sports Wellness",
-    "email": "",
+    "deptFlow": "faculty_sports",
+    "qualifications": "Postgraduate Faculty & Sports Convener",
+    "experience": "Academic Faculty & College Sports Committee SPOC",
+    "specialisation": "Sports Administration, Youth Athletics & Campus Discipline",
+    "bio": "Mr. Chiranjivi M S serves as an Assistant Professor and is the College-Level SPOC for the Sports Committee and Institutional Discipline Committee.",
+    "highlights": "College SPOC — Sports Committee & Discipline Committee.",
+    "committee": "College SPOC — Sports Committee & Discipline Committee",
+    "email": "chiranjivi.ssmrv@rvei.edu.in",
     "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/"
-  },
-  {
-    "id": "dr-lalitha-b-s",
-    "name": "Dr. Lalitha B.S.",
-    "designation": "Professor",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com, MBA",
-    "specialisation": "Accounting, Finance, Banking, Supply Chain Back to Faculty",
-    "committee": "Equal Opportunity Cell Member (M.Com)",
-    "email": "drlalithab.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lalitha_b_s/"
-  },
-  {
-    "id": "dr-lavanya-balaji",
-    "name": "Dr. Lavanya Balaji",
-    "designation": "Assistant Professor and HOD \u2013 M.com",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com, Ph.D.",
-    "specialisation": "Postgraduate Commerce, Advanced Financial Accounting, Capital Markets",
-    "committee": "Associate Professor & Head of PG Department (M.Com) | Grievance Redressal Cell",
-    "email": "lavanyab.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/dr_lavanya_balaji/"
-  },
-  {
-    "id": "mr-akshay-kumar-a-v",
-    "name": "Mr. Akshay Kumar A.V.",
-    "designation": "Professor",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com",
-    "specialisation": "Accountancy, Taxation and Finance Back to Faculty",
-    "committee": "",
-    "email": "mrakshayku.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mr_akshay_kumar_a_v/"
-  },
-  {
-    "id": "mrs-lavanya-b-k",
-    "name": "Mrs. Lavanya B.K.",
-    "designation": "Professor",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com, KSET",
-    "specialisation": "Accounting, Taxation Papers",
-    "committee": "",
-    "email": "mrslavanya.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/mrs_lavanya_b_k/"
-  },
-  {
-    "id": "ms-bhargavi-iyer-b-s",
-    "name": "Ms. Bhargavi Iyer B.S.",
-    "designation": "Professor",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com",
-    "specialisation": "Accounting and Taxation Papers",
-    "committee": "",
-    "email": "msbhargavi.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_bhargavi_iyer_b_s/"
-  },
-  {
-    "id": "ms-neha-banu",
-    "name": "Ms. Neha Banu",
-    "designation": "Professor",
-    "department": "Postgraduate Studies (M.Com)",
-    "qualifications": "M.Com, B.E.",
-    "specialisation": "Finance and Banking Papers",
-    "committee": "",
-    "email": "msnehabanu.ssmrv@rvei.edu.in",
-    "phone": "080 6824 0999",
-    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/ms_neha_banu/"
+    "url": "https://www.ssmrv.edu.in/academics/teaching_faculty/chiranjivi_m_s/"
   },
   {
     "id": "mrs-sumana-h-n",
     "name": "Mrs. Sumana H.N.",
     "designation": "Placement Officer",
     "department": "Training & Placement Cell (Paryapti)",
-    "qualifications": "MBA, Corporate Relations Specialist",
-    "specialisation": "Campus Recruitment, Industry Tie-ups, 100+ Recruiter Network",
-    "committee": "Placement Officer \u2014 Paryapti Training & Placement Cell",
+    "deptFlow": "faculty_placement",
+    "qualifications": "Corporate Relations, HR & Campus Recruitment Specialist",
+    "experience": "Head of Paryapti Training & Placement Cell",
+    "specialisation": "Campus Placements (Highest 11 LPA CTC), Corporate Tie-ups & Pre-Placement Training",
+    "bio": "Mrs. Sumana H.N. heads the Paryapti Training & Placement Cell at SSMRV College as Placement Officer and College SPOC for the Placement & Career Guidance Cell, driving 90%+ placement success across 100+ Tier-1 recruiters (Deloitte, Accenture, Infosys, KPMG, EY, Wipro, Target).",
+    "highlights": "Facilitates 100+ corporate recruitment drives with packages up to 11 LPA (BBA) and 8 LPA (BCA/B.Com).",
+    "committee": "College SPOC — Placement & Career Guidance Cell (Paryapti)",
     "email": "placement.ssmrv@rvei.edu.in",
-    "phone": "9606067551",
+    "phone": "96060 67551",
     "url": "https://www.ssmrv.edu.in/campus_life/placement/"
+  },
+  {
+    "id": "mr-naresh-k-n",
+    "name": "Mr. Naresh K.N.",
+    "designation": "Assistant Manager – HR & Corporate Relations",
+    "department": "Training & Placement Cell (Paryapti)",
+    "deptFlow": "faculty_placement",
+    "qualifications": "Human Resources & Corporate Relations Management",
+    "experience": "HR & Placement Coordination, SSMRV College",
+    "specialisation": "Employer Onboarding, Internship Drives & HR Operations",
+    "bio": "Mr. Naresh K.N. serves as Assistant Manager – HR in the Paryapti Placement Cell and Administrative Office, coordinating corporate recruitment drives and HR operations.",
+    "highlights": "Direct corporate liaison for campus internships and final placement drives.",
+    "committee": "Assistant Manager – HR | Paryapti Placement Cell",
+    "email": "placement.ssmrv@rvei.edu.in",
+    "phone": "96060 67553",
+    "url": "https://www.ssmrv.edu.in/campus_life/placement/"
+  },
+  {
+    "id": "mrs-shylaja-t-m",
+    "name": "Mrs. Shylaja T.M.",
+    "designation": "Library Assistant & In-Charge",
+    "department": "Library & Information Center",
+    "deptFlow": "faculty_library",
+    "qualifications": "M.Lib.I.Sc (Master of Library & Information Science)",
+    "experience": "Head of Central Library & Digital Knowledge Hub",
+    "specialisation": "Koha ILMS Automation, DELNET, INFLIBNET N-LIST & Digital Repositories",
+    "bio": "Mrs. Shylaja T.M. leads the SSMRV Central Library (Knowledge Hub), managing over 40,000+ books, Koha automation, e-journals, DELNET, and NDLI digital repositories.",
+    "highlights": "Oversees 40,000+ volumes and digital library subscriptions.",
+    "committee": "Library In-Charge — Central Knowledge Hub",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-guranna-sajjan",
+    "name": "Mr. Guranna Sajjan",
+    "designation": "Senior Executive – Library",
+    "department": "Library & Information Center",
+    "deptFlow": "faculty_library",
+    "qualifications": "B.A., B.Lib (Bachelor of Library Science)",
+    "experience": "Senior Library Operations & Circulation Executive",
+    "specialisation": "Book Bank Circulation, Periodicals & Student Reference Services",
+    "bio": "Mr. Guranna Sajjan serves as Senior Executive in the SSMRV Library, supporting student circulation, SC/ST Book Bank services, and reference cataloging.",
+    "highlights": "Manages daily student book circulation and reference archives.",
+    "committee": "Senior Executive — Library & Knowledge Hub",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-vani-m-u",
+    "name": "Mrs. Vani M.U.",
+    "designation": "Manager of Finance and Admin",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Finance & Institutional Administration Specialist",
+    "experience": "Head of Administrative & Financial Operations, SSMRV College",
+    "specialisation": "Financial Planning, Institutional Administration & Statutory Compliance",
+    "bio": "Mrs. Vani M.U. is the Manager of Finance and Administration at SSMRV College, overseeing campus administration, accounts, and office operations. She also represents the Administrative Office on the Internal Compliance (POSH) Committee.",
+    "highlights": "Manager of Finance and Admin; Internal Compliance (POSH) Committee Member.",
+    "committee": "Manager of Finance & Admin | Internal Compliance (POSH) Committee Member",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "ms-yeshwanthi-r",
+    "name": "Ms. Yeshwanthi R.",
+    "designation": "Assistant Manager – HR & Admin",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "HR & Administrative Management",
+    "experience": "Assistant Manager – HR & Administration",
+    "specialisation": "Human Resource Records, Faculty Onboarding & General Administration",
+    "bio": "Ms. Yeshwanthi R. serves as Assistant Manager – HR & Admin in the SSMRV College Administrative Office.",
+    "highlights": "Oversees HR records and institutional administration.",
+    "committee": "Assistant Manager – HR & Admin",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "ms-jyothi-k-s",
+    "name": "Ms. Jyothi K.S.",
+    "designation": "Assistant Manager – Accounts",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Accounts & Financial Administration",
+    "experience": "Assistant Manager – Accounts Section",
+    "specialisation": "Institutional Accounting, Fee Receipts & Scholarship Disbursements",
+    "bio": "Ms. Jyothi K.S. serves as Assistant Manager – Accounts in the SSMRV Administrative Office.",
+    "highlights": "Leads the Accounts section under Finance & Administration.",
+    "committee": "Assistant Manager – Accounts",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-sunithamba-k",
+    "name": "Mrs. Sunithamba K",
+    "designation": "F.D.A. (First Division Assistant)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Administrative & Accounts Service",
+    "experience": "First Division Assistant (FDA), SSMRV Office",
+    "specialisation": "University Correspondence, Official Records & Accounts",
+    "bio": "Mrs. Sunithamba K serves as First Division Assistant (F.D.A.) in the SSMRV College Administrative Office.",
+    "highlights": "Senior administrative record management and university correspondence.",
+    "committee": "First Division Assistant (F.D.A.)",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-hanumantha-reddy-b",
+    "name": "Mr. Hanumantha Reddy B",
+    "designation": "IT Executive",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "IT Systems & Network Administration",
+    "experience": "Campus IT Infrastructure Lead",
+    "specialisation": "Computer Labs, 1 Gbps Campus Network, ERP & Server Maintenance",
+    "bio": "Mr. Hanumantha Reddy B serves as IT Executive at SSMRV College, managing computer labs, campus Wi-Fi networks, and digital classroom infrastructure.",
+    "highlights": "Manages high-tech BCA & commerce computing labs and campus network.",
+    "committee": "IT Executive — Systems & Network Infrastructure",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-raviraj-p",
+    "name": "Mr. Raviraj P",
+    "designation": "Jr. Executive IT",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "IT Support & Hardware Maintenance",
+    "experience": "Junior Executive – IT Support",
+    "specialisation": "Lab Systems Maintenance, AV Setup & Technical Support",
+    "bio": "Mr. Raviraj P serves as Junior Executive IT at SSMRV College, supporting computer laboratories and smart classroom systems.",
+    "highlights": "Technical support for computing labs and seminar halls.",
+    "committee": "Jr. Executive — IT Support",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-shashikala-g-t",
+    "name": "Mrs. Shashikala G.T.",
+    "designation": "Sr. Executive – Administration",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Academic & Administrative Operations",
+    "experience": "Senior Executive, SSMRV Administrative Office",
+    "specialisation": "Bengaluru City University (BCU) Academic Section & Student Approvals",
+    "bio": "Mrs. Shashikala G.T. serves as Senior Executive in the SSMRV College Administrative Office, handling university affiliation and student academic records.",
+    "highlights": "Senior Executive in Administration.",
+    "committee": "Sr. Executive — Administration",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-dileepa-kumara-h-m",
+    "name": "Mr. Dileepa Kumara H.M.",
+    "designation": "Sr. Executive – Administration",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Student Services & Administrative Operations",
+    "experience": "Senior Executive, SSMRV Administrative Office",
+    "specialisation": "Student Certificates, Bus/Metro Concessions, Scholarships & Examination Support",
+    "bio": "Mr. Dileepa Kumara H.M. serves as Senior Executive in the SSMRV College Administrative Office supporting student services and documentation.",
+    "highlights": "Senior Executive for student services and certificates.",
+    "committee": "Sr. Executive — Administration",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-nethravathi-b-v",
+    "name": "Mrs. Nethravathi B.V.",
+    "designation": "Sr. Executive – Administration",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Office Administration & Records",
+    "experience": "Senior Executive, SSMRV Administrative Office",
+    "specialisation": "Admissions Verification, University Liaison & Student Records",
+    "bio": "Mrs. Nethravathi B.V. serves as Senior Executive in the SSMRV College Administrative Office.",
+    "highlights": "Senior Executive in Administration.",
+    "committee": "Sr. Executive — Administration",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-jayashree",
+    "name": "Mrs. Jayashree",
+    "designation": "Sr. Executive – Accounts",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Accounting & Financial Operations",
+    "experience": "Senior Executive – Accounts, SSMRV Office",
+    "specialisation": "Accounts Management & Financial Records",
+    "bio": "Mrs. Jayashree serves as Senior Executive – Accounts in the SSMRV College Administrative Office.",
+    "highlights": "Senior Executive in the Accounts Department.",
+    "committee": "Sr. Executive — Accounts",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-latha-k-m",
+    "name": "Mrs. Latha K.M.",
+    "designation": "Accounts Executive",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Accounts & Office Administration",
+    "experience": "Accounts Executive, SSMRV Office",
+    "specialisation": "Student Fee Desk & Accounts Support",
+    "bio": "Mrs. Latha K.M. serves as Accounts Executive in the SSMRV College Administrative Office.",
+    "highlights": "Accounts Executive supporting student fee and billing inquiries.",
+    "committee": "Accounts Executive",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-roopesh-r-k",
+    "name": "Mr. Roopesh R.K.",
+    "designation": "Admin Executive",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Operations & Administration",
+    "experience": "Admin Executive, SSMRV Office",
+    "specialisation": "Campus Facilities, Event Logistics & Office Operations",
+    "bio": "Mr. Roopesh R.K. serves as Admin Executive in the SSMRV College Administrative Office.",
+    "highlights": "Coordinates administrative operations and campus logistics.",
+    "committee": "Admin Executive",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mrs-nethravathi-m",
+    "name": "Mrs. Nethravathi M",
+    "designation": "Admin Executive",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Administrative Support & Documentation",
+    "experience": "Admin Executive, SSMRV Office",
+    "specialisation": "Reception, Student Inquiries & Documentation",
+    "bio": "Mrs. Nethravathi M serves as Admin Executive in the SSMRV College Administrative Office.",
+    "highlights": "Supports student documentation and front-office operations.",
+    "committee": "Admin Executive",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "sri-chandrashekar-m",
+    "name": "Sri. Chandrashekar M",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Classroom Support",
+    "bio": "Sri. Chandrashekar M is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "sri-dasegowda-s-t",
+    "name": "Sri. Dasegowda S.T.",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Office Support",
+    "bio": "Sri. Dasegowda S.T. is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "smt-nandini-h-k",
+    "name": "Smt. Nandini H.K.",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Office Support",
+    "bio": "Smt. Nandini H.K. is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-subhash",
+    "name": "Mr. Subhash",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Office Support",
+    "bio": "Mr. Subhash is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "ms-uma",
+    "name": "Ms. Uma",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Office Support",
+    "bio": "Ms. Uma is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
+  },
+  {
+    "id": "mr-mahadev-prasad",
+    "name": "Mr. Mahadev Prasad",
+    "designation": "Attender (Group D Support Staff)",
+    "department": "Administration & Finance",
+    "deptFlow": "faculty_admin",
+    "qualifications": "Campus Support Services",
+    "experience": "Group D Support Staff, SSMRV College",
+    "specialisation": "Department & Office Support",
+    "bio": "Mr. Mahadev Prasad is a dedicated member of the Group D Support Staff at SSMRV College.",
+    "highlights": "Campus & departmental support services.",
+    "committee": "Group D Support Staff",
+    "email": "office.ssmrv@rvei.edu.in",
+    "phone": "080 6824 0999",
+    "url": "https://www.ssmrv.edu.in/academics/non_teaching_staff/"
   }
 ];
 
@@ -2172,7 +2624,7 @@ const CHAT_FLOWS = {
     buttons: [
       { text: "📚 Explore Programmes", action: "flow:programmes" },
       { text: "📝 Admissions & Apply", action: "flow:admissions" },
-      { text: "👨‍🏫 Faculty Directory (63)", action: "flow:faculty" },
+      { text: "👨‍🏫 Faculty Directory (92)", action: "flow:faculty" },
       { text: "💼 Placements & Packages (11 LPA)", action: "flow:placements" },
       { text: "📄 Official Downloads & AICTE", action: "flow:prospectus_downloads" },
       { text: "📍 Campus Navigation / Maps", action: "flow:campus_navigation" },
@@ -2189,7 +2641,7 @@ const CHAT_FLOWS = {
     buttons: [
       { text: "📚 Explore Programmes", action: "flow:programmes" },
       { text: "📝 Admissions & Apply", action: "flow:admissions" },
-      { text: "👨‍🏫 Faculty Directory (63)", action: "flow:faculty" },
+      { text: "👨‍🏫 Faculty Directory (92)", action: "flow:faculty" },
       { text: "💼 Placements & Packages (11 LPA)", action: "flow:placements" },
       { text: "📄 Official Downloads & AICTE", action: "flow:prospectus_downloads" },
       { text: "📍 Campus Navigation / Maps", action: "flow:campus_navigation" },
@@ -2273,222 +2725,671 @@ const CHAT_FLOWS = {
   },
 
   faculty: {
-    id: "faculty",
-    pageUrl: "https://www.ssmrv.edu.in/academics/teaching_faculty/",
-    message: `<b>👨‍🏫 SSMRV Faculty, Staff & Leadership Directory (85+ Members)</b><br>100% verified against official records on <a href="https://www.ssmrv.edu.in/academics/teaching_faculty/" target="_blank">ssmrv.edu.in</a>. Features professors, department HODs, statutory committee conveners, physical education heads, library faculty, and administrative staff.<br><br>Select a department below or type any name, role, or committee directly (e.g. <i>'Dr. Sheela'</i>, <i>'Samskruthi'</i>, <i>'Sumana'</i>, <i>'NSS'</i>, <i>'NCC'</i>, <i>'Sports'</i>):`,
-    buttons: [
-      { text: "💻 BCA Faculty (17)", action: "flow:faculty_bca" },
-      { text: "📊 Commerce Faculty (11)", action: "flow:faculty_commerce" },
-      { text: "📈 BBA & Aviation Faculty (16)", action: "flow:faculty_bba" },
-      { text: "🎓 M.Com Postgraduate (6)", action: "flow:faculty_mcom" },
-      { text: "🗣️ Languages & Humanities (10)", action: "flow:faculty_languages" },
-      { text: "⚽ Sports & PE Leadership", action: "flow:faculty_sports" },
-      { text: "💼 Placement Cell (Paryapti)", action: "flow:faculty_placement" },
-      { text: "📖 Library & Knowledge Hub", action: "flow:faculty_library" },
-      { text: "🏢 Administration & Support (12)", action: "flow:faculty_admin" },
-      { text: "🏛️ Institutional Leadership (7)", action: "flow:faculty_leadership" },
-      { text: "🛡️ Statutory Committees & Conveners", action: "flow:faculty_committees" }
-    ]
-  },
-
-  faculty_sports: {
-    id: "faculty_sports",
-    pageUrl: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
-    message: `<b>⚽ Physical Education & Sports Wellness Centre</b><br>
-• <b>Mrs. Teja K.R.</b> — Junior Director of Physical Education (Sports Committee Lead)<br>
-• <b>Mr. M.M. Bopanna</b> — Senior Executive PE & Discipline Committee<br>
-• <b>Mr. Chiranjivi M.S.</b> — Sports Committee Member<br><br>
-SSMRV champions holistic student wellness with extensive indoor and outdoor facilities, gymnasiums, and university representation in cricket, football, basketball, yoga, and athletics.`,
-    buttons: [
-      { text: "🌟 Sports & Wellness Centre", action: "flow:centres_clubs" },
-      { text: "👨‍🏫 All Faculty Directory", action: "flow:faculty" },
-      { text: "🌐 View on Website", url: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/" }
-    ]
-  },
-
-  faculty_library: {
-    id: "faculty_library",
-    pageUrl: "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
-    message: `<b>📖 Library & Information Center (Knowledge Hub)</b><br>
-• <b>Mrs. Shylaja T.M.</b> — Library Assistant & In-Charge (M.Lib.I.Sc | Digital Repositories)<br>
-• <b>Mr. Guranna Sajjan</b> — Senior Executive (B.A., B.Lib | Student Circulation)<br><br>
-The Central Library houses over 40,000+ volumes, automated via Koha ILMS, with direct subscriptions to DELNET, NDLI, INFLIBNET, and EBSCO e-journals.`,
-    buttons: [
-      { text: "📚 Knowledge Hub Facilities", action: "flow:campus" },
-      { text: "👨‍🏫 All Faculty Directory", action: "flow:faculty" },
-      { text: "🌐 View on Website", url: "https://www.ssmrv.edu.in/academics/non_teaching_staff/" }
-    ]
-  },
-
-  faculty_admin: {
-    id: "faculty_admin",
-    pageUrl: "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
-    message: `<b>🏢 Non-Teaching Administration & Student Services</b><br>
-• <b>Mrs. Vani M.U.</b> — Manager of Finance & Administration<br>
-• <b>Mr. Hanumantha Reddy B</b> — Senior IT Executive (Campus Networks & Labs)<br>
-• <b>Ms. Yeshwanthi R.</b> — Administrative Executive (Student Records)<br>
-• <b>Ms. Jyothi K.S.</b> — Executive (Admissions Documentation)<br>
-• <b>Mrs. Sunithamba K</b> — Executive (Accounts & Fee Desk)<br>
-• <b>Mrs. Shashikala G.T.</b> — Executive (University Affiliation Records)<br>
-• <b>Mr. Dileepa Kumara H.M.</b> — Executive (Student Services & ID Passes)<br>
-• <b>Mrs. Nethravathi B.V.</b> — Executive (Office Administration)<br>
-• <b>Mr. Roopesh R.K.</b> — Executive (Campus Operations)<br>
-• <b>Mr. Raviraj P</b> — Executive (General Administration)<br>
-• <b>Mrs. Nethravathi M</b> — Executive (Office Support)<br>
-• <b>Mrs. Jayashree</b> & <b>Mrs. Latha K.M.</b> — Executive Staff (Reception & Dispatch)`,
-    buttons: [
-      { text: "📞 Contact Administrative Office", action: "flow:contact" },
-      { text: "👨‍🏫 All Faculty Directory", action: "flow:faculty" },
-      { text: "🌐 View on Website", url: "https://www.ssmrv.edu.in/academics/non_teaching_staff/" }
-    ]
-  },
-
-  faculty_committees: {
-    id: "faculty_committees",
-    pageUrl: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/",
-    message: `<b>🛡️ Official Statutory Committees & Conveners</b><br>
-• <b>IQAC (Quality Assurance):</b> Ms. R. Shanthi Krishna (Convener)<br>
-• <b>NSS Unit:</b> Mr. Yallappa M. (Program Officer)<br>
-• <b>NCC Unit:</b> Mr. Avinash K.V. (Associate NCC Officer)<br>
-• <b>Examination Committee:</b> Dr. Mohan Rao C.N. (Chief Superintendent)<br>
-• <b>Grievance Redressal Cell:</b> Dr. Vijayashree L. (Principal & Chair)<br>
-• <b>POSH / Internal Compliance:</b> Dr. Revathy Shivashankaran (Presiding Officer)<br>
-• <b>Anti-Ragging Cell:</b> Ms. Nandini J. & Mr. M.M. Bopanna<br>
-• <b>Placement Cell:</b> Mrs. Sumana H.N. (Placement Officer)<br>
-• <b>Innovation & IPR Cell:</b> Dr. S. Chethana (Convener)<br>
-• <b>Entrepreneurship Cell (RAISE CoE):</b> Dr. Vinaya T. (Convener)<br>
-• <b>Sports Committee:</b> Mr. Chiranjivi M.S. & Mrs. Teja K.R.<br>
-• <b>Cultural Committee (Tarangini):</b> Dr. Bharathi N.S. & Ms. Soujanya D.<br>
-• <b>Alumni Association (Sammilana):</b> Mr. Gokul C. (Convener)`,
-    buttons: [
-      { text: "🌟 Centres & Clubs", action: "flow:centres_clubs" },
-      { text: "👨‍🏫 Faculty Directory", action: "flow:faculty" },
-      { text: "🌐 View Committees on Website", url: "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/" }
-    ]
+      "id": "faculty",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>👨‍🏫 SSMRV Official Faculty, Staff &amp; Leadership Directory (92 Profiles)</b><br>100% verified from <a href=\"https://www.ssmrv.edu.in/academics/teaching_faculty/\" target=\"_blank\">ssmrv.edu.in</a> with complete <b>Department</b>, <b>Designation</b>, <b>Qualifications</b>, <b>Experience</b>, <b>Specialisations</b>, <b>Publications</b>, and <b>Statutory Committee</b> profiles.<br><br>Select a department below to browse interactive profiles, or type any name/role directly:",
+      "buttons": [
+          {
+              "text": "💻 BCA Faculty (11)",
+              "action": "flow:faculty_bca"
+          },
+          {
+              "text": "📊 Commerce / B.Com Faculty (23)",
+              "action": "flow:faculty_commerce"
+          },
+          {
+              "text": "📈 BBA & Aviation Faculty (11)",
+              "action": "flow:faculty_bba"
+          },
+          {
+              "text": "🎓 M.Com Postgraduate Faculty (3)",
+              "action": "flow:faculty_mcom"
+          },
+          {
+              "text": "🗣️ Languages & Humanities (10)",
+              "action": "flow:faculty_languages"
+          },
+          {
+              "text": "⚽ Physical Education & Sports (3)",
+              "action": "flow:faculty_sports"
+          },
+          {
+              "text": "💼 Placement Cell — Paryapti (2)",
+              "action": "flow:faculty_placement"
+          },
+          {
+              "text": "📖 Library & Knowledge Hub (2)",
+              "action": "flow:faculty_library"
+          },
+          {
+              "text": "🏢 Administration & Support (19)",
+              "action": "flow:faculty_admin"
+          },
+          {
+              "text": "🏛️ Institutional Leadership (8)",
+              "action": "flow:faculty_leadership"
+          },
+          {
+              "text": "🛡️ Statutory Committees & Conveners",
+              "action": "flow:faculty_committees"
+          }
+      ]
   },
 
   faculty_bca: {
-    id: "faculty_bca",
-    message: `<b>💻 Department of Computer Applications (BCA)</b><br>
-• <b>Dr. R. Sheela Chandrashekar</b> — Assoc. Prof & HOD (Ph.D., MCA, M.Phil | Cloud, DB Systems)<br>
-• <b>Mr. Shivakumara N.</b> — Asst. Professor (MCA, M.Phil, NET | Data Structures & Algorithms)<br>
-• <b>Mr. Yallappa M.</b> — Asst. Professor (MCA, M.Sc. | OS, Computer Networks)<br>
-• <b>Ms. M. Roopa Latha</b> — Asst. Professor (MCA, M.Tech | AI & Python Analytics)<br>
-• <b>Ms. Deepika L.</b> — Asst. Professor (MCA | Java & Full-Stack Systems)<br>
-• <b>Ms. Shakeela M.K.</b> — Asst. Professor (M.Sc., M.Phil | Info Security & C++)<br>
-• <b>Ms. Jahanavi Rao A.V.</b> — Asst. Professor (BCA, MCA | Web Technologies)<br>
-<i>+ 10 additional lab instructors and adjunct fellows.</i>`,
-    buttons: [
-      { text: "💻 BCA Course Curriculum", action: "flow:bca_details" },
-      { text: "💰 BCA Fee Structure", action: "flow:fee_enquiry" },
-      { text: "🌐 View BCA Faculty Online", url: "https://www.ssmrv.edu.in/academics/teaching_faculty/" },
-      { text: "👨‍🏫 Other Departments", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_bca",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>💻 Department of Computer Applications (BCA) (11 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Full-Stack Development, AI/ML, Cyber Security, VLSI & Cloud Computing Faculty. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-r-sheela-chandrashekar\" title=\"Click to view full profile of Dr. R. Sheela Chandrashekar\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. R. Sheela Chandrashekar</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Associate Professor and HOD – BCA</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Computer Science, Kuvempu University), M.Sc (Computer Science, Kuvempu University), Ph.D. (Jain University) • 17+ Years Teaching & Research Experience in Computer Science and IT</div><div>🔬 <b>Specialisation:</b> Cyber Security, Cyber Forensics, Digital Forensics, Cyber Threat Intelligence, Image Processing & Face Recognition</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Head of Department (BCA) | Grievance Redressal Cell (BCA Representative)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-r-shanthi-krishna\" title=\"Click to view full profile of Mrs. R. Shanthi Krishna\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. R. Shanthi Krishna</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & IQAC Coordinator</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Sri Sarada College), MCA (Nehru Memorial College), M.Phil. (Manonmaniam Sundaranar University), PGP-AIML (Great Lakes Executive Learning) • 19+ Years Collegiate Teaching Experience (Former HOD BCA 2014–2024)</div><div>🔬 <b>Specialisation:</b> Machine Learning, Artificial Intelligence, Programming Languages</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IQAC Coordinator / Convener (Internal Quality Assurance Cell — NAAC)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-s-chethana\" title=\"Click to view full profile of Dr. S. Chethana\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. S. Chethana</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Electronics, University of Mysore), MCA (IGNOU), Ph.D. (Jain University) • 22+ Years Teaching Experience in Computer Science</div><div>🔬 <b>Specialisation:</b> Artificial Intelligence, Internet of Things (IoT), Software Engineering, Medical Image Processing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — Innovation Cell & IPR Cell | Examination Committee (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-suma-sannamani\" title=\"Click to view full profile of Dr. Suma Sannamani\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Suma Sannamani</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.E. (Electronics & Communication, VTU), M.Tech (VLSI Design & Embedded Systems, VTU), Ph.D. (VTU) • 8.6+ Years Teaching Experience in Engineering & Computer Applications</div><div>🔬 <b>Specialisation:</b> Memory Architecture, VLSI Design & Embedded Systems</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Convenor — Consultancy Cell | Innovation Ambassador | Entrepreneurship Cell (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-v-sudha\" title=\"Click to view full profile of Mrs. V. Sudha (Dr. V. Sudha)\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. V. Sudha (Dr. V. Sudha)</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Sc (Software Systems, Bharathiar University), Ph.D. (Computer Science, Bharathiar University), UGC-NET Qualified • 10+ Years Teaching & Research Experience in Higher Education</div><div>🔬 <b>Specialisation:</b> Digital Image Processing, Machine Learning, Remote Sensing & Software Systems</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IPR Cell Representative (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-getendra-kumar-m\" title=\"Click to view full profile of Mr. Getendra Kumar M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Getendra Kumar M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Sc (Computer Science, University of Madras) • 18+ Years Teaching Experience in Computer Applications</div><div>🔬 <b>Specialisation:</b> Database Management Systems (DBMS), Relational Architecture & SQL</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Alumni Association Representative (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-malasa-m-r\" title=\"Click to view full profile of Mrs. Malasa M.R.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Malasa M.R.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Kuvempu University), M.Sc (Mangalore University), MCA (GITAM University) • 21+ Years Teaching Experience (UG & PG Computer Science)</div><div>🔬 <b>Specialisation:</b> Internet of Things (IoT), Arduino & Electronics-Based Systems</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Placement & Career Guidance Cell (BCA) | Discipline Committee (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-vasugi-mudaliar-r-k\" title=\"Click to view full profile of Ms. Vasugi Mudaliar R.K.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Vasugi Mudaliar R.K.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & BCA II Year Coordinator</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Computer Science, Bishop Cotton Women's Christian College), M.Sc (Computer Science, St. Joseph's PG College), B.Ed (KIET) • 15+ Years Teaching Experience in Computer Science</div><div>🔬 <b>Specialisation:</b> Social Media Analytics, Data Science, Python Programming, Java Programming, Cyber Security</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IQAC Representative (BCA) | II Year BCA & Timetable Coordinator</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-preethi-dwarakanath\" title=\"Click to view full profile of Mrs. Preethi Dwarakanath\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Preethi Dwarakanath</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.E. (Information Science & Engineering, SJCE Mysuru / VTU), M.S. in Software Systems (BITS Pilani) • 11 Years Industry Experience (Senior Software Engineer) + 5+ Years Teaching Experience</div><div>🔬 <b>Specialisation:</b> Theoretical Computer Science, Machine Learning & Software Engineering</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sports Committee (BCA) | Cultural Committee (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-puja-biswas\" title=\"Click to view full profile of Mrs. Puja Biswas\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Puja Biswas</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Tech (West Bengal University of Technology), M.Tech (West Bengal University of Technology) • 6+ Years Teaching Experience in Computer Applications</div><div>🔬 <b>Specialisation:</b> Information Technology, Cloud Computing, Internet of Things (IoT)</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Equal Opportunity Cell Representative (BCA) | Innovation Ambassador</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-jahanavi-rao-a-v\" title=\"Click to view full profile of Ms. Jahanavi Rao A.V.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Jahanavi Rao A.V.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BCA (Vijaya College, Jayanagar), M.Sc (Computer Science, National College Basavanagudi) • 5+ Years Teaching & Research Experience in Computer Science</div><div>🔬 <b>Specialisation:</b> Computer Science, Web Technologies & Software Development</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> BCA Academic & Technical Club Mentor</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. R. Sheela Chandrashekar (HOD)",
+              "action": "profile:dr-r-sheela-chandrashekar"
+          },
+          {
+              "text": "👤 Mrs. R. Shanthi Krishna (Coord.)",
+              "action": "profile:ms-r-shanthi-krishna"
+          },
+          {
+              "text": "👤 Dr. S. Chethana",
+              "action": "profile:dr-s-chethana"
+          },
+          {
+              "text": "👤 Dr. Suma Sannamani",
+              "action": "profile:dr-suma-sannamani"
+          },
+          {
+              "text": "👤 Mrs. V. Sudha (Dr. V. Sudha)",
+              "action": "profile:dr-v-sudha"
+          },
+          {
+              "text": "👤 Mr. Getendra Kumar M.",
+              "action": "profile:mr-getendra-kumar-m"
+          },
+          {
+              "text": "👤 Mrs. Malasa M.R.",
+              "action": "profile:mrs-malasa-m-r"
+          },
+          {
+              "text": "👤 Ms. Vasugi Mudaliar R.K. (Coord.)",
+              "action": "profile:ms-vasugi-mudaliar-r-k"
+          },
+          {
+              "text": "👤 Mrs. Preethi Dwarakanath",
+              "action": "profile:mrs-preethi-dwarakanath"
+          },
+          {
+              "text": "👤 Mrs. Puja Biswas",
+              "action": "profile:mrs-puja-biswas"
+          },
+          {
+              "text": "👤 Ms. Jahanavi Rao A.V.",
+              "action": "profile:ms-jahanavi-rao-a-v"
+          },
+          {
+              "text": "💻 BCA Course Details",
+              "action": "flow:bca_details"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_commerce: {
-    id: "faculty_commerce",
-    message: `<b>📊 Department of Commerce (B.Com)</b><br>
-• <b>Dr. Malini N.</b> — Assoc. Professor & HOD (B.Com, M.Com, MBA, Ph.D. | Accounting, Taxation & HR)<br>
-• <b>Mr. Gokul C.</b> — Asst. Professor & Coordinator (B.Com 1st Year) (B.Com, MBA, M.Com, KSET)<br>
-• <b>Dr. Kanchan G. Rajput</b> — Asst. Professor (MBA, Ph.D. | Financial Markets & Accounting)<br>
-• <b>Dr. Lalitha B.S.</b> — Asst. Professor (M.Com, Ph.D. | 19+ yrs experience in Commerce)<br>
-• <b>Dr. Rajini K.S.</b> — Asst. Professor (M.Com, Ph.D. | Corporate Governance & Auditing)<br>
-• <b>Dr. Shruti Khemashetty</b> — Asst. Professor (M.Com, Ph.D. | Banking & Corporate Law)<br>
-• <b>Dr. Suma Sannamani</b> — Asst. Professor (M.Com, Ph.D. | Business Taxation & Costing)`,
-    buttons: [
-      { text: "📊 B.Com Course Details", action: "flow:bcom_details" },
-      { text: "💰 B.Com Fee Structure", action: "flow:fee_enquiry" },
-      { text: "🌐 View Commerce Profiles", url: "https://www.ssmrv.edu.in/academics/teaching_faculty/" },
-      { text: "👨‍🏫 Other Departments", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_commerce",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>📊 Department of Commerce (B.Com) (23 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Accounting, Taxation, Corporate Finance, Auditing, Business Law & HRM Faculty. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-malini-n\" title=\"Click to view full profile of Dr. Malini N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Malini N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Associate Professor and HOD – Commerce</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Accounting & Taxation, Bangalore University), M.Com (Bangalore University), MBA (HRM, IGNOU), Ph.D. (Jain Deemed-to-be University) • 20+ Years Experience in Academia & Financial Analysis</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation, Human Resources Management, Global Climate Governance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Associate Professor & HOD — Commerce | Grievance Redressal Cell (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-samskruthi-b-l\" title=\"Click to view full profile of Ms. Samskruthi B. L.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Samskruthi B. L.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Associate Professor and HOD – Commerce</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, M.Phil, UGC-NET / KSET • Senior Academic Leadership in Department of Commerce</div><div>🔬 <b>Specialisation:</b> Corporate Accounting, Banking, Financial Markets & Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Associate Professor & HOD — Department of Commerce (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-gokul-c\" title=\"Click to view full profile of Mr. Gokul C.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Gokul C.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and Coordinator (B.Com 1st Year)</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), MBA (Bangalore University), M.Com (Annamalai University), PGDBI (Annamalai University), KSET • 10+ Years Corporate Industry Experience + 10+ Years Academic Experience</div><div>🔬 <b>Specialisation:</b> Accounting, Taxation, Financial Management & General Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> B.Com 1st Year Coordinator | College SPOC — Alumni Association (Sammilana) | Innovation Cell (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-vinaya-t\" title=\"Click to view full profile of Dr. Vinaya T.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Vinaya T.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and Coordinator (B.Com 2nd Year)</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BBM, M.Com, Ph.D. (University of Mysore, Manasagangotri) • 17+ Years Teaching & Corporate Experience</div><div>🔬 <b>Specialisation:</b> Finance, Accounting, Taxation and Empirical Research</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> B.Com 2nd Year Coordinator | College SPOC — Entrepreneurship Cell | Sports Committee (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-mokshamala-u\" title=\"Click to view full profile of Ms. Mokshamala U.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Mokshamala U.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.A. (Political Science, Bangalore University), B.Ed (Bangalore University), LL.B. (KSLU) • 18+ Years Teaching Experience in Higher Education</div><div>🔬 <b>Specialisation:</b> Business Law, Corporate Law, Constitutional Law & Political Science</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Senior Professor — Business & Corporate Law (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-yallappa-m\" title=\"Click to view full profile of Mr. Yallappa M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Yallappa M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & NSS Programme Officer</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (RC College, Bangalore), MFA (Central College, Bangalore University), M.Com, M.Phil, Ph.D. (Pursuing, Jain University) • 15+ Years Teaching Experience in Finance & Commerce</div><div>🔬 <b>Specialisation:</b> Finance, Financial Analysis & Accounting</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — NSS Unit (Programme Officer) | SC/ST Cell, Entrepreneurship & Discipline Committees (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-m-roopa-latha\" title=\"Click to view full profile of Ms. M. Roopa Latha\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. M. Roopa Latha</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Computer Science, Shree Venkateshwara University), MBA (Shree Venkateshwara University) • 16+ Years Teaching & Research Experience in Commerce & Management</div><div>🔬 <b>Specialisation:</b> Finance and Human Resources Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Commerce Academic & Research Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-shivakumara-n\" title=\"Click to view full profile of Mr. Shivakumara N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Shivakumara N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Bangalore University), B.Ed (Bangalore University), UGC-NET Qualified • 16+ Years Teaching Experience in Commerce</div><div>🔬 <b>Specialisation:</b> Accounts and Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Commerce Academic & Mentorship Cell</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-deepika-l\" title=\"Click to view full profile of Ms. Deepika L.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Deepika L.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Vijaya Main College, Bengaluru), M.Com (HRM, University of Mysore), Diploma in Fashion Designing (IIFT) • 9+ Years Teaching Experience in Commerce</div><div>🔬 <b>Specialisation:</b> Human Resource Management, Marketing, Auditing & Fashion Design</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IQAC Representative (B.Com) | Alumni Association Representative (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-shakeela-m-k\" title=\"Click to view full profile of Ms. Shakeela M.K.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Shakeela M.K.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Procedure & Practices of Taxation), M.Com (Finance, Bangalore University), Diploma in Fashion Designing (IIFT) • 11+ Years Teaching Experience (formerly at NMKRV College for Women)</div><div>🔬 <b>Specialisation:</b> Finance, Accounting, Taxation, HR and Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Cultural Committee Representative (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-vidya-u-jambagi\" title=\"Click to view full profile of Mrs. Vidya U. Jambagi\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Vidya U. Jambagi</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (PES College), M.Com (Bangalore University), M.Phil. (Dravidian University), KSET, PGDBA (2 Years) • 21+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Accounting, Corporate Financial Reporting & Sustainability</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Internal Compliance / POSH Committee Representative (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-bharathi-n-s\" title=\"Click to view full profile of Dr. / Ms. Bharathi N.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. / Ms. Bharathi N.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (IGNOU), MBA (Alagappa University), PGDBIO (IGNOU), Ph.D. (Christ Deemed-to-be University) • 10+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Marketing, Finance, Accountancy, Cognitive Psychology & Neuroscience</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Internal Cultural Committee SPOC (Tarangini) | Examination Committee (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-kanchan-g-rajput\" title=\"Click to view full profile of Dr. Kanchan G. Rajput\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Kanchan G. Rajput</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com, MBA (Finance), Ph.D. (ISBR Research Centre, University of Mysore) • 13+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Domain of Finance, Microfinance, Financial Inclusion & Banking</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Commerce Research & Finance Forum</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-rajini-k-s\" title=\"Click to view full profile of Dr. Rajini K.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Rajini K.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (Mangalore University), MBA (Pondicherry University), Ph.D. (Jain University) • 12+ Years Teaching Experience in B.Com Department</div><div>🔬 <b>Specialisation:</b> Human Resource Management, ESG & Green Marketing Strategies</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> B.Com Student Welfare & HRM Mentor</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-shashikala-c-s\" title=\"Click to view full profile of Dr. Shashikala C.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Shashikala C.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Bangalore University), Ph.D. in Commerce (Tumkur University) • 8.7+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation, Marketing, Strategic Management & Consumer Behaviour</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IPR Cell Representative (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-bhargavi-iyer-b-s\" title=\"Click to view full profile of Mrs. Bhargavi Iyer B.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Bhargavi Iyer B.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Bangalore University) • 4.5+ Years Teaching Experience | In-Charge of RV-Skills</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> In-Charge — RV-Skills | Member — IIC, Taxation Club & Youth Red Cross (YRC)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"vaishnavi-r\" title=\"Click to view full profile of Ms. Vaishnavi R\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Vaishnavi R</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com with Computer Applications (Madurai Kamaraj University), M.Com with Computer Applications (MKU), M.A. Economics (IGNOU), UGC-NET, KSET • 9.5+ Years Teaching Experience</div><div>🔬 <b>Specialisation:</b> Accounting, Economics & Computer Applications in Commerce</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Commerce Academic & Competitive Exam Mentor</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"prakasha-v\" title=\"Click to view full profile of Mr. Prakasha V (Dr. Prakasha V)\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Prakasha V (Dr. Prakasha V)</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), MBA (Bangalore University), M.Com (KSOU), PGDFM (KSOU), Ph.D. (Kalinga University) • 16+ Years Teaching Experience in Commerce & Management</div><div>🔬 <b>Specialisation:</b> Finance & Marketing, Accounts</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Cultural Committee (B.Com) | Examination Committee (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ume-salma\" title=\"Click to view full profile of Mrs. Ume Salma\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Ume Salma</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> MBA (Bharathiar University), M.Phil (Dravidian University), M.Com (University of Mysore), PGDIB (Central University Bangalore) • 17+ Years Teaching Experience at SSMRV College (Since 2008)</div><div>🔬 <b>Specialisation:</b> Digital Marketing, Commerce and Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Placement & Career Guidance Cell Representative (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"nandini-j\" title=\"Click to view full profile of Ms. Nandini J\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Nandini J</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Academic & Statutory Cell Coordinator • Commerce Teaching & Institutional Statutory Leadership</div><div>🔬 <b>Specialisation:</b> Commerce, Business Ethics & Student Welfare</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Anti-Ragging Cell, Human Rights Protection Cell, Anti-Drug Cell & Discipline Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"sharavana-m\" title=\"Click to view full profile of Mr. Sharavana M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Sharavana M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Statutory Cell Convener • Commerce Teaching & Student Support Systems</div><div>🔬 <b>Specialisation:</b> Commerce, Accounting & Inclusive Education</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — SC/ST Cell (UGC / NAAC)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-mohan-rao-c-n\" title=\"Click to view full profile of Dr. Mohan Rao C.N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Mohan Rao C.N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Chief Superintendent of Examinations</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Ph.D. • Senior Academician & Examination Controller</div><div>🔬 <b>Specialisation:</b> Commerce, Corporate Accounting & University Examinations</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — Examination Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"vedamurthy-y-n\" title=\"Click to view full profile of Dr. / Mr. Vedamurthy Y N\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. / Mr. Vedamurthy Y N</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Ph.D. • Academic Teaching & Internal Compliance Member</div><div>🔬 <b>Specialisation:</b> Commerce & Academic Governance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Internal Compliance (POSH) Committee Member</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. Malini N. (HOD)",
+              "action": "profile:dr-malini-n"
+          },
+          {
+              "text": "👤 Ms. Samskruthi B. L. (HOD)",
+              "action": "profile:ms-samskruthi-b-l"
+          },
+          {
+              "text": "👤 Mr. Gokul C. (Coord.)",
+              "action": "profile:mr-gokul-c"
+          },
+          {
+              "text": "👤 Dr. Vinaya T. (Coord.)",
+              "action": "profile:dr-vinaya-t"
+          },
+          {
+              "text": "👤 Ms. Mokshamala U.",
+              "action": "profile:ms-mokshamala-u"
+          },
+          {
+              "text": "👤 Mr. Yallappa M.",
+              "action": "profile:mr-yallappa-m"
+          },
+          {
+              "text": "👤 Ms. M. Roopa Latha",
+              "action": "profile:ms-m-roopa-latha"
+          },
+          {
+              "text": "👤 Mr. Shivakumara N.",
+              "action": "profile:mr-shivakumara-n"
+          },
+          {
+              "text": "👤 Ms. Deepika L.",
+              "action": "profile:ms-deepika-l"
+          },
+          {
+              "text": "👤 Ms. Shakeela M.K.",
+              "action": "profile:ms-shakeela-m-k"
+          },
+          {
+              "text": "👤 Mrs. Vidya U. Jambagi",
+              "action": "profile:mrs-vidya-u-jambagi"
+          },
+          {
+              "text": "👤 Dr. / Ms. Bharathi N.S.",
+              "action": "profile:ms-bharathi-n-s"
+          },
+          {
+              "text": "👤 Dr. Kanchan G. Rajput",
+              "action": "profile:dr-kanchan-g-rajput"
+          },
+          {
+              "text": "👤 Dr. Rajini K.S.",
+              "action": "profile:dr-rajini-k-s"
+          },
+          {
+              "text": "👤 Dr. Shashikala C.S.",
+              "action": "profile:dr-shashikala-c-s"
+          },
+          {
+              "text": "👤 Mrs. Bhargavi Iyer B.S.",
+              "action": "profile:ms-bhargavi-iyer-b-s"
+          },
+          {
+              "text": "👤 Ms. Vaishnavi R",
+              "action": "profile:vaishnavi-r"
+          },
+          {
+              "text": "👤 Mr. Prakasha V (Dr. Prakasha V)",
+              "action": "profile:prakasha-v"
+          },
+          {
+              "text": "👤 Mrs. Ume Salma",
+              "action": "profile:ume-salma"
+          },
+          {
+              "text": "👤 Ms. Nandini J",
+              "action": "profile:nandini-j"
+          },
+          {
+              "text": "👤 Mr. Sharavana M",
+              "action": "profile:sharavana-m"
+          },
+          {
+              "text": "👤 Dr. Mohan Rao C.N.",
+              "action": "profile:dr-mohan-rao-c-n"
+          },
+          {
+              "text": "👤 Dr. / Mr. Vedamurthy Y N",
+              "action": "profile:vedamurthy-y-n"
+          },
+          {
+              "text": "📊 B.Com Course Details",
+              "action": "flow:bcom_details"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_bba: {
-    id: "faculty_bba",
-    message: `<b>📈 Department of Business Administration (BBA & Aviation)</b><br>
-• <b>Dr. Revathy Shivashankaran</b> — Assoc. Prof & HOD (MBA, M.Phil., Ph.D. | Strategic Management)<br>
-• <b>Mr. Jagadish A.</b> — Asst. Prof & HOD - Aviation (BCA, MBA | Airport Operations & Air Cargo Logistics)<br>
-• <b>Dr. S. Chethana</b> — Asst. Professor (MBA, Ph.D. | Marketing & Consumer Psychology)<br>
-• <b>Dr. Sushma C.</b> — Asst. Professor (BBM, MBA, Ph.D. | Organizational Behavior)<br>
-• <b>Mrs. V. Sudha</b> — Asst. Professor (MBA, M.Phil | Human Resource Development)<br>
-• <b>Mr. Arun Kumar R.</b> — Asst. Professor (BBM, MBA | Finance & International Business)<br>
-• <b>Mr. Santosh Bendigeri</b> — Asst. Professor (MBA | Supply Chain Management)<br>
-• <b>Mrs. Puja Biswas</b> — Asst. Professor (MBA | Retail & Entrepreneurship)`,
-    buttons: [
-      { text: "📈 BBA Honours Details", action: "flow:bba_details" },
-      { text: "✈️ BBA Aviation Details", action: "flow:aviation_details" },
-      { text: "💰 Request Fee Structure", action: "flow:fee_enquiry" },
-      { text: "👨‍🏫 Other Departments", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_bba",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>📈 Department of Business Administration (BBA &amp; Aviation) (11 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Strategic Management, Aviation Management, HR Analytics, Finance & Marketing Faculty. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-revathy-shivashankaran\" title=\"Click to view full profile of Dr. Revathy Shivashankaran\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Revathy Shivashankaran</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Associate Professor and HOD – BBA</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Mathematics, University of Madras), MBA (University of Madras), M.Com (IGNOU), Ph.D. (Mother Teresa Women's University, Kodaikanal) • 25+ Years Combined Experience (16.5 Years Academia + 8.5 Years Corporate)</div><div>🔬 <b>Specialisation:</b> Organisational Behaviour & HRM, HR Analytics, General Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Associate Professor & HOD — BBA | College Chairperson — Internal Compliance (POSH) | Grievance Redressal Cell (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-jagadish-a\" title=\"Click to view full profile of Mr. Jagadish A.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Jagadish A.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and HOD – BBA Aviation Management</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BCA (Bangalore University), MBA (Bangalore University), Ph.D. (Pursuing at Jain University) • 16+ Years Teaching Experience + Corporate Experience at Bharti Infotel & ICICI Bank</div><div>🔬 <b>Specialisation:</b> Marketing, Information Technology, Consumer Behaviour Analytics, E-Commerce & Aviation Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> HOD — BBA Aviation Management | IQAC Representative (BBA) | Internal Compliance POSH Member (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"avinash-k-v\" title=\"Click to view full profile of Mr. Avinash K.V.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Avinash K.V.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Associate NCC Officer (ANO)</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com, M.Com, MBA • Management Educator & Commissioned Associate NCC Officer</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation, Human Resources Management & Youth Leadership</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — NCC Unit (Associate NCC Officer)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-shruti-khemashetty\" title=\"Click to view full profile of Dr. Shruti Khemashetty\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Shruti Khemashetty</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc, MBA (Dodappa Appa College), Ph.D. (Dayananda Sagar University) • 15+ Years Academic Experience in Management</div><div>🔬 <b>Specialisation:</b> Human Resource Management and Marketing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Innovation Cell Representative (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-sushma-c\" title=\"Click to view full profile of Dr. Sushma C.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Sushma C.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BBM (Bangalore University), MBA (Bangalore University), Ph.D. in Management (Bangalore University) • 13+ Years Academic & Industrial Experience</div><div>🔬 <b>Specialisation:</b> Accounts, Finance, Entrepreneurship & Industrial Dynamics</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IPR Cell Representative (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-m-rajatha\" title=\"Click to view full profile of Mrs. Rajatha M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Rajatha M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Kuvempu University), MBA (ICFAI University) • 14+ Years Teaching Experience in BBA Department</div><div>🔬 <b>Specialisation:</b> Finance and Marketing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Alumni Association Representative (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-santosh-d-bendigeri\" title=\"Click to view full profile of Mr. Santosh D. Bendigeri\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Santosh D. Bendigeri</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Dharwad University), M.Com (Rajasthan University), MBA (Bangalore University), Ph.D. (Pursuing at Annamalai University) • 10+ Years Teaching Experience + Corporate Experience</div><div>🔬 <b>Specialisation:</b> Finance, Accounting and Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sports Committee Representative (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-pavana-r-kulkarni\" title=\"Click to view full profile of Mrs. Pavana R. Kulkarni\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Pavana R. Kulkarni</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com, MBA (Finance and HR, Bangalore University), M.Com (University of Mysore) • 9+ Years Undergraduate Teaching Experience (at SSMRV since 2019)</div><div>🔬 <b>Specialisation:</b> Finance and Human Resource Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> BBA Academic & Student Mentoring Cell</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-lavanya-b-k\" title=\"Click to view full profile of Ms. Lavanya B.K.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Lavanya B.K.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (NMKRV College for Women), M.Com (Bangalore University), KSET, Ph.D. Candidate (Jain University) • 9+ Years Academic & Research Experience</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> OBC Cell Coordinator (BBA) | Cultural Committee (BBA) | Placement Cell (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-arunkumar-r\" title=\"Click to view full profile of Mr. Arun Kumar R.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Arun Kumar R.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BBM (Marketing), MBA (Finance and HR, Anna University of Technology) • Experienced Commerce & Management Educator</div><div>🔬 <b>Specialisation:</b> Finance and Human Resources</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> BBA Curriculum & Authorship Cell</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-neha-banu\" title=\"Click to view full profile of Ms. Neha Banu\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Neha Banu</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Bangalore University), Ph.D. (Enrolled, Jain Deemed-to-be University) • 6.5+ Years Academic & Research Experience</div><div>🔬 <b>Specialisation:</b> Finance and Banking</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Entrepreneurship Cell Representative (BBA) | Examination Committee (BBA)</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. Revathy Shivashankaran (HOD)",
+              "action": "profile:dr-revathy-shivashankaran"
+          },
+          {
+              "text": "👤 Mr. Jagadish A. (HOD)",
+              "action": "profile:mr-jagadish-a"
+          },
+          {
+              "text": "👤 Mr. Avinash K.V.",
+              "action": "profile:avinash-k-v"
+          },
+          {
+              "text": "👤 Dr. Shruti Khemashetty",
+              "action": "profile:dr-shruti-khemashetty"
+          },
+          {
+              "text": "👤 Dr. Sushma C.",
+              "action": "profile:dr-sushma-c"
+          },
+          {
+              "text": "👤 Mrs. Rajatha M",
+              "action": "profile:ms-m-rajatha"
+          },
+          {
+              "text": "👤 Mr. Santosh D. Bendigeri",
+              "action": "profile:mr-santosh-d-bendigeri"
+          },
+          {
+              "text": "👤 Mrs. Pavana R. Kulkarni",
+              "action": "profile:mrs-pavana-r-kulkarni"
+          },
+          {
+              "text": "👤 Ms. Lavanya B.K.",
+              "action": "profile:mrs-lavanya-b-k"
+          },
+          {
+              "text": "👤 Mr. Arun Kumar R.",
+              "action": "profile:mr-arunkumar-r"
+          },
+          {
+              "text": "👤 Ms. Neha Banu",
+              "action": "profile:ms-neha-banu"
+          },
+          {
+              "text": "📈 BBA Honours Details",
+              "action": "flow:bba_details"
+          },
+          {
+              "text": "✈️ BBA Aviation Details",
+              "action": "flow:aviation_details"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_mcom: {
-    id: "faculty_mcom",
-    message: `<b>🎓 Department of Postgraduate Studies (M.Com)</b><br>
-• <b>Dr. Lavanya Balaji</b> — Assoc. Prof & Head of PG Department (M.Com, Ph.D. | 21+ yrs experience)<br>
-• <b>Dr. Vinaya T.</b> — Asst. Professor & PG Faculty (BBM, MBA, Ph.D. | Research Methodology)<br>
-• <b>Dr. Shashikala C.S.</b> — Asst. Professor (M.Com, Ph.D. | Advanced Tax Systems)<br>
-• <b>Research Focus:</b> SPSS Financial Analytics, UGC-NET coaching, and Scopus Publications.`,
-    buttons: [
-      { text: "🎓 M.Com Course Details", action: "flow:mcom_details" },
-      { text: "💰 M.Com Fee Structure", action: "flow:fee_enquiry" },
-      { text: "👨‍🏫 Other Departments", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_mcom",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>🎓 Postgraduate Department of Commerce (M.Com) (3 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Advanced Corporate Accounting, Capital Markets, Banking & Empirical Research Faculty. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-lavanya-balaji\" title=\"Click to view full profile of Dr. Lavanya Balaji\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Lavanya Balaji</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and Head of PG Department – M.Com</span><span class=\"ssmrv-badge-dept\">🏛️ Postgraduate Studies (M.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (SDNB Vaishnav College for Women), MBA (Bharath Engineering College), Ph.D. (Bharath Institute of Higher Education and Research) • 21+ Years Academic & Postgraduate Leadership Experience</div><div>🔬 <b>Specialisation:</b> Finance and Banking, Accounting, Corporate Taxation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Head of PG Department (M.Com) | IQAC, Grievance Redressal, Innovation, Alumni, Placement & Exam Committees (M.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-lalitha-b-s\" title=\"Click to view full profile of Dr. Lalitha B.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Lalitha B.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Postgraduate Studies (M.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (Bangalore University), MBA (IGNOU), Ph.D. (University of Mysore) • 19+ Years Teaching Experience in Commerce & PG Studies</div><div>🔬 <b>Specialisation:</b> Accounting, Finance, Banking and Supply Chain Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Equal Opportunity Cell Representative (M.Com) | Entrepreneurship Cell (M.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-akshay-kumar-a-v\" title=\"Click to view full profile of Dr. / Mr. Akshay Kumar A.V.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. / Mr. Akshay Kumar A.V.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Postgraduate Studies (M.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Christ University), M.Com (Christ University), Ph.D. (Christ University) • 8+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Accountancy, Taxation and Corporate Finance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IPR Cell, Sports Committee, Cultural Committee & Discipline Committee Representative (M.Com)</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. Lavanya Balaji (HOD)",
+              "action": "profile:dr-lavanya-balaji"
+          },
+          {
+              "text": "👤 Dr. Lalitha B.S.",
+              "action": "profile:dr-lalitha-b-s"
+          },
+          {
+              "text": "👤 Dr. / Mr. Akshay Kumar A.V.",
+              "action": "profile:mr-akshay-kumar-a-v"
+          },
+          {
+              "text": "🎓 M.Com Course Details",
+              "action": "flow:mcom_details"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_languages: {
-    id: "faculty_languages",
-    message: `<b>📚 Department of Languages & Humanities</b><br>
-• <b>Dr. Jyothi N. Hosurkar</b> — Asst. Prof & HOD Kannada (M.A., Ph.D. | 13+ yrs experience)<br>
-• <b>Dr. D. Kannan</b> — Asst. Professor of English (B.A., M.A., Ph.D. | Corporate Communication)<br>
-• <b>Dr. Kavitha H S</b> — Asst. Professor of Hindi (M.A., Ph.D. | Dakshin Bharat Hindi Prachar Sabha)<br>
-• <b>Dr. Prathima Vijay</b> — Asst. Professor of Kannada (M.A., Ph.D. | 10+ yrs experience)<br>
-• <b>Focus:</b> Personality development, English language fluency labs, and heritage cultural preservation.`,
-    buttons: [
-      { text: "🌟 Centres of Excellence", action: "flow:centres_clubs" },
-      { text: "👨‍🏫 Other Departments", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_languages",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/teaching_faculty/",
+      "message": "<b>🗣️ Department of Languages &amp; Humanities (10 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Kannada, English, Hindi & Sanskrit Literature, Folklore and Soft Skills Faculty. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-jyothi-n-hosurkar\" title=\"Click to view full profile of Dr. Jyothi N. Hosurkar\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Jyothi N. Hosurkar</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and HOD – Languages (Kannada)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (Karnataka University), M.A. in Kannada, M.A. in Folklore, Ph.D. (Karnataka University) • 13+ Years Teaching Experience in Kannada & Folklore</div><div>🔬 <b>Specialisation:</b> Kannada Literature, Kannada Folklore & Creative Writing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Assistant Professor & HOD — Department of Languages & Humanities</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-prathima-vijay\" title=\"Click to view full profile of Dr. Prathima Vijay\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Prathima Vijay</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (Kannada)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (Bangur Nagar Degree College), M.A. in Kannada (Karnataka University Dharwad), M.A. in Folklore (Karnataka University Dharwad), Ph.D. (Karnataka University Dharwad) • 10+ Years Teaching Experience in Kannada Literature</div><div>🔬 <b>Specialisation:</b> Kannada Literature, Folklore & Women's Literary Studies</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Internal Compliance (POSH) Committee Representative</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"kavitha-h-s\" title=\"Click to view full profile of Dr. Kavitha H S\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Kavitha H S</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (Hindi)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Postgraduate & Doctorate in Hindi (Dakshin Bharat Hindi Prachar Sabha) • 17+ Years Teaching Experience in Hindi Literature</div><div>🔬 <b>Specialisation:</b> Hindi Literature, Language Pedagogy & Translation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Discipline Committee Representative</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ramamishra-yashaswi-m\" title=\"Click to view full profile of Mr. Ramamishra Yashaswi M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Ramamishra Yashaswi M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (Sanskrit)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Phil (Rashtriya Sanskrit Vidyapeetha, Tirupati), B.Ed (Sringeri) • Sanskrit Scholar & Educator</div><div>🔬 <b>Specialisation:</b> Sanskrit Literature, Shastras & Indian Knowledge Systems</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Examination Committee Representative (Languages)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-d-kannan\" title=\"Click to view full profile of Dr. D. Kannan\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. D. Kannan</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (English, Bharathiar University), M.A. (English, Annamalai University), Ph.D. (Presidency University) • Experienced English Literature Professor & UGC CARE Researcher</div><div>🔬 <b>Specialisation:</b> Gender Studies, Indian Literature, Cinematic Literature & Communicative English</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> English Literary & Communication Forum</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-gayathri-kempurajan\" title=\"Click to view full profile of Mrs. Gayathri Kempurajan\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Gayathri Kempurajan</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (TTM), M.A. English (Annamalai University), Ph.D. (MP University) • 17+ Years Teaching Experience in English Literature</div><div>🔬 <b>Specialisation:</b> English Literature, Language Etiquette & Analytical Communication</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> English Language & Soft Skills Mentor</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-soujanya-d\" title=\"Click to view full profile of Ms. Soujannya D.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Soujannya D.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (English, Psychology, Sociology), M.A. (English) • 10+ Years Experience in English Literature & Soft Skills Development</div><div>🔬 <b>Specialisation:</b> Humanities, English Literature, Poetry & Classical Music</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> External Cultural Committee SPOC (Inter-Collegiate Events & Fests)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-deepthi-raju\" title=\"Click to view full profile of Ms. Deepthi Raju\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Deepthi Raju</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (NMKRV College for Women), M.A. English Literature (SDM PG Centre, Mangalore University), Ph.D. (Pursuing at GITAM University) • 4.7+ Years Teaching, Curriculum & Research Experience</div><div>🔬 <b>Specialisation:</b> Gender Studies, Urban Studies, Graphic Narratives & Creative Writing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> English Literary Club & Creative Writing Mentor</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"kalaimathi-s\" title=\"Click to view full profile of Ms. Kalaimathi S\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Kalaimathi S</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. with C.A. English (Manonmaniam Sundaranar University), M.A. English (Madurai Kamaraj University), M.Phil. (MKU), PGCTE, UGC-NET Qualified • 4+ Years Teaching Experience | University Gold Medalist</div><div>🔬 <b>Specialisation:</b> English Language Teaching (ELT) & AI in Language Pedagogy</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> English Language Lab & ELT Coordinator</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"swathi-s-nair\" title=\"Click to view full profile of Ms. Swathi S Nair\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Swathi S Nair</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. English Literature & Communication Studies (St. Xavier's College, Ernakulam), M.A. English Literature (Kristu Jayanti College, Bengaluru), Ph.D. (Pursuing, Presidency University) • Assistant Professor & Research Scholar in English Literature</div><div>🔬 <b>Specialisation:</b> English Literature, Medical Humanities, Spatial Studies, Gender Studies & Trauma Literature</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> English Literary & Theatre Club Coordinator</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. Jyothi N. Hosurkar (HOD)",
+              "action": "profile:dr-jyothi-n-hosurkar"
+          },
+          {
+              "text": "👤 Dr. Prathima Vijay",
+              "action": "profile:dr-prathima-vijay"
+          },
+          {
+              "text": "👤 Dr. Kavitha H S",
+              "action": "profile:kavitha-h-s"
+          },
+          {
+              "text": "👤 Mr. Ramamishra Yashaswi M",
+              "action": "profile:ramamishra-yashaswi-m"
+          },
+          {
+              "text": "👤 Dr. D. Kannan",
+              "action": "profile:dr-d-kannan"
+          },
+          {
+              "text": "👤 Mrs. Gayathri Kempurajan",
+              "action": "profile:ms-gayathri-kempurajan"
+          },
+          {
+              "text": "👤 Ms. Soujannya D.",
+              "action": "profile:ms-soujanya-d"
+          },
+          {
+              "text": "👤 Ms. Deepthi Raju",
+              "action": "profile:ms-deepthi-raju"
+          },
+          {
+              "text": "👤 Ms. Kalaimathi S",
+              "action": "profile:kalaimathi-s"
+          },
+          {
+              "text": "👤 Ms. Swathi S Nair",
+              "action": "profile:swathi-s-nair"
+          },
+          {
+              "text": "🌟 Centres & Literary Clubs",
+              "action": "flow:centres_clubs"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
+  },
+
+  faculty_sports: {
+      "id": "faculty_sports",
+      "pageUrl": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/sports_and_wellness_centre/",
+      "message": "<b>⚽ Department of Physical Education &amp; Sports Wellness (3 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">University Athletics, Indoor/Outdoor Sports Complex, Gymnasium & Discipline Leadership. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-teja-k-r\" title=\"Click to view full profile of Mrs. Teja K.R.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Teja K.R.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Junior Director of Physical Education</span><span class=\"ssmrv-badge-dept\">🏛️ Physical Education & Sports</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.P.Ed (Master of Physical Education) • Sports & Wellness Centre Leadership</div><div>🔬 <b>Specialisation:</b> Athletics, Indoor & Outdoor Sports Coaching, Yoga & Student Wellness</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Sports Committee & Sports Wellness Centre</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-m-m-bopanna\" title=\"Click to view full profile of Mr. M.M. Bopanna\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. M.M. Bopanna</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Senior Executive – Physical Education</span><span class=\"ssmrv-badge-dept\">🏛️ Physical Education & Sports</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Physical Education & Sports Coaching Specialist • Senior Physical Education & Campus Discipline Officer</div><div>🔬 <b>Specialisation:</b> Team Sports Coaching, Tournament Management & Campus Discipline</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Anti-Ragging Cell & Discipline Committee | Sports Coaching</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"chiranjivi-m-s\" title=\"Click to view full profile of Mr. Chiranjivi M S\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Chiranjivi M S</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Sports Coordinator</span><span class=\"ssmrv-badge-dept\">🏛️ Physical Education & Sports</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Postgraduate Faculty & Sports Convener • Academic Faculty & College Sports Committee SPOC</div><div>🔬 <b>Specialisation:</b> Sports Administration, Youth Athletics & Campus Discipline</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Sports Committee & Discipline Committee</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Mrs. Teja K.R.",
+              "action": "profile:mrs-teja-k-r"
+          },
+          {
+              "text": "👤 Mr. M.M. Bopanna",
+              "action": "profile:mr-m-m-bopanna"
+          },
+          {
+              "text": "👤 Mr. Chiranjivi M S (Coord.)",
+              "action": "profile:chiranjivi-m-s"
+          },
+          {
+              "text": "🌟 Sports & Wellness Centre",
+              "action": "flow:centres_clubs"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_placement: {
-    id: "faculty_placement",
-    message: `<b>💼 Paryapti Training & Placement Cell Roster</b><br>
-• <b>Mrs. Sumana H.N.</b> — Placement Officer<br>
-  📞 Direct: <b>+91 96060 67551</b> | ✉️ placement.ssmrv@rvei.edu.in<br>
-• <b>Mr. Naresh K. N.</b> — Asst. Manager - HR & Corporate Relations<br>
-  📞 Direct: <b>+91 96060 67553</b><br>
-• <b>Track Record:</b> 90%+ annual placement rate, 100+ recruiting MNCs (Deloitte, Infosys, Accenture, KPMG, EY, Wipro).`,
-    buttons: [
-      { text: "💼 View Placement Packages", action: "flow:placements" },
-      { text: "📞 Call Placement Office", url: "tel:9606067551" },
-      { text: "📝 Apply for Admission", action: "flow:inquiry_form" },
-      { text: "👨‍🏫 Other Faculty", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_placement",
+      "pageUrl": "https://www.ssmrv.edu.in/campus_life/placement/",
+      "message": "<b>💼 Paryapti Training &amp; Placement Cell (2 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Corporate Relations, Pre-Placement Training & Campus Recruitment (Up to 11 LPA CTC). Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-sumana-h-n\" title=\"Click to view full profile of Mrs. Sumana H.N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Sumana H.N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Placement Officer</span><span class=\"ssmrv-badge-dept\">🏛️ Training & Placement Cell (Paryapti)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Corporate Relations, HR & Campus Recruitment Specialist • Head of Paryapti Training & Placement Cell</div><div>🔬 <b>Specialisation:</b> Campus Placements (Highest 11 LPA CTC), Corporate Tie-ups & Pre-Placement Training</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Placement & Career Guidance Cell (Paryapti)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-naresh-k-n\" title=\"Click to view full profile of Mr. Naresh K.N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Naresh K.N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Manager – HR & Corporate Relations</span><span class=\"ssmrv-badge-dept\">🏛️ Training & Placement Cell (Paryapti)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Human Resources & Corporate Relations Management • HR & Placement Coordination, SSMRV College</div><div>🔬 <b>Specialisation:</b> Employer Onboarding, Internship Drives & HR Operations</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Assistant Manager – HR | Paryapti Placement Cell</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Mrs. Sumana H.N.",
+              "action": "profile:mrs-sumana-h-n"
+          },
+          {
+              "text": "👤 Mr. Naresh K.N.",
+              "action": "profile:mr-naresh-k-n"
+          },
+          {
+              "text": "💼 Placement Packages (11 LPA)",
+              "action": "flow:placements"
+          },
+          {
+              "text": "📞 Call Placement Office",
+              "url": "tel:9606067551"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
+  },
+
+  faculty_library: {
+      "id": "faculty_library",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
+      "message": "<b>📖 Central Library &amp; Information Center (Knowledge Hub) (2 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">40,000+ Books, Koha ILMS Automation, DELNET, NDLI & INFLIBNET Digital Repositories. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-shylaja-t-m\" title=\"Click to view full profile of Mrs. Shylaja T.M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Shylaja T.M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Library Assistant & In-Charge</span><span class=\"ssmrv-badge-dept\">🏛️ Library & Information Center</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Lib.I.Sc (Master of Library & Information Science) • Head of Central Library & Digital Knowledge Hub</div><div>🔬 <b>Specialisation:</b> Koha ILMS Automation, DELNET, INFLIBNET N-LIST & Digital Repositories</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Library In-Charge — Central Knowledge Hub</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-guranna-sajjan\" title=\"Click to view full profile of Mr. Guranna Sajjan\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Guranna Sajjan</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Senior Executive – Library</span><span class=\"ssmrv-badge-dept\">🏛️ Library & Information Center</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A., B.Lib (Bachelor of Library Science) • Senior Library Operations & Circulation Executive</div><div>🔬 <b>Specialisation:</b> Book Bank Circulation, Periodicals & Student Reference Services</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Senior Executive — Library & Knowledge Hub</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Mrs. Shylaja T.M.",
+              "action": "profile:mrs-shylaja-t-m"
+          },
+          {
+              "text": "👤 Mr. Guranna Sajjan",
+              "action": "profile:mr-guranna-sajjan"
+          },
+          {
+              "text": "🏛️ Campus Infrastructure",
+              "action": "flow:campus"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
+  },
+
+  faculty_admin: {
+      "id": "faculty_admin",
+      "pageUrl": "https://www.ssmrv.edu.in/academics/non_teaching_staff/",
+      "message": "<b>🏢 Non-Teaching Administration, Finance, IT &amp; Support Staff (19 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Finance & Admin Management, HR, Accounts, Campus IT Infrastructure & Student Support. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-vani-m-u\" title=\"Click to view full profile of Mrs. Vani M.U.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Vani M.U.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Manager of Finance and Admin</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Finance & Institutional Administration Specialist • Head of Administrative & Financial Operations, SSMRV College</div><div>🔬 <b>Specialisation:</b> Financial Planning, Institutional Administration & Statutory Compliance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Manager of Finance & Admin | Internal Compliance (POSH) Committee Member</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-yeshwanthi-r\" title=\"Click to view full profile of Ms. Yeshwanthi R.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Yeshwanthi R.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Manager – HR & Admin</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> HR & Administrative Management • Assistant Manager – HR & Administration</div><div>🔬 <b>Specialisation:</b> Human Resource Records, Faculty Onboarding & General Administration</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Assistant Manager – HR & Admin</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-jyothi-k-s\" title=\"Click to view full profile of Ms. Jyothi K.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Jyothi K.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Manager – Accounts</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Accounts & Financial Administration • Assistant Manager – Accounts Section</div><div>🔬 <b>Specialisation:</b> Institutional Accounting, Fee Receipts & Scholarship Disbursements</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Assistant Manager – Accounts</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-sunithamba-k\" title=\"Click to view full profile of Mrs. Sunithamba K\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Sunithamba K</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ F.D.A. (First Division Assistant)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Administrative & Accounts Service • First Division Assistant (FDA), SSMRV Office</div><div>🔬 <b>Specialisation:</b> University Correspondence, Official Records & Accounts</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> First Division Assistant (F.D.A.)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-hanumantha-reddy-b\" title=\"Click to view full profile of Mr. Hanumantha Reddy B\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Hanumantha Reddy B</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ IT Executive</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> IT Systems & Network Administration • Campus IT Infrastructure Lead</div><div>🔬 <b>Specialisation:</b> Computer Labs, 1 Gbps Campus Network, ERP & Server Maintenance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IT Executive — Systems & Network Infrastructure</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-raviraj-p\" title=\"Click to view full profile of Mr. Raviraj P\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Raviraj P</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Jr. Executive IT</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> IT Support & Hardware Maintenance • Junior Executive – IT Support</div><div>🔬 <b>Specialisation:</b> Lab Systems Maintenance, AV Setup & Technical Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Jr. Executive — IT Support</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-shashikala-g-t\" title=\"Click to view full profile of Mrs. Shashikala G.T.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Shashikala G.T.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Sr. Executive – Administration</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Academic & Administrative Operations • Senior Executive, SSMRV Administrative Office</div><div>🔬 <b>Specialisation:</b> Bengaluru City University (BCU) Academic Section & Student Approvals</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sr. Executive — Administration</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-dileepa-kumara-h-m\" title=\"Click to view full profile of Mr. Dileepa Kumara H.M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Dileepa Kumara H.M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Sr. Executive – Administration</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Student Services & Administrative Operations • Senior Executive, SSMRV Administrative Office</div><div>🔬 <b>Specialisation:</b> Student Certificates, Bus/Metro Concessions, Scholarships & Examination Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sr. Executive — Administration</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-nethravathi-b-v\" title=\"Click to view full profile of Mrs. Nethravathi B.V.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Nethravathi B.V.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Sr. Executive – Administration</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Office Administration & Records • Senior Executive, SSMRV Administrative Office</div><div>🔬 <b>Specialisation:</b> Admissions Verification, University Liaison & Student Records</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sr. Executive — Administration</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-jayashree\" title=\"Click to view full profile of Mrs. Jayashree\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Jayashree</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Sr. Executive – Accounts</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Accounting & Financial Operations • Senior Executive – Accounts, SSMRV Office</div><div>🔬 <b>Specialisation:</b> Accounts Management & Financial Records</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Sr. Executive — Accounts</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-latha-k-m\" title=\"Click to view full profile of Mrs. Latha K.M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Latha K.M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Accounts Executive</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Accounts & Office Administration • Accounts Executive, SSMRV Office</div><div>🔬 <b>Specialisation:</b> Student Fee Desk & Accounts Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Accounts Executive</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-roopesh-r-k\" title=\"Click to view full profile of Mr. Roopesh R.K.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Roopesh R.K.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Admin Executive</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Operations & Administration • Admin Executive, SSMRV Office</div><div>🔬 <b>Specialisation:</b> Campus Facilities, Event Logistics & Office Operations</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Admin Executive</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-nethravathi-m\" title=\"Click to view full profile of Mrs. Nethravathi M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Nethravathi M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Admin Executive</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Administrative Support & Documentation • Admin Executive, SSMRV Office</div><div>🔬 <b>Specialisation:</b> Reception, Student Inquiries & Documentation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Admin Executive</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"sri-chandrashekar-m\" title=\"Click to view full profile of Sri. Chandrashekar M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Sri. Chandrashekar M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Classroom Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"sri-dasegowda-s-t\" title=\"Click to view full profile of Sri. Dasegowda S.T.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Sri. Dasegowda S.T.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Office Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"smt-nandini-h-k\" title=\"Click to view full profile of Smt. Nandini H.K.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Smt. Nandini H.K.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Office Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-subhash\" title=\"Click to view full profile of Mr. Subhash\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Subhash</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Office Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-uma\" title=\"Click to view full profile of Ms. Uma\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Uma</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Office Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-mahadev-prasad\" title=\"Click to view full profile of Mr. Mahadev Prasad\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Mahadev Prasad</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Attender (Group D Support Staff)</span><span class=\"ssmrv-badge-dept\">🏛️ Administration & Finance</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Campus Support Services • Group D Support Staff, SSMRV College</div><div>🔬 <b>Specialisation:</b> Department & Office Support</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Group D Support Staff</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Mrs. Vani M.U.",
+              "action": "profile:mrs-vani-m-u"
+          },
+          {
+              "text": "👤 Ms. Yeshwanthi R.",
+              "action": "profile:ms-yeshwanthi-r"
+          },
+          {
+              "text": "👤 Ms. Jyothi K.S.",
+              "action": "profile:ms-jyothi-k-s"
+          },
+          {
+              "text": "👤 Mrs. Sunithamba K",
+              "action": "profile:mrs-sunithamba-k"
+          },
+          {
+              "text": "👤 Mr. Hanumantha Reddy B",
+              "action": "profile:mr-hanumantha-reddy-b"
+          },
+          {
+              "text": "👤 Mr. Raviraj P",
+              "action": "profile:mr-raviraj-p"
+          },
+          {
+              "text": "👤 Mrs. Shashikala G.T.",
+              "action": "profile:mrs-shashikala-g-t"
+          },
+          {
+              "text": "👤 Mr. Dileepa Kumara H.M.",
+              "action": "profile:mr-dileepa-kumara-h-m"
+          },
+          {
+              "text": "👤 Mrs. Nethravathi B.V.",
+              "action": "profile:mrs-nethravathi-b-v"
+          },
+          {
+              "text": "👤 Mrs. Jayashree",
+              "action": "profile:mrs-jayashree"
+          },
+          {
+              "text": "👤 Mrs. Latha K.M.",
+              "action": "profile:mrs-latha-k-m"
+          },
+          {
+              "text": "👤 Mr. Roopesh R.K.",
+              "action": "profile:mr-roopesh-r-k"
+          },
+          {
+              "text": "👤 Mrs. Nethravathi M",
+              "action": "profile:mrs-nethravathi-m"
+          },
+          {
+              "text": "👤 Sri. Chandrashekar M",
+              "action": "profile:sri-chandrashekar-m"
+          },
+          {
+              "text": "👤 Sri. Dasegowda S.T.",
+              "action": "profile:sri-dasegowda-s-t"
+          },
+          {
+              "text": "👤 Smt. Nandini H.K.",
+              "action": "profile:smt-nandini-h-k"
+          },
+          {
+              "text": "👤 Mr. Subhash",
+              "action": "profile:mr-subhash"
+          },
+          {
+              "text": "👤 Ms. Uma",
+              "action": "profile:ms-uma"
+          },
+          {
+              "text": "👤 Mr. Mahadev Prasad",
+              "action": "profile:mr-mahadev-prasad"
+          },
+          {
+              "text": "📞 Contact Administrative Office",
+              "action": "flow:contact"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   faculty_leadership: {
-    id: "faculty_leadership",
-    pageUrl: "https://www.ssmrv.edu.in/about_us/board_of_management/",
-    message: `<b>🏛️ Institutional Leadership — SSMRV College</b><br>
-• <b>Principal:</b> Dr. Vijayashree L. (MBA, M.Phil., Ph.D., NET)<br>
-  <i>Certified Harvard Design Thinker, 25+ years academic & industry leadership.</i><br>
-  ✉️ <b>principal.ssmrv@rvei.edu.in</b><br><br>
-• <b>Manager of Finance & Admin:</b> Mrs. Vani M.U.<br>
-• <b>Chief Librarian:</b> Mrs. Shylaja T.M. (M.Lib.I.Sc)<br>
-• <b>Governing Body:</b> Rashtreeya Sikshana Samithi Trust (RSST), Est. 1940.`,
-    buttons: [
-      { text: "📞 Contact Principal's Office", action: "flow:contact" },
-      { text: "🏫 Schedule Campus Visit", action: "flow:campus_visit" },
-      { text: "👨‍🏫 Explore Teaching Faculty", action: "flow:faculty" },
-      { text: "↩️ Main Menu", action: "flow:welcome" }
-    ]
+      "id": "faculty_leadership",
+      "pageUrl": "https://www.ssmrv.edu.in/about_us/board_of_management/",
+      "message": "<b>🏛️ Institutional Leadership &amp; RSST Board of Management (8 Profiles)</b><br><span style=\"font-size:11.5px;color:#475569;\">Principal of SSMRV College & Rashtreeya Sikshana Samithi Trust (RVEI) Governing Body. Tap any profile card or button below for complete biography, publications &amp; official webpage:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-vijayashree-l\" title=\"Click to view full profile of Dr. Vijayashree L.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Vijayashree L.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Principal & Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Institutional Leadership</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> MBA, M.Phil., Ph.D., NET | Certified Harvard Design Thinker • 19+ Years Academic Experience (incl. 3 yrs Head & Professor of MBA) + 4 Years Industry Experience</div><div>🔬 <b>Specialisation:</b> Academic Leadership, Innovation Strategy, Entrepreneurship & Start-up Incubation, IP Creation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Principal — SSMRV College | Chairperson — Grievance Redressal Cell</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-m-p-shyam\" title=\"Click to view full profile of Dr. M.P. Shyam\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. M.P. Shyam</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ President — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Prominent Industrialist & Visionary Educational Leader • President, Rashtreeya Sikshana Samithi Trust (RV Institutions)</div><div>🔬 <b>Specialisation:</b> Institutional Governance, Strategic Vision & Philanthropy</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> President — Board of Management (RSST / RVEI)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-h-c-a-v-s-murthy\" title=\"Click to view full profile of Dr. (h.c.) A.V.S. Murthy\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. (h.c.) A.V.S. Murthy</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Hon. Secretary — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Doctorate (Honoris Causa) | Educational Administrator • Honorary Secretary, Rashtreeya Sikshana Samithi Trust (RSST)</div><div>🔬 <b>Specialisation:</b> Educational Administration, Institutional Growth & Trust Governance</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Hon. Secretary — RSST / RVEI | Governing Council Member</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-d-p-nagaraj\" title=\"Click to view full profile of Mr. D.P. Nagaraj\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. D.P. Nagaraj</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Hon. Joint Secretary — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Educational Administrator & Strategic Planner • Honorary Joint Secretary, Rashtreeya Sikshana Samithi Trust (RSST)</div><div>🔬 <b>Specialisation:</b> Institutional Development, Infrastructure & Academic Operations</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Hon. Joint Secretary — RSST / RVEI | Governing Council Member</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-p-s-venkatesh-babu\" title=\"Click to view full profile of Mr. P.S. Venkatesh Babu\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. P.S. Venkatesh Babu</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Hon. Treasurer — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Financial Governance & Trust Management • Honorary Treasurer, Rashtreeya Sikshana Samithi Trust (RSST)</div><div>🔬 <b>Specialisation:</b> Financial Stewardship, Institutional Audits & Resource Allocation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Hon. Treasurer — RSST / RVEI | Governing Council Member</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-a-c-chandrashekar-raju\" title=\"Click to view full profile of Dr. A.C. Chandrashekar Raju\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. A.C. Chandrashekar Raju</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Vice President — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Trustee & Vice President, RSST • Supervising Committee & Board of Management, RVEI</div><div>🔬 <b>Specialisation:</b> Institutional Governance & Higher Education Leadership</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Vice President — RSST / RVEI Board of Management</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-c-vinod-hayagriv\" title=\"Click to view full profile of Dr. C. Vinod Hayagriv\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. C. Vinod Hayagriv</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Vice President — RSST / RVEI</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Trustee & Vice President, RSST • Supervising Committee & Board of Management, RVEI</div><div>🔬 <b>Specialisation:</b> Strategic Partnerships & Institutional Excellence</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Vice President — RSST / RVEI Board of Management</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-m-r-arvind\" title=\"Click to view full profile of Mr. M.R. Arvind\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. M.R. Arvind</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Chairman — Governing Council</span><span class=\"ssmrv-badge-dept\">🏛️ Board of Management (RSST)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Trustee, RSST & Chairman, Governing Council • Governing Council Leadership, SSMRV Degree College</div><div>🔬 <b>Specialisation:</b> Academic Governance & Strategic Institutional Oversight</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Chairman — Governing Council (SSMRV College)</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Dr. Vijayashree L. (Principal)",
+              "action": "profile:dr-vijayashree-l"
+          },
+          {
+              "text": "👤 Dr. M.P. Shyam (President)",
+              "action": "profile:dr-m-p-shyam"
+          },
+          {
+              "text": "👤 Dr. (h.c.) A.V.S. Murthy",
+              "action": "profile:dr-h-c-a-v-s-murthy"
+          },
+          {
+              "text": "👤 Mr. D.P. Nagaraj",
+              "action": "profile:mr-d-p-nagaraj"
+          },
+          {
+              "text": "👤 Mr. P.S. Venkatesh Babu",
+              "action": "profile:mr-p-s-venkatesh-babu"
+          },
+          {
+              "text": "👤 Dr. A.C. Chandrashekar Raju",
+              "action": "profile:dr-a-c-chandrashekar-raju"
+          },
+          {
+              "text": "👤 Dr. C. Vinod Hayagriv",
+              "action": "profile:dr-c-vinod-hayagriv"
+          },
+          {
+              "text": "👤 Mr. M.R. Arvind",
+              "action": "profile:mr-m-r-arvind"
+          },
+          {
+              "text": "📞 Contact Principal's Office",
+              "action": "flow:contact"
+          },
+          {
+              "text": "👨‍🏫 All Departments (92)",
+              "action": "flow:faculty"
+          }
+      ]
+  },
+
+  faculty_committees: {
+      "id": "faculty_committees",
+      "pageUrl": "https://www.ssmrv.edu.in/campus_life/clubs_and_associations/statutory_committees_and_support_system/",
+      "message": "<b>🛡️ Official Statutory Committees &amp; Cell Conveners (16 Conveners)</b><br><span style=\"font-size:11.5px;color:#475569;\">NAAC, UGC &amp; University Statutory Committee Heads. Click any convener card or button below to view their full profile:</span><div class=\"ssmrv-dept-profile-list\"><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-r-shanthi-krishna\" title=\"Click to view full profile of Mrs. R. Shanthi Krishna\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. R. Shanthi Krishna</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & IQAC Coordinator</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Sri Sarada College), MCA (Nehru Memorial College), M.Phil. (Manonmaniam Sundaranar University), PGP-AIML (Great Lakes Executive Learning) • 19+ Years Collegiate Teaching Experience (Former HOD BCA 2014–2024)</div><div>🔬 <b>Specialisation:</b> Machine Learning, Artificial Intelligence, Programming Languages</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> IQAC Coordinator / Convener (Internal Quality Assurance Cell — NAAC)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-vijayashree-l\" title=\"Click to view full profile of Dr. Vijayashree L.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Vijayashree L.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Principal & Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Institutional Leadership</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> MBA, M.Phil., Ph.D., NET | Certified Harvard Design Thinker • 19+ Years Academic Experience (incl. 3 yrs Head & Professor of MBA) + 4 Years Industry Experience</div><div>🔬 <b>Specialisation:</b> Academic Leadership, Innovation Strategy, Entrepreneurship & Start-up Incubation, IP Creation</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Principal — SSMRV College | Chairperson — Grievance Redressal Cell</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-revathy-shivashankaran\" title=\"Click to view full profile of Dr. Revathy Shivashankaran\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Revathy Shivashankaran</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Associate Professor and HOD – BBA</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Mathematics, University of Madras), MBA (University of Madras), M.Com (IGNOU), Ph.D. (Mother Teresa Women's University, Kodaikanal) • 25+ Years Combined Experience (16.5 Years Academia + 8.5 Years Corporate)</div><div>🔬 <b>Specialisation:</b> Organisational Behaviour & HRM, HR Analytics, General Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Associate Professor & HOD — BBA | College Chairperson — Internal Compliance (POSH) | Grievance Redressal Cell (BBA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-yallappa-m\" title=\"Click to view full profile of Mr. Yallappa M.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Yallappa M.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & NSS Programme Officer</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (RC College, Bangalore), MFA (Central College, Bangalore University), M.Com, M.Phil, Ph.D. (Pursuing, Jain University) • 15+ Years Teaching Experience in Finance & Commerce</div><div>🔬 <b>Specialisation:</b> Finance, Financial Analysis & Accounting</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — NSS Unit (Programme Officer) | SC/ST Cell, Entrepreneurship & Discipline Committees (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"avinash-k-v\" title=\"Click to view full profile of Mr. Avinash K.V.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Avinash K.V.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Associate NCC Officer (ANO)</span><span class=\"ssmrv-badge-dept\">🏛️ Business Administration (BBA & Aviation)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com, M.Com, MBA • Management Educator & Commissioned Associate NCC Officer</div><div>🔬 <b>Specialisation:</b> Accounting and Taxation, Human Resources Management & Youth Leadership</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — NCC Unit (Associate NCC Officer)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-mohan-rao-c-n\" title=\"Click to view full profile of Dr. Mohan Rao C.N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Mohan Rao C.N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Chief Superintendent of Examinations</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Ph.D. • Senior Academician & Examination Controller</div><div>🔬 <b>Specialisation:</b> Commerce, Corporate Accounting & University Examinations</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — Examination Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"nandini-j\" title=\"Click to view full profile of Ms. Nandini J\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Nandini J</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Academic & Statutory Cell Coordinator • Commerce Teaching & Institutional Statutory Leadership</div><div>🔬 <b>Specialisation:</b> Commerce, Business Ethics & Student Welfare</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Anti-Ragging Cell, Human Rights Protection Cell, Anti-Drug Cell & Discipline Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-sumana-h-n\" title=\"Click to view full profile of Mrs. Sumana H.N.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Sumana H.N.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Placement Officer</span><span class=\"ssmrv-badge-dept\">🏛️ Training & Placement Cell (Paryapti)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Corporate Relations, HR & Campus Recruitment Specialist • Head of Paryapti Training & Placement Cell</div><div>🔬 <b>Specialisation:</b> Campus Placements (Highest 11 LPA CTC), Corporate Tie-ups & Pre-Placement Training</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Placement & Career Guidance Cell (Paryapti)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-s-chethana\" title=\"Click to view full profile of Dr. S. Chethana\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. S. Chethana</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Computer Applications (BCA)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Sc (Electronics, University of Mysore), MCA (IGNOU), Ph.D. (Jain University) • 22+ Years Teaching Experience in Computer Science</div><div>🔬 <b>Specialisation:</b> Artificial Intelligence, Internet of Things (IoT), Software Engineering, Medical Image Processing</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — Innovation Cell & IPR Cell | Examination Committee (BCA)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"dr-vinaya-t\" title=\"Click to view full profile of Dr. Vinaya T.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. Vinaya T.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and Coordinator (B.Com 2nd Year)</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> BBM, M.Com, Ph.D. (University of Mysore, Manasagangotri) • 17+ Years Teaching & Corporate Experience</div><div>🔬 <b>Specialisation:</b> Finance, Accounting, Taxation and Empirical Research</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> B.Com 2nd Year Coordinator | College SPOC — Entrepreneurship Cell | Sports Committee (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mr-gokul-c\" title=\"Click to view full profile of Mr. Gokul C.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Gokul C.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor and Coordinator (B.Com 1st Year)</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), MBA (Bangalore University), M.Com (Annamalai University), PGDBI (Annamalai University), KSET • 10+ Years Corporate Industry Experience + 10+ Years Academic Experience</div><div>🔬 <b>Specialisation:</b> Accounting, Taxation, Financial Management & General Management</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> B.Com 1st Year Coordinator | College SPOC — Alumni Association (Sammilana) | Innovation Cell (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"sharavana-m\" title=\"Click to view full profile of Mr. Sharavana M\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Sharavana M</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.Com, Statutory Cell Convener • Commerce Teaching & Student Support Systems</div><div>🔬 <b>Specialisation:</b> Commerce, Accounting & Inclusive Education</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC & Convener — SC/ST Cell (UGC / NAAC)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"chiranjivi-m-s\" title=\"Click to view full profile of Mr. Chiranjivi M S\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mr. Chiranjivi M S</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor & Sports Coordinator</span><span class=\"ssmrv-badge-dept\">🏛️ Physical Education & Sports</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> Postgraduate Faculty & Sports Convener • Academic Faculty & College Sports Committee SPOC</div><div>🔬 <b>Specialisation:</b> Sports Administration, Youth Athletics & Campus Discipline</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Sports Committee & Discipline Committee</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"mrs-teja-k-r\" title=\"Click to view full profile of Mrs. Teja K.R.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Mrs. Teja K.R.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Junior Director of Physical Education</span><span class=\"ssmrv-badge-dept\">🏛️ Physical Education & Sports</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> M.P.Ed (Master of Physical Education) • Sports & Wellness Centre Leadership</div><div>🔬 <b>Specialisation:</b> Athletics, Indoor & Outdoor Sports Coaching, Yoga & Student Wellness</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> College SPOC — Sports Committee & Sports Wellness Centre</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-bharathi-n-s\" title=\"Click to view full profile of Dr. / Ms. Bharathi N.S.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Dr. / Ms. Bharathi N.S.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor</span><span class=\"ssmrv-badge-dept\">🏛️ Commerce (B.Com)</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.Com (Bangalore University), M.Com (IGNOU), MBA (Alagappa University), PGDBIO (IGNOU), Ph.D. (Christ Deemed-to-be University) • 10+ Years Teaching & Research Experience</div><div>🔬 <b>Specialisation:</b> Marketing, Finance, Accountancy, Cognitive Psychology & Neuroscience</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> Internal Cultural Committee SPOC (Tarangini) | Examination Committee (B.Com)</div></div></div><div class=\"ssmrv-dept-profile-item\" data-profile-id=\"ms-soujanya-d\" title=\"Click to view full profile of Ms. Soujannya D.\"><div class=\"ssmrv-dept-prof-header\"><span class=\"ssmrv-dept-prof-name\">👤 Ms. Soujannya D.</span><span class=\"ssmrv-dept-prof-cta\">View Profile &rarr;</span></div><div class=\"ssmrv-faculty-badges\"><span class=\"ssmrv-badge-desig\">🎖️ Assistant Professor (English)</span><span class=\"ssmrv-badge-dept\">🏛️ Languages & Humanities</span></div><div class=\"ssmrv-dept-prof-meta\"><div>🎓 <b>Qualifications:</b> B.A. (English, Psychology, Sociology), M.A. (English) • 10+ Years Experience in English Literature & Soft Skills Development</div><div>🔬 <b>Specialisation:</b> Humanities, English Literature, Poetry & Classical Music</div><div class=\"ssmrv-dept-prof-comm\">🛡️ <b>Role:</b> External Cultural Committee SPOC (Inter-Collegiate Events & Fests)</div></div></div></div>",
+      "buttons": [
+          {
+              "text": "👤 Mrs. R. Shanthi Krishna",
+              "action": "profile:ms-r-shanthi-krishna"
+          },
+          {
+              "text": "👤 Dr. Vijayashree L.",
+              "action": "profile:dr-vijayashree-l"
+          },
+          {
+              "text": "👤 Dr. Revathy Shivashankaran",
+              "action": "profile:dr-revathy-shivashankaran"
+          },
+          {
+              "text": "👤 Mr. Yallappa M.",
+              "action": "profile:mr-yallappa-m"
+          },
+          {
+              "text": "👤 Mr. Avinash K.V.",
+              "action": "profile:avinash-k-v"
+          },
+          {
+              "text": "👤 Dr. Mohan Rao C.N.",
+              "action": "profile:dr-mohan-rao-c-n"
+          },
+          {
+              "text": "👤 Ms. Nandini J",
+              "action": "profile:nandini-j"
+          },
+          {
+              "text": "👤 Mrs. Sumana H.N.",
+              "action": "profile:mrs-sumana-h-n"
+          },
+          {
+              "text": "👤 Dr. S. Chethana",
+              "action": "profile:dr-s-chethana"
+          },
+          {
+              "text": "👤 Dr. Vinaya T.",
+              "action": "profile:dr-vinaya-t"
+          },
+          {
+              "text": "👤 Mr. Gokul C.",
+              "action": "profile:mr-gokul-c"
+          },
+          {
+              "text": "👤 Mr. Sharavana M",
+              "action": "profile:sharavana-m"
+          },
+          {
+              "text": "👤 Mr. Chiranjivi M S",
+              "action": "profile:chiranjivi-m-s"
+          },
+          {
+              "text": "👤 Mrs. Teja K.R.",
+              "action": "profile:mrs-teja-k-r"
+          },
+          {
+              "text": "👤 Dr. / Ms. Bharathi N.S.",
+              "action": "profile:ms-bharathi-n-s"
+          },
+          {
+              "text": "👤 Ms. Soujannya D.",
+              "action": "profile:ms-soujanya-d"
+          },
+          {
+              "text": "🌟 Centres & Clubs",
+              "action": "flow:centres_clubs"
+          },
+          {
+              "text": "👨‍🏫 All Faculty Directory (92)",
+              "action": "flow:faculty"
+          }
+      ]
   },
 
   prospectus_downloads: {
